@@ -38,7 +38,7 @@ namespace DarkSouls.Items
             
             item.value = 10000;
             item.rare = 2;
-            item.mana = 0;
+            item.mana = 1;
             item.autoReuse = true;
             
             item.shootSpeed = 1f;
