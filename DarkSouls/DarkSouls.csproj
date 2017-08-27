@@ -120,6 +120,7 @@
     <Content Include="Items\AngerTalisman.png" />
     <Content Include="Items\AngerTalisman_HandsOn.png" />
     <Content Include="Items\AntimatRifle.png" />
+    <Content Include="Items\AquamarineRing.png" />
     <Content Include="Items\BarrowBlade.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
@@ -260,6 +261,7 @@
     <Compile Include="Items\Anger Talisman.cs" />
     <Compile Include="Items\Anicient Great Bow.cs" />
     <Compile Include="Items\AntimatRifle.cs" />
+    <Compile Include="Items\AquamarineRing.cs" />
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />
