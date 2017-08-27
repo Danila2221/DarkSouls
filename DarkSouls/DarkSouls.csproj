@@ -215,6 +215,7 @@
     <Content Include="Projectiles\Lightning4Bolt4.png" />
     <Content Include="Projectiles\LightPillarBall.png" />
     <Content Include="Projectiles\LizardPro.png" />
+    <Content Include="Projectiles\MasterBuster.png" />
     <Content Include="Projectiles\MegaDrill.png" />
     <Content Include="Projectiles\ObscureSaw.png" />
     <Content Include="Projectiles\PhantomSeeker.png" />
@@ -341,6 +342,7 @@
     <Compile Include="Projectiles\Lightning4Bolt3.cs" />
     <Compile Include="Projectiles\Lightning4Bolt4.cs" />
     <Compile Include="Projectiles\LightPillarBall.cs" />
+    <Compile Include="Projectiles\MasterBuster.cs" />
     <Compile Include="Projectiles\MegaDrill.cs" />
     <Compile Include="Projectiles\Obscure Saw.cs" />
     <Compile Include="Projectiles\Phantom Seeker.cs" />
