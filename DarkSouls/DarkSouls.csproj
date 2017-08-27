@@ -127,6 +127,7 @@
     <Content Include="Items\Bolt3Tome.png" />
     <Content Include="Items\Bolt4Tome.png" />
     <Content Include="Items\DarkSoul.png" />
+    <Content Include="Items\DivineSpark.png" />
     <Content Include="Items\FireSword.png" />
     <Content Include="Items\GemBox.png" />
     <Content Include="Items\HamdraxEX.png" />
@@ -263,6 +264,7 @@
     <Compile Include="Items\Bolt3Tome.cs" />
     <Compile Include="Items\Bolt4Tome.cs" />
     <Compile Include="Items\DarkSoul.cs" />
+    <Compile Include="Items\DivineCannon.cs" />
     <Compile Include="Items\FireSword.cs" />
     <Compile Include="Items\GemBox.cs" />
     <Compile Include="Items\HamdraxEX.cs" />
