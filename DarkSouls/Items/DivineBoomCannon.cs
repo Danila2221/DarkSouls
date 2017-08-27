@@ -28,13 +28,11 @@ namespace DarkSouls.Items
         public override void SetDefaults()
         {
             item.damage = 9000;
-            
             item.width = 24;
             item.height = 28;
             item.useTime = 1;
             item.useAnimation = 2;
             item.useStyle = 5;
-            
             item.channel = true;
             item.value = 10000;
             item.rare = 2;
