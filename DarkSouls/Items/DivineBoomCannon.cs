@@ -38,7 +38,7 @@ namespace DarkSouls.Items
             item.channel = true;
             item.value = 10000;
             item.rare = 2;
-            item.magic = false
+            item.magic = false;
             item.autoReuse = true;
             
             item.shootSpeed = 100f;
