@@ -43,11 +43,7 @@ namespace DarkSouls.Items
 		}
 
 		// We use the CanUseItem hook to prevent a player from using this item while the boss is present in the world.
-		public override bool CanUseItem(Player player)
-		{
-			// "player.ZoneUnderworldHeight" could also be written as "player.position.Y / 16f > Main.maxTilesY - 200"
-			return !NPC.AnyNPCs(NPCID.WallofFlesh);
-		}
+		
 
 		public override bool UseItem(Player player)
 		{
