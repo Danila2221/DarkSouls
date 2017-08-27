@@ -41,7 +41,6 @@
   <ItemGroup>
     <Content Include="Buffs\Vulnerable.png" />
     <Content Include="build.txt" />
-    <Content Include="Dusts\Sandstorm.png" />
     <Content Include="Dusts\Smoke.png" />
     <Content Include="Dusts\Sparkle.png" />
     <Content Include="Gores\EarthFiendLichGore1.png" />
@@ -69,6 +68,7 @@
     <Content Include="Items\AaronProtectionStone.png" />
     <Content Include="Items\AbysmalStone.png" />
     <Content Include="Items\AbyssScroll.png" />
+    <Content Include="Items\Ancient.png" />
     <Content Include="Items\AncientBrassArmor.png" />
     <Content Include="Items\AncientBrassArmor_Arms.png" />
     <Content Include="Items\AncientBrassArmor_Body.png" />
@@ -227,7 +227,6 @@
     <Compile Include="DarkSouls.cs" />
     <Compile Include="DarkSoulsPlayer.cs" />
     <Compile Include="DarkSoulsWorld.cs" />
-    <Compile Include="Dusts\Sandstorm.cs" />
     <Compile Include="Dusts\Smoke.cs" />
     <Compile Include="Dusts\Sparkle.cs" />
     <Compile Include="Items\Aaron%27s Protection Stone.cs" />
@@ -247,6 +246,7 @@
     <Compile Include="Items\Ancient Dwarven Helmet.cs" />
     <Compile Include="Items\Ancient Dwarven Helmet2.cs" />
     <Compile Include="Items\Ancient Fire Axe.cs" />
+    <Compile Include="Items\Ancient.cs" />
     <Compile Include="Items\AncientDragonScaleGreaves.cs" />
     <Compile Include="Items\AncientDragonScaleHelmet.cs" />
     <Compile Include="Items\AncientGoldenArmor.cs" />
@@ -365,6 +365,7 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>.\Microsoft.Xna.Framework.Xact.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="Terraria">
       <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Terraria\Terraria.exe</HintPath>
     </Reference>
