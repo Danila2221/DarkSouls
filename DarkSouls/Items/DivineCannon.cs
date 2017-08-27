@@ -16,7 +16,7 @@ using DarkSouls;
 
 namespace DarkSouls.Items
 {
-    public class DivineCannon : ModItem
+    public class DivineSpark : ModItem
     {
         public override void SetStaticDefaults()
         {
