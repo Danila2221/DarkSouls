@@ -5,6 +5,7 @@ using Terraria.ModLoader;
 
 namespace DarkSouls.Items
 {
+    [AutoloadEquip(EquipType.Body)]
     public class MagicPlateArmor : ModItem
 	{
 
@@ -12,7 +13,7 @@ namespace DarkSouls.Items
         {
             DisplayName.SetDefault("Magic Plate Armor");
             Tooltip.SetDefault("Fueled by a magical gem in the chest."
-                + "+20 % melee speed, -20 % mana cost, 20 % not to consume ammo");
+                + "\n+20 % melee speed, -20 % mana cost, 20 % not to consume ammo");
 
         }
 
