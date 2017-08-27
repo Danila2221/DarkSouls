@@ -27,6 +27,7 @@ namespace DarkSouls.Items
             item.value = 184000;
             item.rare = 4;
             item.useTurn = true;
+            item.shoot = mod.ProjectileType("Sparkle");
         }
 
         public override void SetStaticDefaults()
@@ -37,43 +38,29 @@ namespace DarkSouls.Items
 
         }
 
-        public override bool UseItem(Player player)
+        public static Vector2[] randomSpread(float speedX, float speedY, int angle, int num)
         {
-            int playerID;
-            int spread = 10;
-
-            float num48 = 14f;
-            float speedX = ((Main.mouseX + Main.screenPosition.X) - (player.position.X + player.width * 0.5f)) + Main.rand.Next(-spread, spread);
-            float speedY = ((Main.mouseY + Main.screenPosition.Y) - (player.position.Y + player.height * 0.5f)) + Main.rand.Next(-spread, spread);
-            float num51 = (float)Math.Sqrt((double)((speedX * speedX) + (speedY * speedY)));
-            num51 = num48 / num51;
-            speedX *= num51;
-            speedY *= num51;
-
-            if ((player.direction == -1) && ((Main.mouseX + Main.screenPosition.X) > (player.position.X + player.width * 0.5f)))
+            var posArray = new Vector2[num];
+            float spread = (float)(angle * 0.0180532925);
+            float baseSpeed = (float)System.Math.Sqrt(speedX * speedX + speedY * speedY);
+            double baseAngle = System.Math.Atan2(speedX, speedY);
+            double randomAngle;
+            for (int i = 0; i < num; ++i)
             {
-                player.direction = 1;
+                randomAngle = baseAngle + (Main.rand.NextFloat() - 0.5f) * spread;
+                posArray[i] = new Vector2(baseSpeed * (float)System.Math.Sin(randomAngle), baseSpeed * (float)System.Math.Cos(randomAngle));
             }
-            if ((player.direction == 1) && ((Main.mouseX + Main.screenPosition.X) < (player.position.X + player.width * 0.5f)))
+            return (Vector2[])posArray;
+        }
+
+        public override bool Shoot(Player player, ref Vector2 position, ref float speedX, ref float speedY, ref int type, ref int damage, ref float knockBack)
+        {
+            Vector2[] speeds = randomSpread(speedX, speedY, 8, 6);
+            for (int i = 0; i < 5; ++i)
             {
-                player.direction = -1;
+                Projectile.NewProjectile(position.X, position.Y, speeds[i].X, speeds[i].Y, type, damage, knockBack, player.whoAmI);
             }
-
-            if (player.direction == 1) player.itemRotation = (float)Math.Atan2((Main.mouseY + Main.screenPosition.Y) - (player.position.Y + player.height * 0.5f), (Main.mouseX + Main.screenPosition.X) - (player.position.X + player.width * 0.5f));
-            else player.itemRotation = (float)Math.Atan2((player.position.Y + player.height * 0.5f) - (Main.mouseY + Main.screenPosition.Y), (player.position.X + player.width * 0.5f) - (Main.mouseX + Main.screenPosition.X));
-
-
-            Projectile.NewProjectile(
-            (float)player.position.X + (player.width * 0.5f),
-            (float)player.position.Y + (player.height * 0.5f),
-            (float)speedX,
-            (float)speedY,
-            mod.ProjectileType("Sandstorm"),
-            (int)(item.damage * player.magicDamage),
-            player.inventory[player.selectedItem].knockBack,
-            Main.myPlayer
-            );
-            return true;
+            return false;
         }
 
 
