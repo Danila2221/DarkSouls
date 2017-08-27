@@ -35,13 +35,13 @@ namespace DarkSouls.Items
             item.useAnimation = 2;
             item.useStyle = 5;
             item.noMelee = true; //so the item's animation doesn't do damage
-            
+            item.channel = true;
             item.value = 10000;
             item.rare = 2;
-            
+            item.magic = false
             item.autoReuse = true;
             
-            item.shootSpeed = 1f;
+            item.shootSpeed = 100f;
            
         }
 
