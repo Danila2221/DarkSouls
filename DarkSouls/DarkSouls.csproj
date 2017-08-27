@@ -172,6 +172,7 @@
     <Content Include="NPCs\Enemies\WyvernMageShadow.png" />
     <Content Include="obj\Debug\Dark Souls.csproj.FileListAbsolute.txt" />
     <Content Include="Projectiles\AncientDragonLanceP.png" />
+    <Content Include="Projectiles\AntiMaterialRound.png" />
     <Content Include="Projectiles\AntiMatterBlast.png" />
     <Content Include="Projectiles\BlackBreath.png" />
     <Content Include="Projectiles\CrazyOrb.png" />
