@@ -68,7 +68,7 @@ namespace DarkSouls.Items
             (float)player.position.Y + (player.height * 0.5f),
             (float)speedX,
             (float)speedY,
-            mod.ProjectileType("Smoke"),
+            mod.ProjectileType("Sandstorm"),
             (int)(item.damage * player.magicDamage),
             player.inventory[player.selectedItem].knockBack,
             Main.myPlayer
