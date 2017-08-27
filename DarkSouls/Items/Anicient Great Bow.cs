@@ -7,8 +7,8 @@ namespace DarkSouls.Items
 	{
 		public override void SetDefaults()
 		{
-
-			item.damage = 25;
+            item.maxStack = 1;
+            item.damage = 25;
 			item.width = 16;
 			item.height = 58;
 			item.ranged = true;

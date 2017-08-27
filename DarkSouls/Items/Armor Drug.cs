@@ -36,7 +36,7 @@ namespace DarkSouls.Items
             item.consumable = true;
             item.useTurn = true;
             item.buffTime = 10800;
-
+            item.UseSound = SoundID.Item3;
             item.value = 300000;
             item.rare = 1;
             item.maxStack = 1;

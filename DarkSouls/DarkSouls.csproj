@@ -124,6 +124,7 @@
     <Content Include="Items\AquamarineRing.png" />
     <Content Include="Items\ArchmenEmblem.png" />
     <Content Include="Items\ArmorDrug.png" />
+    <Content Include="Items\ArtemisBow.png" />
     <Content Include="Items\BarrowBlade.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
@@ -268,6 +269,7 @@
     <Compile Include="Items\AquamarineRing.cs" />
     <Compile Include="Items\Archmen Emblem.cs" />
     <Compile Include="Items\Armor Drug.cs" />
+    <Compile Include="Items\Artemis Bow.cs" />
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />

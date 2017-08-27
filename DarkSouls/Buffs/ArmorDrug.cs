@@ -17,7 +17,7 @@ namespace DarkSouls.Buffs
             DisplayName.SetDefault("Armor Drug");
             Description.SetDefault("I feel Protected!");
             Main.debuff[Type] = false;
-           
+            
         }
 
         public override void Update(Player player, ref int buffIndex)
