@@ -43,11 +43,11 @@ namespace DarkSouls.Items
 
         public override void UpdateArmorSet(Player player)
         {
-            player.setBonus = "+20% damage, +80 mana";
-            player.meleeDamage += 0.20f;
-            player.magicDamage += 0.20f;
-            player.rangedDamage += 0.20f;
-            player.statManaMax2 += 80;
+            player.setBonus = "+6% damage all types, +40 mana";
+            player.meleeDamage += 0.06f;
+            player.magicDamage += 0.06f;
+            player.rangedDamage += 0.06f;
+            player.statManaMax2 += 40;
         }
 	   public override void AddRecipes()
         {

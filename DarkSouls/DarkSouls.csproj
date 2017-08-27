@@ -274,6 +274,7 @@
     <Compile Include="Items\HamdraxEX.cs" />
     <Compile Include="Items\HornedHelmet.cs" />
     <Compile Include="Items\MagicPlateGreaves.cs" />
+    <Compile Include="Items\MagicPlateArmor.cs" />
     <Compile Include="Items\Potions\Healing Elixir.cs" />
     <Compile Include="Items\Red Titanite.cs" />
     <Compile Include="Items\White Titanite.cs" />
