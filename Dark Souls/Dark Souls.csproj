@@ -1,0 +1,380 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{90ED53F7-8F99-498F-A202-80DF90629241}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Dark_Souls</RootNamespace>
+    <AssemblyName>Dark Souls</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="NPCs\Enemies\Armored Wraith.ini" />
+    <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="Projectiles\Thumbs.db" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Buffs\Vulnerable.png" />
+    <Content Include="build.txt" />
+    <Content Include="Dusts\Sandstorm.png" />
+    <Content Include="Dusts\Smoke.png" />
+    <Content Include="Dusts\Sparkle.png" />
+    <Content Include="Gores\EarthFiendLichGore1.png" />
+    <Content Include="Gores\EarthFiendLichGore2.png" />
+    <Content Include="Gores\EasterlingGore1.png" />
+    <Content Include="Gores\EasterlingGore2.png" />
+    <Content Include="Gores\EasterlingGore3.png" />
+    <Content Include="Gores\FireFiendMarilithGore1.png" />
+    <Content Include="Gores\FireFiendMarilithGore2.png" />
+    <Content Include="Gores\FireFiendMarilithGore3.png" />
+    <Content Include="Gores\FireFiendMarilithGore4.png" />
+    <Content Include="Gores\FireFiendMarilithGore5.png" />
+    <Content Include="Gores\FireFiendMarilithGore6.png" />
+    <Content Include="Gores\FireFiendMarilithGore7.png" />
+    <Content Include="Gores\FireFiendMarilithGore8.png" />
+    <Content Include="Gores\FireFiendMarilithGore9.png" />
+    <Content Include="Gores\WaterFiendKrakenGore1.png" />
+    <Content Include="Gores\WaterFiendKrakenGore2.png" />
+    <Content Include="Gores\WaterFiendKrakenGore3.png" />
+    <Content Include="Gores\WaterFiendKrakenGore4.png" />
+    <Content Include="Gores\WaterFiendKrakenGore5.png" />
+    <Content Include="Gores\WaterFiendKrakenGore6.png" />
+    <Content Include="Gores\WaterFiendKrakenGore7.png" />
+    <Content Include="Gores\WaterFiendKrakenGore8.png" />
+    <Content Include="Items\AaronProtectionStone.png" />
+    <Content Include="Items\AbysmalStone.png" />
+    <Content Include="Items\AbyssScroll.png" />
+    <Content Include="Items\AncientBrassArmor.png" />
+    <Content Include="Items\AncientBrassArmor_Arms.png" />
+    <Content Include="Items\AncientBrassArmor_Body.png" />
+    <Content Include="Items\AncientBrassArmor_FemaleBody.png" />
+    <Content Include="Items\AncientBrassGreaves.png" />
+    <Content Include="Items\AncientBrassGreaves_Legs.png" />
+    <Content Include="Items\AncientBrassHelmet.png" />
+    <Content Include="Items\AncientBrassHelmet_Head.png" />
+    <Content Include="Items\AncientDemonArmor.png" />
+    <Content Include="Items\AncientDemonArmor_Arms.png" />
+    <Content Include="Items\AncientDemonArmor_Body.png" />
+    <Content Include="Items\AncientDemonArmor_FemaleBody.png" />
+    <Content Include="Items\AncientDemonGreaves.png" />
+    <Content Include="Items\AncientDemonGreaves_Legs.png" />
+    <Content Include="Items\AncientDemonHelmet.png" />
+    <Content Include="Items\AncientDemonHelmet_Head.png" />
+    <Content Include="Items\AncientDemonShield.png" />
+    <Content Include="Items\AncientDemonShield_Shield.png" />
+    <Content Include="Items\AncientDragonLance.png" />
+    <Content Include="Items\AncientDragonScaleGreaves.png" />
+    <Content Include="Items\AncientDragonScaleGreaves_Legs.png" />
+    <Content Include="Items\AncientDragonScaleHelmet.png" />
+    <Content Include="Items\AncientDragonScaleHelmet_Head.png" />
+    <Content Include="Items\AncientDragonScaleMail.png" />
+    <Content Include="Items\AncientDragonScaleMail_Arms.png" />
+    <Content Include="Items\AncientDragonScaleMail_Body.png" />
+    <Content Include="Items\AncientDragonScaleMail_FemaleBody.png" />
+    <Content Include="Items\AncientDwarvenArmor.png" />
+    <Content Include="Items\AncientDwarvenArmorFemale_Body.png" />
+    <Content Include="Items\AncientDwarvenArmor_Arms.png" />
+    <Content Include="Items\AncientDwarvenArmor_Body.png" />
+    <Content Include="Items\AncientDwarvenGreaves.png" />
+    <Content Include="Items\AncientDwarvenGreaves_Legs.png" />
+    <Content Include="Items\AncientDwarvenHelmet.png" />
+    <Content Include="Items\AncientDwarvenHelmet2.png" />
+    <Content Include="Items\AncientDwarvenHelmet2_Head.png" />
+    <Content Include="Items\AncientDwarvenHelmet_Head.png" />
+    <Content Include="Items\AncientFireAxe.png" />
+    <Content Include="Items\AncientGoldenArmor.png" />
+    <Content Include="Items\AncientGoldenArmor_Arms.png" />
+    <Content Include="Items\AncientGoldenArmor_Body.png" />
+    <Content Include="Items\AncientGoldenArmor_FemaleBody.png" />
+    <Content Include="Items\AncientGoldenGreaves.png" />
+    <Content Include="Items\AncientGoldenGreaves_Legs.png" />
+    <Content Include="Items\AncientGoldenHelmet.png" />
+    <Content Include="Items\AncientGoldenHelmet2.png" />
+    <Content Include="Items\AncientGoldenHelmet2_Head.png" />
+    <Content Include="Items\AncientGoldenHelmet_Head.png" />
+    <Content Include="Items\AncientGreatBow.png" />
+    <Content Include="Items\AngerTalisman.png" />
+    <Content Include="Items\AngerTalisman_HandsOn.png" />
+    <Content Include="Items\BarrowBlade.png" />
+    <Content Include="Items\BloomShards.png" />
+    <Content Include="Items\Bolt1Tome.png" />
+    <Content Include="Items\Bolt2Tome.png" />
+    <Content Include="Items\Bolt3Tome.png" />
+    <Content Include="Items\Bolt4Tome.png" />
+    <Content Include="Items\DarkSoul.png" />
+    <Content Include="Items\FireSword.png" />
+    <Content Include="Items\GemBox.png" />
+    <Content Include="Items\HamdraxEX.png" />
+    <Content Include="Items\HornedHelmet.png" />
+    <Content Include="Items\HornedHelmet_Head.png" />
+    <Content Include="Items\MagicPlateArmor.png" />
+    <Content Include="Items\MagicPlateArmor_Arms.png" />
+    <Content Include="Items\MagicPlateArmor_Body.png" />
+    <Content Include="Items\MagicPlateArmor_FemaleBody.png" />
+    <Content Include="Items\MagicPlateGreaves.png" />
+    <Content Include="Items\MagicPlateGreaves_Legs.png" />
+    <Content Include="Items\Potions\HealingElixir.png" />
+    <Content Include="Items\RedTitanite.png" />
+    <Content Include="Items\WhiteTitanite.png" />
+    <Content Include="Microsoft.Xna.Framework.dll" />
+    <Content Include="Microsoft.Xna.Framework.Game.dll" />
+    <Content Include="Microsoft.Xna.Framework.Graphics.dll" />
+    <Content Include="Microsoft.Xna.Framework.Xact.dll" />
+    <Content Include="NPCs\Enemies\AbysmalOolacileSorcerer.png" />
+    <Content Include="NPCs\Enemies\ArmoredWraith.png" />
+    <Content Include="NPCs\Enemies\Artorias.png" />
+    <Content Include="NPCs\Enemies\Attraidies.png" />
+    <Content Include="NPCs\Enemies\AttraidiesMimic.png" />
+    <Content Include="NPCs\Enemies\BarrowWight.png" />
+    <Content Include="NPCs\Enemies\Blight.png" />
+    <Content Include="NPCs\Enemies\Chaos.png" />
+    <Content Include="NPCs\Enemies\ChaosDeathAnimation.png" />
+    <Content Include="NPCs\Enemies\DamnedSoul.png" />
+    <Content Include="NPCs\Enemies\DarkShogunMask.png" />
+    <Content Include="NPCs\Enemies\DiscipleofAttraidies.png" />
+    <Content Include="NPCs\Enemies\GhostDragonBody.png" />
+    <Content Include="NPCs\Enemies\GhostDragonHead.png" />
+    <Content Include="NPCs\Enemies\GhostDragonTail.png" />
+    <Content Include="NPCs\Enemies\Gwyn.png" />
+    <Content Include="NPCs\Enemies\MindflayerIllusion.png" />
+    <Content Include="NPCs\Enemies\ShadowDragonBody.png" />
+    <Content Include="NPCs\Enemies\ShadowDragonHead.png" />
+    <Content Include="NPCs\Enemies\ShadowDragonTail.png" />
+    <Content Include="NPCs\Enemies\TheEarthFiendLich.png" />
+    <Content Include="NPCs\Enemies\TheFireFiendMarilith.png" />
+    <Content Include="NPCs\Enemies\TheWaterFiendKraken.png" />
+    <Content Include="NPCs\Enemies\Witchking.png" />
+    <Content Include="NPCs\Enemies\WyvernMageShadow.png" />
+    <Content Include="obj\Debug\Dark Souls.csproj.FileListAbsolute.txt" />
+    <Content Include="Projectiles\AncientDragonLanceP.png" />
+    <Content Include="Projectiles\AntiMatterBlast.png" />
+    <Content Include="Projectiles\BlackBreath.png" />
+    <Content Include="Projectiles\CrazyOrb.png" />
+    <Content Include="Projectiles\DragonBreath.png" />
+    <Content Include="Projectiles\EffectBuff.png" />
+    <Content Include="Projectiles\FBolt1.png" />
+    <Content Include="Projectiles\FBolt2.png" />
+    <Content Include="Projectiles\FBolt2_2.png" />
+    <Content Include="Projectiles\FBolt3.png" />
+    <Content Include="Projectiles\FBolt3_2.png" />
+    <Content Include="Projectiles\FBolt3_3.png" />
+    <Content Include="Projectiles\FBolt4.png" />
+    <Content Include="Projectiles\FBolt4_2.png" />
+    <Content Include="Projectiles\FBolt4_3.png" />
+    <Content Include="Projectiles\FBolt4_4.png" />
+    <Content Include="Projectiles\FBoltBall.png" />
+    <Content Include="Projectiles\FrozenSaw.png" />
+    <Content Include="Projectiles\Gravity4Ball.png" />
+    <Content Include="Projectiles\Gravity4Strike.png" />
+    <Content Include="Projectiles\GreatEnergyBall.png" />
+    <Content Include="Projectiles\HoldBall.png" />
+    <Content Include="Projectiles\Ice3Ball.png" />
+    <Content Include="Projectiles\Ice3Icicle.png" />
+    <Content Include="Projectiles\Ice4Ball.png" />
+    <Content Include="Projectiles\Ice4Icicle.png" />
+    <Content Include="Projectiles\IcestormBall.png" />
+    <Content Include="Projectiles\IcestormIcicle1.png" />
+    <Content Include="Projectiles\IcestormIcicle2.png" />
+    <Content Include="Projectiles\IcestormIcicle3.png" />
+    <Content Include="Projectiles\IcestormIcicle4.png" />
+    <Content Include="Projectiles\Lightning3Ball.png" />
+    <Content Include="Projectiles\Lightning3Bolt1.png" />
+    <Content Include="Projectiles\Lightning3Bolt2.png" />
+    <Content Include="Projectiles\Lightning3Bolt3.png" />
+    <Content Include="Projectiles\Lightning4Ball.png" />
+    <Content Include="Projectiles\Lightning4Bolt1.png" />
+    <Content Include="Projectiles\Lightning4Bolt2.png" />
+    <Content Include="Projectiles\Lightning4Bolt3.png" />
+    <Content Include="Projectiles\Lightning4Bolt4.png" />
+    <Content Include="Projectiles\LightPillarBall.png" />
+    <Content Include="Projectiles\LizardPro.png" />
+    <Content Include="Projectiles\MegaDrill.png" />
+    <Content Include="Projectiles\ObscureSaw.png" />
+    <Content Include="Projectiles\PhantomSeeker.png" />
+    <Content Include="Projectiles\PoisonSmog.png" />
+    <Content Include="Projectiles\ShadowOrb.png" />
+    <Content Include="Projectiles\SuddenDeathBall.png" />
+    <Content Include="Projectiles\SuddenDeathStrike.png" />
+    <Content Include="Sounds\Music\Gwyn.mp3" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Buffs\Vulnerable.cs" />
+    <Compile Include="DarkSouls.cs" />
+    <Compile Include="DarkSoulsPlayer.cs" />
+    <Compile Include="DarkSoulsWorld.cs" />
+    <Compile Include="Dusts\Sandstorm.cs" />
+    <Compile Include="Dusts\Smoke.cs" />
+    <Compile Include="Dusts\Sparkle.cs" />
+    <Compile Include="Items\Aaron%27s Protection Stone.cs" />
+    <Compile Include="Items\Abysmal Stone.cs" />
+    <Compile Include="Items\Abyss Scroll.cs" />
+    <Compile Include="Items\Ancient Brass Armor.cs" />
+    <Compile Include="Items\Ancient Brass Greaves.cs" />
+    <Compile Include="Items\Ancient Brass Helmet.cs" />
+    <Compile Include="Items\Ancient Demon Armor.cs" />
+    <Compile Include="Items\Ancient Demon Greaves.cs" />
+    <Compile Include="Items\Ancient Demon Helmet.cs" />
+    <Compile Include="Items\Ancient Demon Shield.cs" />
+    <Compile Include="Items\Ancient Dragon Lance.cs" />
+    <Compile Include="Items\Ancient Dragon Scale Mail.cs" />
+    <Compile Include="Items\Ancient Dwarven Armor.cs" />
+    <Compile Include="Items\Ancient Dwarven Greaves.cs" />
+    <Compile Include="Items\Ancient Dwarven Helmet.cs" />
+    <Compile Include="Items\Ancient Dwarven Helmet2.cs" />
+    <Compile Include="Items\Ancient Fire Axe.cs" />
+    <Compile Include="Items\AncientDragonScaleGreaves.cs" />
+    <Compile Include="Items\AncientDragonScaleHelmet.cs" />
+    <Compile Include="Items\AncientGoldenArmor.cs" />
+    <Compile Include="Items\AncientGoldenGreaves.cs" />
+    <Compile Include="Items\AncientGoldenHelmet.cs" />
+    <Compile Include="Items\AncientGoldenHelmet2.cs" />
+    <Compile Include="Items\Anger Talisman.cs" />
+    <Compile Include="Items\Anicient Great Bow.cs" />
+    <Compile Include="Items\BarrowBlade.cs" />
+    <Compile Include="Items\Bloom Shards.cs" />
+    <Compile Include="Items\Bolt1Tome.cs" />
+    <Compile Include="Items\Bolt2Tome.cs" />
+    <Compile Include="Items\Bolt3Tome.cs" />
+    <Compile Include="Items\Bolt4Tome.cs" />
+    <Compile Include="Items\DarkSoul.cs" />
+    <Compile Include="Items\FireSword.cs" />
+    <Compile Include="Items\GemBox.cs" />
+    <Compile Include="Items\HamdraxEX.cs" />
+    <Compile Include="Items\HornedHelmet.cs" />
+    <Compile Include="Items\MagicPlateGreaves.cs" />
+    <Compile Include="Items\Potions\Healing Elixir.cs" />
+    <Compile Include="Items\Red Titanite.cs" />
+    <Compile Include="Items\White Titanite.cs" />
+    <Compile Include="MPlayer.cs" />
+    <Compile Include="NPCs\Enemies\AbysmalOolacileSorcerer.cs" />
+    <Compile Include="NPCs\Enemies\Armored Wraith.cs" />
+    <Compile Include="NPCs\Enemies\Artorias.cs" />
+    <Compile Include="NPCs\Enemies\Attraidies Mimic.cs" />
+    <Compile Include="NPCs\Enemies\Attraidies.cs" />
+    <Compile Include="NPCs\Enemies\BarrowWight.cs" />
+    <Compile Include="NPCs\Enemies\Blight.cs" />
+    <Compile Include="NPCs\Enemies\Chaos.cs" />
+    <Compile Include="NPCs\Enemies\ChaosDeathAnimation.cs" />
+    <Compile Include="NPCs\Enemies\Damned Soul.cs" />
+    <Compile Include="NPCs\Enemies\Dark Shogun mask.cs" />
+    <Compile Include="NPCs\Enemies\DiscipleofAttraidies.cs" />
+    <Compile Include="NPCs\Enemies\Ghost Dragon Body.cs" />
+    <Compile Include="NPCs\Enemies\Ghost Dragon Head.cs" />
+    <Compile Include="NPCs\Enemies\Ghost Dragon Tail.cs" />
+    <Compile Include="NPCs\Enemies\Gwyn.cs" />
+    <Compile Include="NPCs\Enemies\MindflayerIllusion.cs" />
+    <Compile Include="NPCs\Enemies\Shadow Dragon Body.cs" />
+    <Compile Include="NPCs\Enemies\Shadow Dragon Head.cs" />
+    <Compile Include="NPCs\Enemies\Shadow Dragon Tail.cs" />
+    <Compile Include="NPCs\Enemies\TheEarthFiendLich.cs" />
+    <Compile Include="NPCs\Enemies\TheFireFiendMarilith.cs" />
+    <Compile Include="NPCs\Enemies\TheWaterFiendKraken.cs" />
+    <Compile Include="NPCs\Enemies\Witchking.cs" />
+    <Compile Include="NPCs\Enemies\Wyvern Mage Shadow.cs" />
+    <Compile Include="NPCs\GNPC.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Projectiles\AncientDragonLance.cs" />
+    <Compile Include="Projectiles\Anti Matter Blast.cs" />
+    <Compile Include="Projectiles\BlackBreath.cs" />
+    <Compile Include="Projectiles\Crazy Orb.cs" />
+    <Compile Include="Projectiles\DragonBreath.cs" />
+    <Compile Include="Projectiles\EffectBuff.cs" />
+    <Compile Include="Projectiles\ExampleBullet.cs" />
+    <Compile Include="Projectiles\FBolt1.cs" />
+    <Compile Include="Projectiles\FBolt2.cs" />
+    <Compile Include="Projectiles\FBolt3.cs" />
+    <Compile Include="Projectiles\FBolt4.cs" />
+    <Compile Include="Projectiles\FBoltBall.cs" />
+    <Compile Include="Projectiles\Frozen Saw.cs" />
+    <Compile Include="Projectiles\FrozenSaw2.cs" />
+    <Compile Include="Projectiles\Gravity4Ball.cs" />
+    <Compile Include="Projectiles\Gravity4Strike.cs" />
+    <Compile Include="Projectiles\GreatEnergyBall.cs" />
+    <Compile Include="Projectiles\HoldBall.cs" />
+    <Compile Include="Projectiles\Ice3Ball.cs" />
+    <Compile Include="Projectiles\Ice3Icicle.cs" />
+    <Compile Include="Projectiles\Ice4Ball.cs" />
+    <Compile Include="Projectiles\Ice4Icicle.cs" />
+    <Compile Include="Projectiles\IcestormBall.cs" />
+    <Compile Include="Projectiles\IcestormIcicle1.cs" />
+    <Compile Include="Projectiles\IcestormIcicle2.cs" />
+    <Compile Include="Projectiles\IcestormIcicle3.cs" />
+    <Compile Include="Projectiles\IcestormIcicle4.cs" />
+    <Compile Include="Projectiles\Lightning3Ball.cs" />
+    <Compile Include="Projectiles\Lightning3Bolt1.cs" />
+    <Compile Include="Projectiles\Lightning3Bolt2.cs" />
+    <Compile Include="Projectiles\Lightning3Bolt3.cs" />
+    <Compile Include="Projectiles\Lightning4Ball.cs" />
+    <Compile Include="Projectiles\Lightning4Bolt1.cs" />
+    <Compile Include="Projectiles\Lightning4Bolt2.cs" />
+    <Compile Include="Projectiles\Lightning4Bolt3.cs" />
+    <Compile Include="Projectiles\Lightning4Bolt4.cs" />
+    <Compile Include="Projectiles\LightPillarBall.cs" />
+    <Compile Include="Projectiles\MegaDrill.cs" />
+    <Compile Include="Projectiles\Obscure Saw.cs" />
+    <Compile Include="Projectiles\Phantom Seeker.cs" />
+    <Compile Include="Projectiles\PoisonSmog.cs" />
+    <Compile Include="Projectiles\Shadow Orb.cs" />
+    <Compile Include="Projectiles\SuddenDeathBall.cs" />
+    <Compile Include="Projectiles\SuddenDeathStrike.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.Xna.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.Xna.Framework.Game.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.Xna.Framework.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Microsoft.Xna.Framework.Xact.dll</HintPath>
+    </Reference>
+    <Reference Include="Terraria">
+      <HintPath>..\..\..\..\..\..\..\..\Program Files (x86)\Steam\steamapps\common\Terraria\Terraria.exe</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

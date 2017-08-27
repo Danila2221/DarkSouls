@@ -1,0 +1,8 @@
+author = penny 
+version = 1.0 
+displayName = Dark Souls mod port 
+homepage = https://forums.terraria.org/index.php?threads/elemental-unleash-bluemagics-endgame-bosses-mod.45905/ 
+hideCode = false 
+hideResources = false
+includeSource = true 
+buildIgnore = Sounds\MusicFull\*, .git\*, changelog.txt, OldArt\*, NewArt\*
