@@ -121,6 +121,13 @@
     <Content Include="Items\AncientHolyLance.png" />
     <Content Include="Items\AngerTalisman.png" />
     <Content Include="Items\AngerTalisman_HandsOn.png" />
+    <Content Include="Items\AnkorWatArmor.png" />
+    <Content Include="Items\AnkorWatArmor_Arms.png" />
+    <Content Include="Items\AnkorWatArmor_Body.png" />
+    <Content Include="Items\AnkorWatGreaves.png" />
+    <Content Include="Items\AnkorWatGreaves_Legs.png" />
+    <Content Include="Items\AnkorWatHelmet.png" />
+    <Content Include="Items\AnkorWatHelmet_Head.png" />
     <Content Include="Items\AntimatRifle.png" />
     <Content Include="Items\AquamarineRing.png" />
     <Content Include="Items\ArchmenEmblem.png" />
@@ -245,8 +252,11 @@
     <Compile Include="Items\Aaron%27s Protection Stone.cs" />
     <Compile Include="Items\Abysmal Stone.cs" />
     <Compile Include="Items\Abyss Scroll.cs" />
+    <Compile Include="Items\Ankor Wat Armor.cs" />
     <Compile Include="Items\Ancient Brass Armor.cs" />
+    <Compile Include="Items\Ankor Wat Greaves.cs" />
     <Compile Include="Items\Ancient Brass Greaves.cs" />
+    <Compile Include="Items\Ankor Wat Helmet.cs" />
     <Compile Include="Items\Ancient Brass Helmet.cs" />
     <Compile Include="Items\Ancient Demon Armor.cs" />
     <Compile Include="Items\Ancient Demon Greaves.cs" />
