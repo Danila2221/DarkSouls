@@ -28,7 +28,7 @@ namespace DarkSouls.Items
         public override void SetDefaults()
         {
             item.damage = 9000;
-            item.magic = true;
+            
             item.width = 24;
             item.height = 28;
             item.useTime = 1;
@@ -38,7 +38,7 @@ namespace DarkSouls.Items
             
             item.value = 10000;
             item.rare = 2;
-            item.mana = 1;
+            
             item.autoReuse = true;
             
             item.shootSpeed = 1f;
