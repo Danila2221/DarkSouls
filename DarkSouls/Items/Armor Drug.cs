@@ -39,7 +39,7 @@ namespace DarkSouls.Items
             item.UseSound = SoundID.Item3;
             item.value = 300000;
             item.rare = 1;
-            item.maxStack = 1;
+            
 
         }
         public override bool UseItem(Player player)
