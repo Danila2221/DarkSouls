@@ -14,8 +14,8 @@ namespace DarkSouls.Items
 			item.height = 24;
 
 			item.value = 15000;
-		
-			item.defense = 4;
+            item.maxStack = 1;
+            item.defense = 4;
 		}
 
 		public override void SetStaticDefaults()

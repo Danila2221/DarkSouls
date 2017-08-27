@@ -23,8 +23,8 @@ namespace DarkSouls.Items
 
 			item.width = 24;
 			item.height = 28;
-
-			item.useTime = 5;
+            item.maxStack = 1;
+            item.useTime = 5;
 			item.useAnimation = 15;
 			item.useStyle = 5;
             item.UseSound = SoundID.Item21;

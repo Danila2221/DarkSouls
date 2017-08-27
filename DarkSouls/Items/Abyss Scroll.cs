@@ -25,7 +25,8 @@ namespace DarkSouls.Items
 
 		public override void SetDefaults()
 		{
-			item.width = 20;
+            item.maxStack = 1;
+            item.width = 20;
 			item.height = 20;
 			item.maxStack = 999;
 			item.value = 100;

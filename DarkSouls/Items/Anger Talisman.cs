@@ -25,8 +25,8 @@ namespace DarkSouls.Items
 			
 			item.width = 22;
 			item.height = 22;
-
-			item.value = 270000;
+            item.maxStack = 1;
+            item.value = 270000;
 			item.rare = 4;
 			item.accessory = true;
 		}

@@ -40,6 +40,7 @@ namespace DarkSouls.Items
             item.shoot = 10; //idk why but all the guns in the vanilla source have this
             item.shootSpeed = 20f;
             item.useAmmo = AmmoID.Bullet;
+            item.maxStack = 1;
         }
         public override void UseStyle(Player player)
         {

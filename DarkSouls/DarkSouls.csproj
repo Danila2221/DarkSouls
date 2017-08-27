@@ -118,6 +118,7 @@
     <Content Include="Items\AncientGoldenHelmet2_Head.png" />
     <Content Include="Items\AncientGoldenHelmet_Head.png" />
     <Content Include="Items\AncientGreatBow.png" />
+    <Content Include="Items\AncientHolyLance.png" />
     <Content Include="Items\AngerTalisman.png" />
     <Content Include="Items\AngerTalisman_HandsOn.png" />
     <Content Include="Items\AntimatRifle.png" />
@@ -179,6 +180,7 @@
     <Content Include="NPCs\Enemies\WyvernMageShadow.png" />
     <Content Include="obj\Debug\Dark Souls.csproj.FileListAbsolute.txt" />
     <Content Include="Projectiles\AncientDragonLanceP.png" />
+    <Content Include="Projectiles\AncientHolyLance.png" />
     <Content Include="Projectiles\AntiMaterialRound.png" />
     <Content Include="Projectiles\AntiMatterBlast.png" />
     <Content Include="Projectiles\BlackBreath.png" />
@@ -257,6 +259,7 @@
     <Compile Include="Items\Ancient Dwarven Helmet.cs" />
     <Compile Include="Items\Ancient Dwarven Helmet2.cs" />
     <Compile Include="Items\Ancient Fire Axe.cs" />
+    <Compile Include="Items\Ancient Holy Lance.cs" />
     <Compile Include="Items\AncientDragonScaleGreaves.cs" />
     <Compile Include="Items\AncientDragonScaleHelmet.cs" />
     <Compile Include="Items\AncientGoldenArmor.cs" />
@@ -319,6 +322,7 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Projectiles\AncientDragonLance.cs" />
+    <Compile Include="Projectiles\AncientHolyLanceP.cs" />
     <Compile Include="Projectiles\Anti Matter Blast.cs" />
     <Compile Include="Projectiles\AntiMaterialRound.cs" />
     <Compile Include="Projectiles\BlackBreath.cs" />

@@ -5,6 +5,10 @@ namespace DarkSouls.Items
 {
     public class ArtemisBow : ModItem
     {
+        public override void SetStaticDefaults()
+        {
+            Tooltip.SetDefault("A bow forged to slay demon-gods.");
+        }
         public override void SetDefaults()
         {
             item.maxStack = 1;

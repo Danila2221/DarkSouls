@@ -38,8 +38,9 @@ namespace DarkSouls.Items
 			item.consumable = false;
 			item.damage = 500;
 			item.autoReuse = true;
-			//idk why but all the guns in the vanilla source have this
-			item.shootSpeed = 100f;
+            //idk why but all the guns in the vanilla source have this
+
+            item.shootSpeed = 100f;
 		}
 
 		// We use the CanUseItem hook to prevent a player from using this item while the boss is present in the world.

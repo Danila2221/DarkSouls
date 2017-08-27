@@ -35,7 +35,8 @@ namespace DarkSouls.Items
 			item.useAnimation = 21;
 			item.melee = true;
             item.scale = 1.05f;
-		}
+            item.maxStack = 1;
+        }
         public override void OnHitNPC(Player player, NPC target, int damage, float knockBack, bool crit)
         {
             if (Main.rand.Next(2) == 0)
