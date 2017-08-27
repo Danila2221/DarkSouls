@@ -33,10 +33,10 @@ namespace DarkSouls.Items
             item.useTime = 1;
             item.useAnimation = 2;
             item.useStyle = 5;
-            item.channel = true;
+            
             item.value = 10000;
             item.rare = 2;
-            item.magic = false;
+            
             item.autoReuse = true;
             item.consumable = false;
             item.shootSpeed = 100f;
@@ -50,7 +50,12 @@ namespace DarkSouls.Items
             int playerID;
             float n = 0;
             float m = 0;
+            MPlayer p = (MPlayer)player.GetModPlayer(mod, "MPlayer");
+            if (p.dualCast)
+                item.useTime = 1 / 2;
 
+            if (!p.dualCast)
+                item.useTime = 1;
 
             if (Main.mouseX + Main.screenPosition.X - player.position.X > 0) player.direction = 1;
             else player.direction = -1;
@@ -61,12 +66,12 @@ namespace DarkSouls.Items
 
             player.itemRotation = (float)Math.Atan2(((Main.mouseY + Main.screenPosition.Y) - player.position.Y) * player.direction, ((Main.mouseX + Main.screenPosition.X) - player.position.X) * player.direction);
 
-            int damage = 60;//(int) (14f * npc.scale);
+            int damage = 9000;//(int) (14f * npc.scale);
             for (int i = 1; i < 20; i++)
             {
                 n = (float)Math.Sin(targetrotation) * ((float)i + 0.1f) * 56;
                 m = (float)Math.Cos(targetrotation) * ((float)i + 0.1f) * 56;
-                int num54 = Projectile.NewProjectile(m + player.position.X + 7, n + player.position.Y + 21, 0, 0, mod.ProjectileType("MasterBuster2"), 60, 0f, Main.myPlayer);
+                int num54 = Projectile.NewProjectile(m + player.position.X + 7, n + player.position.Y + 21, 0, 0, mod.ProjectileType("MasterBuster2"), 9000, 0f, Main.myPlayer);
                 Main.projectile[num54].timeLeft = 2;
                 Main.projectile[num54].rotation = (float)Math.Atan2((double)n, (double)m);
             }
@@ -83,8 +88,7 @@ namespace DarkSouls.Items
 
 
 
-            if (Main.time % 5 < 2) player.inventory[player.selectedItem].mana = 2;
-            else player.inventory[player.selectedItem].mana = 0;
+          
 
             Main.PlaySound(2, -1, -1, SoundID.Duck);
             return true;

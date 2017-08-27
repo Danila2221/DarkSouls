@@ -53,7 +53,7 @@ namespace DarkSouls.Items
 		{
 			MPlayer p = (MPlayer)player.GetModPlayer(mod, "MPlayer");
 			if(p.dualCast)
-			item.useTime = 5/20;
+			item.useTime = 5/2;
 
 			if(!p.dualCast)
 			item.useTime = 5;
