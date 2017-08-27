@@ -119,6 +119,7 @@
     <Content Include="Items\AncientGreatBow.png" />
     <Content Include="Items\AngerTalisman.png" />
     <Content Include="Items\AngerTalisman_HandsOn.png" />
+    <Content Include="Items\AntimatRifle.png" />
     <Content Include="Items\BarrowBlade.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
@@ -253,6 +254,7 @@
     <Compile Include="Items\AncientGoldenHelmet2.cs" />
     <Compile Include="Items\Anger Talisman.cs" />
     <Compile Include="Items\Anicient Great Bow.cs" />
+    <Compile Include="Items\AntimatRifle.cs" />
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />
@@ -300,6 +302,7 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Projectiles\AncientDragonLance.cs" />
     <Compile Include="Projectiles\Anti Matter Blast.cs" />
+    <Compile Include="Projectiles\AntiMaterialRound.cs" />
     <Compile Include="Projectiles\BlackBreath.cs" />
     <Compile Include="Projectiles\Crazy Orb.cs" />
     <Compile Include="Projectiles\DragonBreath.cs" />
