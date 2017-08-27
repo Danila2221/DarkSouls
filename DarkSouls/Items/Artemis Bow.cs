@@ -12,10 +12,10 @@ namespace DarkSouls.Items
             item.width = 24;
             item.height = 60;
             item.ranged = true;
-            item.useTime = 50;
+            item.useTime = 100;
             item.shoot = 1;
             item.shootSpeed = 16f;
-            item.useAnimation = 50;
+            item.useAnimation = 100;
             item.useStyle = 5;
             item.knockBack = 19;
             item.value = 3100000;
