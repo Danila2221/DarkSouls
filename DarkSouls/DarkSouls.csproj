@@ -7,8 +7,8 @@
     <ProjectGuid>{90ED53F7-8F99-498F-A202-80DF90629241}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Dark_Souls</RootNamespace>
-    <AssemblyName>Dark Souls</AssemblyName>
+    <RootNamespace>DarkSouls</RootNamespace>
+    <AssemblyName>DarkSouls</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
