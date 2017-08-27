@@ -21,7 +21,9 @@ namespace DarkSouls.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Divine Fucking Spark");
+            DisplayName.AddTranslation(GameCulture.Russian,"Божественная ебаная искра");
             Tooltip.SetDefault("Freaking huge magical laser");
+            Tooltip.AddTranslation(GameCulture.Russian, "Очень большой магический лазер.");
         }
         public override void SetDefaults()
         {
