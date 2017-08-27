@@ -20,18 +20,16 @@ namespace DarkSouls.Projectiles
     {
         public override void SetDefaults()
         {
-            projectile.alpha = 255;
-            projectile.width = 59;
-            projectile.height = 59;
-            projectile.timeLeft = 100;
+            projectile.width = 15;
+            projectile.height = 15;
+            projectile.penetrate = 10;
+            projectile.aiStyle = -1;
+            projectile.timeLeft = 2000;
             projectile.friendly = true;
             projectile.hostile = false;
-            projectile.penetrate = 200;
-            projectile.light = 1;
+            projectile.ignoreWater = true;
             projectile.tileCollide = false;
-            projectile.ranged = true;
-            projectile.timeLeft = 20000;
-            projectile.damage = 25;
+
         }
         public override void AI()
         {
