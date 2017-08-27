@@ -1,0 +1,55 @@
+﻿using System.IO;
+using System.Collections.Generic;
+using System.Linq;
+using Terraria;
+using Terraria.ID;
+using Terraria.Localization;
+using Terraria.ModLoader;
+using Terraria.World.Generation;
+using Microsoft.Xna.Framework;
+using Terraria.GameContent.Generation;
+using Terraria.ModLoader.IO;
+using Terraria.DataStructures;
+using Microsoft.Xna.Framework.Graphics;
+using System;
+using DarkSouls;
+
+namespace DarkSouls.Projectiles
+{
+    public class MasterBuster2 : ModProjectile
+    {
+        public override void SetDefaults()
+        {
+            projectile.alpha = 255;
+            projectile.width = 59;
+            projectile.height = 59;
+            projectile.timeLeft = 100;
+            projectile.friendly = true;
+            projectile.hostile = false;
+            projectile.penetrate = 9999;
+            projectile.light = 1;
+            projectile.tileCollide = false;
+            projectile.ranged = true;
+            projectile.timeLeft = 20000;
+            projectile.damage = 25;
+        }
+        public override void AI()
+        {
+            
+            this.projectile.alpha = 0;
+
+
+            if (Main.rand.Next(5) < 1)
+            {
+                
+                int dust = Dust.NewDust(this.projectile.position, 64, 0, 45, Main.rand.Next(10) - 5, Main.rand.Next(10) - 5, 255, Color.Blue, 10.0f);
+                Main.dust[dust].noGravity = true;
+                Main.dust[dust].rotation = this.projectile.rotation;
+            }
+
+
+
+        }
+
+    }
+}
