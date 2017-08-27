@@ -41,6 +41,7 @@
   <ItemGroup>
     <Content Include="Buffs\Vulnerable.png" />
     <Content Include="build.txt" />
+    <Content Include="Dusts\Sandstorm.png" />
     <Content Include="Dusts\Smoke.png" />
     <Content Include="Dusts\Sparkle.png" />
     <Content Include="Gores\EarthFiendLichGore1.png" />
@@ -227,6 +228,7 @@
     <Compile Include="DarkSouls.cs" />
     <Compile Include="DarkSoulsPlayer.cs" />
     <Compile Include="DarkSoulsWorld.cs" />
+    <Compile Include="Dusts\Sandstorm.cs" />
     <Compile Include="Dusts\Smoke.cs" />
     <Compile Include="Dusts\Sparkle.cs" />
     <Compile Include="Items\Aaron%27s Protection Stone.cs" />

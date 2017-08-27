@@ -73,7 +73,7 @@ namespace DarkSouls.Items
             player.inventory[player.selectedItem].knockBack,
             Main.myPlayer
             );
-            return false;
+            return true;
         }
 
 
