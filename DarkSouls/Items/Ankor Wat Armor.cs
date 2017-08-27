@@ -22,8 +22,9 @@ namespace DarkSouls.Items
 			item.height = 18;
 			item.value = 100000;
 			item.defense = 3;
-			item.maxStack = 14;
-		}
+			
+            item.rare = 8;
+        }
 
 		public override void UpdateEquip(Player player)
 		{
