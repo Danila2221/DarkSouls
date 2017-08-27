@@ -16,13 +16,12 @@ using DarkSouls;
 
 namespace DarkSouls.Items
 {
-    public class AquamarineRing : ModItem
+    public class ArchmenEmblem : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Ring");
-            Tooltip.SetDefault("+5% Magic Damage"
-                + "\n+40 Mana");
+            DisplayName.SetDefault("Archmen Emblem");
+            Tooltip.SetDefault("25% increased ranged damage");
         }
 
         public override void SetDefaults()
@@ -32,21 +31,24 @@ namespace DarkSouls.Items
             item.height = 24;
             item.accessory = true;
 
-            item.value = 10000;
-            item.rare = 1;
+            item.value = 100000;
+            item.rare = 10;
             item.maxStack = 1;
 
         }
         public override void UpdateEquip(Player player)
         {
-            player.magicDamage += 5;
-            player.statManaMax2 += 40;
+            player.rangedDamage += 0.25f;
         }
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.SilverBar, 1);
-            recipe.AddIngredient(null, "DarkSoul", 2000);
+            recipe.AddIngredient(ItemID.RangerEmblem, 1);
+            recipe.AddIngredient(ItemID.SoulofLight, 5);
+            recipe.AddIngredient(ItemID.SoulofNight, 5);
+            recipe.AddIngredient(ItemID.SoulofSight, 1);
+
+            recipe.AddIngredient(null, "DarkSoul", 5000);
             recipe.SetResult(this);
             recipe.AddTile(26);
             recipe.AddRecipe();

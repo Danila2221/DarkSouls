@@ -16,39 +16,46 @@ using DarkSouls;
 
 namespace DarkSouls.Items
 {
-    public class AquamarineRing : ModItem
+    public class ArmorDrug : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Aquamarine Ring");
-            Tooltip.SetDefault("+5% Magic Damage"
-                + "\n+40 Mana");
+            DisplayName.SetDefault("Armor Drug");
+            Tooltip.SetDefault("Increases Defense by 13 for 3 minutes.");
         }
 
         public override void SetDefaults()
         {
 
-            item.width = 24;
+            item.width = 14;
             item.height = 24;
-            item.accessory = true;
+            item.useStyle = 2;
+            item.useAnimation = 17;
+            item.useTime = 17;
+            item.maxStack = 30;
+            item.consumable = true;
+            item.useTurn = true;
+            item.buffTime = 10800;
 
-            item.value = 10000;
+            item.value = 300000;
             item.rare = 1;
             item.maxStack = 1;
 
         }
-        public override void UpdateEquip(Player player)
+        public override bool UseItem(Player player)
         {
-            player.magicDamage += 5;
-            player.statManaMax2 += 40;
+            player.AddBuff(mod.BuffType("ArmorDrug"), 10800, false);
+            return true;
         }
+            
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.SilverBar, 1);
-            recipe.AddIngredient(null, "DarkSoul", 2000);
+            recipe.AddIngredient(ItemID.BottledWater, 1);
+            recipe.AddIngredient(ItemID.Sapphire, 5);
+            recipe.AddIngredient(ItemID.SoulofNight, 4);
             recipe.SetResult(this);
-            recipe.AddTile(26);
+            recipe.AddTile(13);
             recipe.AddRecipe();
         }
     }

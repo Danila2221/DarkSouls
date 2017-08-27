@@ -23,7 +23,7 @@ namespace DarkSouls.Items
             item.height = 20;
             
             item.value = 4000000;
-            item.rare = 9;
+            item.rare = 10;
             item.defense = 15;
         }
 
