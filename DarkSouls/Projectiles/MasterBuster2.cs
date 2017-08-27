@@ -20,9 +20,9 @@ namespace DarkSouls.Projectiles
     {
         public override void SetDefaults()
         {
-            projectile.width = 15;
-            projectile.height = 15;
-            projectile.penetrate = 10;
+            projectile.width = 59;
+            projectile.height = 59;
+            projectile.penetrate = 99999999;
             projectile.aiStyle = -1;
             projectile.timeLeft = 2000;
             projectile.friendly = true;
