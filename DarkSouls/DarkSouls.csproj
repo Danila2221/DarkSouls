@@ -153,6 +153,7 @@
     <Content Include="Items\MagicPlateArmor_FemaleBody.png" />
     <Content Include="Items\MagicPlateGreaves.png" />
     <Content Include="Items\MagicPlateGreaves_Legs.png" />
+    <Content Include="Items\AtmaWeapon.png" />
     <Content Include="Items\Potions\HealingElixir.png" />
     <Content Include="Items\RedTitanite.png" />
     <Content Include="Items\WhiteTitanite.png" />
@@ -298,6 +299,7 @@
     <Compile Include="Items\HornedHelmet.cs" />
     <Compile Include="Items\MagicPlateGreaves.cs" />
     <Compile Include="Items\MagicPlateArmor.cs" />
+    <Compile Include="Items\AtmaWeapon.cs" />
     <Compile Include="Items\Potions\Healing Elixir.cs" />
     <Compile Include="Items\Red Titanite.cs" />
     <Compile Include="Items\White Titanite.cs" />
