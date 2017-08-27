@@ -26,7 +26,7 @@ namespace DarkSouls.Projectiles
             projectile.timeLeft = 100;
             projectile.friendly = true;
             projectile.hostile = false;
-            projectile.penetrate = 9999;
+            projectile.penetrate = 200;
             projectile.light = 1;
             projectile.tileCollide = false;
             projectile.ranged = true;
