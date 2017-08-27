@@ -39,7 +39,7 @@
     <None Include="Projectiles\Thumbs.db" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Buffs\Armor Drug.png" />
+    <Content Include="Buffs\ArmorDrug.png" />
     <Content Include="Buffs\Vulnerable.png" />
     <Content Include="build.txt" />
     <Content Include="Dusts\Smoke.png" />
