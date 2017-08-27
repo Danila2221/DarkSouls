@@ -68,7 +68,6 @@
     <Content Include="Items\AaronProtectionStone.png" />
     <Content Include="Items\AbysmalStone.png" />
     <Content Include="Items\AbyssScroll.png" />
-    <Content Include="Items\Ancient.png" />
     <Content Include="Items\AncientBrassArmor.png" />
     <Content Include="Items\AncientBrassArmor_Arms.png" />
     <Content Include="Items\AncientBrassArmor_Body.png" />
@@ -246,7 +245,6 @@
     <Compile Include="Items\Ancient Dwarven Helmet.cs" />
     <Compile Include="Items\Ancient Dwarven Helmet2.cs" />
     <Compile Include="Items\Ancient Fire Axe.cs" />
-    <Compile Include="Items\Ancient.cs" />
     <Compile Include="Items\AncientDragonScaleGreaves.cs" />
     <Compile Include="Items\AncientDragonScaleHelmet.cs" />
     <Compile Include="Items\AncientGoldenArmor.cs" />
