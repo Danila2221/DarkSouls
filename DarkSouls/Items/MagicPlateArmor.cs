@@ -11,7 +11,7 @@ namespace DarkSouls.Items
 
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Magic Plate Armor");
+            DisplayName.SetDefault("Ancient Magic Plate Armor Set");
             Tooltip.SetDefault("Fueled by a magical gem in the chest."
                 + "\n+20 % melee speed, -20 % mana cost, 20 % not to consume ammo");
 

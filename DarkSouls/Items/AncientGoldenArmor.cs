@@ -10,7 +10,7 @@ namespace DarkSouls.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Golden Armor");
+			DisplayName.SetDefault("Ancient Golden Armor Set");
 			Tooltip.SetDefault("A lost prince's armor."
 				+ "\n+7% melee speed");
 		}

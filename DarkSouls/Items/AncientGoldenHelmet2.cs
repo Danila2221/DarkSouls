@@ -11,7 +11,7 @@ namespace DarkSouls.Items
         
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Golden Hemlet");
+			DisplayName.SetDefault("Ancient Golden Hemlet");
 			Tooltip.SetDefault("It is the famous Helmet of the Stars."
 								+ "\n+9% Melee speed");
 		}

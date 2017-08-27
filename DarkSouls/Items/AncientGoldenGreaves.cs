@@ -10,7 +10,7 @@ namespace DarkSouls.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Golden Leggings");
+            DisplayName.SetDefault("Ancient Golden Leggings");
             Tooltip.SetDefault("A lost prince's greaves."
                 + "\n+10% movement.");
         }

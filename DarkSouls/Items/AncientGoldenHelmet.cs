@@ -10,7 +10,7 @@ namespace DarkSouls.Items
 	{
         public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Golden Hemlet");
+			DisplayName.SetDefault("Ancient Golden Hemlet");
 			Tooltip.SetDefault("It is the famous Helmet of the Stars."
 				+ "\nCan be upgraded with 4000 Dark Souls and 8 Stinger."
 				+ "\n+7% Melee speed");

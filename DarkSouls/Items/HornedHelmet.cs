@@ -10,7 +10,7 @@ namespace DarkSouls.Items
 	{
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Horned Helmet");
+            DisplayName.SetDefault("Ancient Horned Helmet");
             Tooltip.SetDefault("It is the famous Helmet of the Stars."
                 + "\nA treasure from ancient Plains of Havoc."
                 + "\n+5% critical chance ");
