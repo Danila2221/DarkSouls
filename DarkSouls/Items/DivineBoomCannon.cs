@@ -27,7 +27,7 @@ namespace DarkSouls.Items
         }
         public override void SetDefaults()
         {
-            item.damage = 3000;
+            item.damage = 9000;
             item.magic = true;
             item.width = 24;
             item.height = 28;
