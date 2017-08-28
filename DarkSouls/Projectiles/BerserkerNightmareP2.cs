@@ -58,11 +58,22 @@ namespace DarkSouls.Projectiles
 
         public override void OnHitNPC(NPC N, int damage, float knockBack, bool crit)
         {
-            if (Main.rand.Next(4) == 0)
+            
+            if (Main.rand.Next(3) == 0)
+            { 
             Projectile.NewProjectile(N.position.X + (N.width * 0.5f), N.position.Y -100, 0f, 4f, mod.ProjectileType("FBolt4"), 35, 6, Main.myPlayer);
             
         }
+            if (Main.rand.Next(3) == 0)
+            {
+                
+                Projectile.NewProjectile(N.position.X + (N.width * 0.5f), N.position.Y - 100, 0f, 4f, mod.ProjectileType("FGravity4Strike"), 35, 6, Main.myPlayer);
+            }
         }
+
+
+
+    }
 
         
 
