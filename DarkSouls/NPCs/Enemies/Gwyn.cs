@@ -34,7 +34,7 @@ float customspawn3;
 
 		public override void SetDefaults()
 		{
-			npc.aiStyle = 3;
+			
 			animationType = 28;
 			npc.noTileCollide = false ;
 			npc.noGravity = false;
