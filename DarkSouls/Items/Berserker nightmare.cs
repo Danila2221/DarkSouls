@@ -18,7 +18,7 @@ namespace DarkSouls.Items
         {
             item.width = 34;
             item.height = 32;
-            item.channel = true;
+            
             item.useAnimation = 44;
             item.useTime = 44;
             item.maxStack = 1;
@@ -30,7 +30,7 @@ namespace DarkSouls.Items
             item.shootSpeed = 12;
             item.noMelee = true;
             item.value = 505000;
-            item.melee = true;
+            
             item.shoot = mod.ProjectileType<BerserkerNightmareP>();
         }
 
