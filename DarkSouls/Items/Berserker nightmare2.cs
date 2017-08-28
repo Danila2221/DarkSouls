@@ -15,9 +15,9 @@ namespace DarkSouls.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Berserker Nightmare Thunder");
+            DisplayName.SetDefault("Magic protective balls");
             Tooltip.SetDefault("Weapon of the gods"
-                + "\nNo one can resist you");
+                + "\nNo one can approach you");
         }
         public override void SetDefaults()
         {
@@ -27,7 +27,7 @@ namespace DarkSouls.Items
             item.useStyle = 5;
             item.useAnimation = 9;
             item.useTime = 9;
-            item.shootSpeed = 30;
+            item.shootSpeed = 90;
             item.knockBack = 9.5f;
             item.width = 32;
             item.height = 32;

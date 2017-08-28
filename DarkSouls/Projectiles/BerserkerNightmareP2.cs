@@ -33,7 +33,7 @@ namespace DarkSouls.Projectiles
             projectile.hostile = false;         //Can the projectile deal damage to the player?
             projectile.melee = true;           //Is the projectile shoot by a ranged weapon?
             projectile.penetrate = 1;           //How many monsters the projectile can penetrate. (OnTileCollide below also decrements penetrate for bounces as well)
-            projectile.timeLeft = 5400;          //The live time for the projectile (60 = 1 second, so 600 is 10 seconds)
+            projectile.timeLeft = 24000;          //The live time for the projectile (60 = 1 second, so 600 is 10 seconds)
                        //The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in)
                      //How much light emit around the projectile
             projectile.ignoreWater = true;          //Does the projectile's speed be influenced by water?

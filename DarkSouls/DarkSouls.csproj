@@ -147,8 +147,8 @@
     <Content Include="Items\BeholderShield2.png" />
     <Content Include="Items\BeholderShield2_Shield.png" />
     <Content Include="Items\BeholderShield_Shield.png" />
-    <Content Include="Items\BerserkerNightmare2.png" />
     <Content Include="Items\BerserkerNightmare.png" />
+    <Content Include="Items\BerserkerNightmare2.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
@@ -211,6 +211,7 @@
     <Content Include="Projectiles\AncientHolyLanceP.png" />
     <Content Include="Projectiles\AntiMaterialRound.png" />
     <Content Include="Projectiles\AntiMatterBlast.png" />
+    <Content Include="Projectiles\BerserkerNightmareP2 - Копировать.png" />
     <Content Include="Projectiles\BerserkerNightmareP2.png" />
     <Content Include="Projectiles\BerserkerNightmareP.png" />
     <Content Include="Projectiles\BlackBreath.png" />
