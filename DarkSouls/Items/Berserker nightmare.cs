@@ -7,7 +7,7 @@ using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
-
+using DarkSouls;
 namespace DarkSouls.Items
 {
     public class BerserkerNightmare : ModItem
@@ -35,7 +35,7 @@ namespace DarkSouls.Items
             item.noMelee = true;
             item.value = 505000;
             item.melee = true;
-            item.shoot = mod.ProjectileType<BerserkerNightmareP>();
+            item.shoot = mod.ProjectileType("BerserkerNightmareP");
 
         }
 
