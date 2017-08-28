@@ -246,7 +246,7 @@ npc.TargetClosest(true);
 
 	if (npc.life <= npc.lifeMax/2)
 	{
-	int NewOkiku = NPC.NewNPC((int) vector8.X, (int) vector8.Y, mod.NPCType("BrokenOkiku"), 0);
+	int NewOkiku = NPC.NewNPC((int) vector8.X, (int) vector8.Y, mod.NPCType("BrokenMindflayerIllusion"), 0);
 	Main.npc[NewOkiku].life = npc.life;
 	npc.active = false;
 	}
