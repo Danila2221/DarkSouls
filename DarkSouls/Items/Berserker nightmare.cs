@@ -28,7 +28,6 @@ namespace DarkSouls.Items
             item.UseSound = SoundID.Item1;
             item.rare = 5;
             item.shootSpeed = 12;
-            item.noUseGraphic = true;
             item.noMelee = true;
             item.value = 505000;
             item.melee = true;
