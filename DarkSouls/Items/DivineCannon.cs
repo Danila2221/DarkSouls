@@ -68,7 +68,7 @@ namespace DarkSouls.Items
             {
                 n = (float)Math.Sin(targetrotation) * ((float)i + 0.1f) * 56;
                 m = (float)Math.Cos(targetrotation) * ((float)i + 0.1f) * 56;
-                int num54 = Projectile.NewProjectile(m + player.position.X + 7, n + player.position.Y + 21, 0, 0, mod.ProjectileType("MasterBuster"), 60, 0f, Main.myPlayer);
+                int num54 = Projectile.NewProjectile(m + player.position.X + 7, n + player.position.Y + 21, 0, 0, mod.ProjectileType("BerserkerNightmareP"), 60, 0f, Main.myPlayer);
                 Main.projectile[num54].timeLeft = 2;
                 Main.projectile[num54].rotation = (float)Math.Atan2((double)n, (double)m);
             }
