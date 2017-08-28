@@ -8,7 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace OmnirsNosPak.Items.Accessory
+namespace DarkSouls.Items
 {
     [AutoloadEquip(EquipType.Shield)]
     public class GazingShield : ModItem
