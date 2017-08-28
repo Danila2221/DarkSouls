@@ -28,7 +28,7 @@ namespace DarkSouls.Projectiles
         {
             projectile.width = 34;               //The width of projectile hitbox
             projectile.height = 34;              //The height of projectile hitbox
-            projectile.aiStyle = 15;             //The ai style of the projectile, please reference the source code of Terraria
+            projectile.aiStyle = 19;             //The ai style of the projectile, please reference the source code of Terraria
             projectile.friendly = true;         //Can the projectile deal damage to enemies?
             projectile.hostile = false;         //Can the projectile deal damage to the player?
             projectile.melee = true;           //Is the projectile shoot by a ranged weapon?
