@@ -228,6 +228,7 @@
     <Content Include="Projectiles\FBolt4_3.png" />
     <Content Include="Projectiles\FBolt4_4.png" />
     <Content Include="Projectiles\FBoltBall.png" />
+    <Content Include="Projectiles\FGravity4Strike.png" />
     <Content Include="Projectiles\FrozenSaw.png" />
     <Content Include="Projectiles\Gravity4Ball.png" />
     <Content Include="Projectiles\Gravity4Strike.png" />
@@ -386,6 +387,7 @@
     <Compile Include="Projectiles\FBolt3.cs" />
     <Compile Include="Projectiles\FBolt4.cs" />
     <Compile Include="Projectiles\FBoltBall.cs" />
+    <Compile Include="Projectiles\FGravity4Strike.cs" />
     <Compile Include="Projectiles\Frozen Saw.cs" />
     <Compile Include="Projectiles\FrozenSaw2.cs" />
     <Compile Include="Projectiles\Gravity4Ball.cs" />

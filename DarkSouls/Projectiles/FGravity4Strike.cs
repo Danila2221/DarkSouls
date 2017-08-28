@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace DarkSouls.Projectiles
 {
-	public class Gravity4Strike : ModProjectile
+	public class FGravity4Strike : ModProjectile
 	{
 		public override void SetStaticDefaults()
         {
