@@ -17,7 +17,7 @@ namespace DarkSouls.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Beholder Shield");
-            Tooltip.SetDefault("For melee warriors only \n Grants immunity to knockback, plus 40 defense & +6% melee damage. \n Reduces ranged and magic damage by 150%. \n +70% mana cost -15% move speed.")
+            Tooltip.SetDefault("For melee warriors only \n Grants immunity to knockback, plus 40 defense & +6% melee damage. \n Reduces ranged and magic damage by 150%. \n +70% mana cost -15% move speed.");
         }
 
         public override void SetDefaults()
