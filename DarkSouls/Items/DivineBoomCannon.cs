@@ -66,7 +66,7 @@ namespace DarkSouls.Items
 
             player.itemRotation = (float)Math.Atan2(((Main.mouseY + Main.screenPosition.Y) - player.position.Y) * player.direction, ((Main.mouseX + Main.screenPosition.X) - player.position.X) * player.direction);
 
-            int damage = 9000;//(int) (14f * npc.scale);
+            
             for (int i = 1; i < 20; i++)
             {
                 n = (float)Math.Sin(targetrotation) * ((float)i + 0.1f) * 56;

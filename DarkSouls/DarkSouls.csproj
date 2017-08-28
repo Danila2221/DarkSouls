@@ -147,6 +147,7 @@
     <Content Include="Items\BeholderShield2.png" />
     <Content Include="Items\BeholderShield2_Shield.png" />
     <Content Include="Items\BeholderShield_Shield.png" />
+    <Content Include="Items\BerserkerNightmare.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
@@ -209,6 +210,7 @@
     <Content Include="Projectiles\AncientHolyLanceP.png" />
     <Content Include="Projectiles\AntiMaterialRound.png" />
     <Content Include="Projectiles\AntiMatterBlast.png" />
+    <Content Include="Projectiles\BerserkerNightmareP.png" />
     <Content Include="Projectiles\BlackBreath.png" />
     <Content Include="Projectiles\CrazyOrb.png" />
     <Content Include="Projectiles\DragonBreath.png" />
@@ -314,6 +316,7 @@
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\BeholderShield2.cs" />
     <Compile Include="Items\BeholderShield.cs" />
+    <Compile Include="Items\Berserker nightmare.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />
     <Compile Include="Items\Bolt2Tome.cs" />
@@ -368,6 +371,7 @@
     <Compile Include="Projectiles\AncientHolyLanceP.cs" />
     <Compile Include="Projectiles\Anti Matter Blast.cs" />
     <Compile Include="Projectiles\AntiMaterialRound.cs" />
+    <Compile Include="Projectiles\BerserkerNightmareP.cs" />
     <Compile Include="Projectiles\BlackBreath.cs" />
     <Compile Include="Projectiles\Crazy Orb.cs" />
     <Compile Include="Projectiles\DragonBreath.cs" />
