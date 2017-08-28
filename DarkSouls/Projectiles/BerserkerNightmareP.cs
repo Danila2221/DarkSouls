@@ -9,10 +9,7 @@ namespace DarkSouls.Projectiles
 {
     public class BerserkerNightmareP : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("BOOM BITCH");
-        }
+        
 
         public override void SetDefaults()
         {

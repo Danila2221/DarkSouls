@@ -13,10 +13,7 @@ namespace DarkSouls.Items
 {
     public class BerserkerNightmare : ModItem
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Berserker Nightmare");
-        }
+        
         public override void SetDefaults()
         {
             item.width = 34;
