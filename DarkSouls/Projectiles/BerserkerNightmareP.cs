@@ -38,7 +38,7 @@ namespace DarkSouls.Projectiles
                      //How much light emit around the projectile
             projectile.ignoreWater = true;          //Does the projectile's speed be influenced by water?
             projectile.tileCollide = true;          //Can the projectile collide with tiles?
-            projectile.extraUpdates = 1;            //Set to above 0 if you want the projectile to update multiple time in a frame
+                      //Set to above 0 if you want the projectile to update multiple time in a frame
                        //Act exactly like default Bullet
         }
         public override void AI()
