@@ -154,6 +154,7 @@
     <Content Include="Items\DivineSpark.png" />
     <Content Include="Items\FireSword.png" />
     <Content Include="Items\Gazing Shield.png" />
+    <Content Include="Items\GazingShield.png" />
     <Content Include="Items\GazingShield_Shield.png" />
     <Content Include="Items\GemBox.png" />
     <Content Include="Items\HamdraxEX.png" />
