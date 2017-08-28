@@ -12,7 +12,7 @@ namespace DarkSouls.Projectiles
 		public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Demi 4");
-            Main.projFrames[projectile.type] = 6;
+            Main.projFrames[projectile.type] = 7;
 
         }
         public override void SetDefaults()
