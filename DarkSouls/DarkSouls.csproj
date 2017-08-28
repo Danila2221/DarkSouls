@@ -149,6 +149,7 @@
     <Content Include="Items\BeholderShield_Shield.png" />
     <Content Include="Items\BerserkerNightmare.png" />
     <Content Include="Items\BerserkerNightmare2.png" />
+    <Content Include="Items\BeserkerEmblem.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
@@ -307,6 +308,7 @@
     <Compile Include="Items\Anicient Great Bow.cs" />
     <Compile Include="Items\AntimatRifle.cs" />
     <Compile Include="Items\AquamarineRing.cs" />
+    <Compile Include="Items\Beserker Emblem.cs" />
     <Compile Include="Items\Archmen Emblem.cs" />
     <Compile Include="Items\Armor Drug.cs" />
     <Compile Include="Items\Artemis Bow.cs" />
