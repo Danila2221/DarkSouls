@@ -144,6 +144,8 @@
     <Content Include="Items\BarrierTome.png" />
     <Content Include="Items\BarrowBlade.png" />
     <Content Include="Items\BeholderShield.png" />
+    <Content Include="Items\BeholderShield2.png" />
+    <Content Include="Items\BeholderShield2_Shield.png" />
     <Content Include="Items\BeholderShield_Shield.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
