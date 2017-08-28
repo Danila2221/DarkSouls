@@ -86,11 +86,7 @@ for (int num36 = 0; num36 < 20; num36++)
 		{
 npc.TargetClosest(true);
 	
-	if (Main.player[npc.target].dead || !Main.player[npc.target].active)
-	{
-		Teleport(-1000,-1000);
-		npc.timeLeft = 0;
-	}
+	
 	
 	for(int num36 = 0; num36 < 10; num36++)
 	{
@@ -120,9 +116,65 @@ npc.TargetClosest(true);
 	{
 	lookMode = 1;
 	phaseTime = 90;
-	if (Main.rand.Next(2)==0) Teleport(Main.player[npc.target].position.X-500, Main.player[npc.target].position.Y+400);
-	else Teleport(Main.player[npc.target].position.X+500, Main.player[npc.target].position.Y+400);
-	phaseStarted = true;
+                    Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 8);
+                    for (int num36 = 0; num36 < 10; num36++)
+                    {
+                        int dust = Dust.NewDust(new Vector2((float)npc.position.X, (float)npc.position.Y), npc.width, npc.height, 54, npc.velocity.X + Main.rand.Next(-10, 10), npc.velocity.Y + Main.rand.Next(-10, 10), 200, Color.Red, 4f);
+                        Main.dust[dust].noGravity = false;
+                    }
+                    npc.ai[3] = (float)(Main.rand.Next(360) * (Math.PI / 180));
+                    npc.ai[2] = 0;
+                    npc.ai[1] = 0;
+                    if (npc.target < 0 || npc.target == 255 || Main.player[npc.target].dead || !Main.player[npc.target].active)
+                    {
+                        npc.TargetClosest(true);
+                    }
+                    if (Main.player[npc.target].dead)
+                    {
+                        npc.position.X = 0;
+                        npc.position.Y = 0;
+                        if (npc.timeLeft > 10)
+                        {
+                            npc.timeLeft = 0;
+                            return;
+                        }
+                    }
+                    else
+                    {
+
+
+
+
+
+                        Player Pt = Main.player[npc.target];
+                        Vector2 NC = npc.position + new Vector2(npc.width / 2, npc.height / 2);
+                        Vector2 PtC = Pt.position + new Vector2(Pt.width / 2, Pt.height / 2);
+                        npc.position.X = Pt.position.X + (float)((600 * Math.Cos(npc.ai[3])) * -1);
+                        npc.position.Y = Pt.position.Y - 35 + (float)((30 * Math.Sin(npc.ai[3])) * -1);
+
+                        float MinDIST = 360f;
+                        float MaxDIST = 410f;
+                        Vector2 Diff = npc.position - Pt.position;
+                        if (Diff.Length() > MaxDIST)
+                        {
+                            Diff *= MaxDIST / Diff.Length();
+                        }
+                        if (Diff.Length() < MinDIST)
+                        {
+                            Diff *= MinDIST / Diff.Length();
+                        }
+                        npc.position = Pt.position + Diff;
+
+                        NC = npc.position + new Vector2(npc.width / 2, npc.height / 2);
+
+                        float rotation = (float)Math.Atan2(NC.Y - PtC.Y, NC.X - PtC.X);
+                        npc.velocity.X = (float)(Math.Cos(rotation) * 8) * -1;
+                        npc.velocity.Y = (float)(Math.Sin(rotation) * 8) * -1;
+
+
+                    }
+                
+                phaseStarted = true;
 	}
 	bool left = false;
 	if (npc.position.X < Main.player[npc.target].position.X) left = false;
