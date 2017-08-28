@@ -42,5 +42,16 @@ namespace OmnirsNosPak.Items.Accessory
 			player.rangedDamage -= 0.85f;
 			player.meleeDamage += 0.04f;
 		}
-	}
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.CobaltBar, 15);
+            recipe.AddIngredient(ItemID.SoulofLight, 5);
+            recipe.AddIngredient(null, "DarkSoul", 15000);
+            recipe.SetResult(this);
+            recipe.AddTile(26);
+            recipe.AddRecipe();
+        }
+
+    }
 }
