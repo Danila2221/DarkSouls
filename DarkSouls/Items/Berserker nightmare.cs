@@ -15,7 +15,7 @@ namespace DarkSouls.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Berserker Nightmare");
-            Tooltip.SetDefault("");
+           
         }
         public override void SetDefaults()
         {
