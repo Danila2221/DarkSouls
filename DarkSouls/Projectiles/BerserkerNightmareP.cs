@@ -55,7 +55,7 @@ namespace DarkSouls.Projectiles
             
         }
 
-        public void DamageNPC(NPC N, ref int damage, ref float knockback)
+        public void OnHitNPC(NPC N,int damage, float knockback)
         {
             if (Main.rand.Next(4) == 0)
             {
