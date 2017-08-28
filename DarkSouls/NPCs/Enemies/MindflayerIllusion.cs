@@ -86,7 +86,7 @@ for (int num36 = 0; num36 < 20; num36++)
 		{
 npc.TargetClosest(true);
 	
-	if (npc.target < 0 || npc.target == 255 || Main.player[npc.target].dead || !Main.player[npc.target].active)
+	if (Main.player[npc.target].dead || !Main.player[npc.target].active)
 	{
 		Teleport(-1000,-1000);
 		npc.timeLeft = 0;
