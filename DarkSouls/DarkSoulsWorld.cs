@@ -18,10 +18,29 @@ namespace DarkSouls
 
 		public static bool downedSorcerer = false; // Downed Tutorial Boss
 		public static bool downedAttraidies = false;
-       
-        public override void Initialize()
-		{
-			downedSorcerer = false;
+        public int iexp = 0;
+        public int ilevel = 0;
+        public int itnl = 0;
+        public string oritemname = "";
+        public int oridamage = 0;
+        public int oricrit = 0;
+
+        public void Initialize(Terraria.Item item)
+        {
+
+            if (item.damage > 0)
+            {
+
+                iexp = 0;
+                ilevel = 0;
+
+                oritemname = Name;
+                oridamage = item.damage;
+                oricrit = item.crit;
+            }
+
+
+            downedSorcerer = false;
 			downedAttraidies = false;
 		}
 
@@ -30,9 +49,13 @@ namespace DarkSouls
 			var downed = new List<string>();
 			if (downedSorcerer) downed.Add("Sorcerer");
 			if (downedAttraidies) downed.Add("Attraidies");
-			return new TagCompound {
+            
+
+
+            return new TagCompound {
 				{"downed", downed}
-			};
+                
+            };
 		}
 
 		public override void Load(TagCompound tag)

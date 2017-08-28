@@ -309,6 +309,7 @@
     <Compile Include="Items\Anicient Great Bow.cs" />
     <Compile Include="Items\AntimatRifle.cs" />
     <Compile Include="Items\AquamarineRing.cs" />
+    <Compile Include="Items\GlobalItem.cs" />
     <Compile Include="Items\LightCube.cs" />
     <Compile Include="Items\Beserker Emblem.cs" />
     <Compile Include="Items\Archmen Emblem.cs" />
