@@ -141,6 +141,7 @@
     <Content Include="Items\BandofGreatCosmicPower.png" />
     <Content Include="Items\BandofSupremeCosmicPower.png" />
     <Content Include="Items\BarrierRing.png" />
+    <Content Include="Items\BarrierTome.png" />
     <Content Include="Items\BarrowBlade.png" />
     <Content Include="Items\BeholderShield.png" />
     <Content Include="Items\BeholderShield_Shield.png" />
@@ -307,6 +308,7 @@
     <Compile Include="Items\BandofGreatCosmicPower.cs" />
     <Compile Include="Items\BandofSupremeCosmicPower.cs" />
     <Compile Include="Items\BarrierRing.cs" />
+    <Compile Include="Items\BarrierTome.cs" />
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\BeholderShield.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
