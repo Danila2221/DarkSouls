@@ -55,4 +55,3 @@ namespace DarkSouls.Items
     }
 
 }
-}
