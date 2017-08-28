@@ -49,7 +49,5 @@ namespace DarkSouls.Projectiles
                 Main.PlaySound(2, (int)N.position.X, (int)N.position.Y, SoundID.Duck);
             }
         }
-
-        
     }
 }

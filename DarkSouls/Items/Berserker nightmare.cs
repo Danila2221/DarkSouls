@@ -8,6 +8,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 using DarkSouls.Projectiles;
+
 namespace DarkSouls.Items
 {
     public class BerserkerNightmare : ModItem
