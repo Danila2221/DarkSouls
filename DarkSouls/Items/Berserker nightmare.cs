@@ -32,7 +32,6 @@ namespace DarkSouls.Items
             item.noMelee = true;
             item.value = 505000;
             item.melee = true;
-
             item.shoot = mod.ProjectileType<BerserkerNightmareP>();
         }
 
