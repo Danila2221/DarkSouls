@@ -41,9 +41,10 @@ namespace DarkSouls.Projectiles
                       //Set to above 0 if you want the projectile to update multiple time in a frame
                        //Act exactly like default Bullet
         }
+        
         public override void AI()
         {
-
+            
             if (Main.rand.Next(2) == 0)
             {
                 Color color = new Color();
@@ -55,19 +56,16 @@ namespace DarkSouls.Projectiles
             
         }
 
-        public void OnHitNPC(NPC N,int damage, float knockback)
+        public void OnHitNPC(NPC N, int damage, float knockback)
         {
-            if (Main.rand.Next(4) == 0)
-            {
+            
+            
                 Projectile.NewProjectile(N.position.X + (N.width * 0.5f), N.position.Y - 200, 0f, 4f, mod.ProjectileType("FBolt3"), 35, 6, Main.myPlayer);
                 Main.PlaySound(2, (int)N.position.X, (int)N.position.Y, SoundID.Duck);
-            }
+            
         }
 
-        public void PreKill()
-        {
-            Collision.HitTiles(projectile.position, projectile.velocity, projectile.width, projectile.height);
-        }
+        
 
 
     }
