@@ -21,7 +21,7 @@ float customspawn1;
 
 		public override void SetStaticDefaults()
 		{
-			DisplayName.SetDefault("Mindflayer Illusion");
+			DisplayName.SetDefault("Broken Mindflayer Illusion");
 			Main.npcFrameCount[npc.type] = 3;
 		}
 
