@@ -310,6 +310,7 @@
     <Compile Include="Items\BarrierRing.cs" />
     <Compile Include="Items\BarrierTome.cs" />
     <Compile Include="Items\BarrowBlade.cs" />
+    <Compile Include="Items\BeholderShield2.cs" />
     <Compile Include="Items\BeholderShield.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />
