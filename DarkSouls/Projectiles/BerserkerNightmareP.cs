@@ -14,7 +14,7 @@ using Microsoft.Xna.Framework.Graphics;
 using System;
 using DarkSouls;
 
-namespace DarkSouls.Items
+namespace DarkSouls.Projectiles
 {
     public class BerserkerNightmareP : ModProjectile
     {
