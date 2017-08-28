@@ -27,7 +27,7 @@ namespace DarkSouls.Items
             item.useStyle = 5;
             item.useAnimation = 60;
             item.useTime = 60;
-            item.shootSpeed = 300f;
+            item.shootSpeed = 60;
             item.knockBack = 9.5f;
             item.width = 32;
             item.height = 32;
