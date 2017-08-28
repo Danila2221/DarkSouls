@@ -20,7 +20,7 @@ namespace DarkSouls.Projectiles
 
 			projectile.width = 90;
 			projectile.height = 90;
-			projectile.penetrate = 50;
+			projectile.penetrate = 100;
 			projectile.knockBack = 9;
 			projectile.timeLeft = 200;
 			projectile.alpha = 100;

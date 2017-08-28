@@ -21,6 +21,7 @@ namespace DarkSouls.Items
         }
         public override void SetDefaults()
         {
+            
             item.maxStack = 1;
             item.damage = 250;
             item.useStyle = 5;
