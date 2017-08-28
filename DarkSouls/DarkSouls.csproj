@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Buffs\ArmorDrug.png" />
+    <Content Include="Buffs\Barrier.png" />
     <Content Include="Buffs\BloodMoon.png" />
     <Content Include="Buffs\Vulnerable.png" />
     <Content Include="build.txt" />
@@ -139,7 +140,10 @@
     <Content Include="Items\BandofCosmicPower.png" />
     <Content Include="Items\BandofGreatCosmicPower.png" />
     <Content Include="Items\BandofSupremeCosmicPower.png" />
+    <Content Include="Items\BarrierRing.png" />
     <Content Include="Items\BarrowBlade.png" />
+    <Content Include="Items\BeholderShield.png" />
+    <Content Include="Items\BeholderShield_Shield.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
@@ -149,6 +153,8 @@
     <Content Include="Items\DivineBoomSpark.png" />
     <Content Include="Items\DivineSpark.png" />
     <Content Include="Items\FireSword.png" />
+    <Content Include="Items\Gazing Shield.png" />
+    <Content Include="Items\GazingShield_Shield.png" />
     <Content Include="Items\GemBox.png" />
     <Content Include="Items\HamdraxEX.png" />
     <Content Include="Items\HornedHelmet.png" />
@@ -250,6 +256,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buffs\ArmorDrug.cs" />
+    <Compile Include="Buffs\Barrier.cs" />
     <Compile Include="Buffs\BloodMoon.cs" />
     <Compile Include="Buffs\Vulnerable.cs" />
     <Compile Include="DarkSouls.cs" />
@@ -296,7 +303,9 @@
     <Compile Include="Items\BandofCosmicPower.cs" />
     <Compile Include="Items\BandofGreatCosmicPower.cs" />
     <Compile Include="Items\BandofSupremeCosmicPower.cs" />
+    <Compile Include="Items\BarrierRing.cs" />
     <Compile Include="Items\BarrowBlade.cs" />
+    <Compile Include="Items\BeholderShield.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />
     <Compile Include="Items\Bolt2Tome.cs" />
@@ -306,6 +315,7 @@
     <Compile Include="Items\DivineBoomCannon.cs" />
     <Compile Include="Items\DivineCannon.cs" />
     <Compile Include="Items\FireSword.cs" />
+    <Compile Include="Items\GazingShield.cs" />
     <Compile Include="Items\GemBox.cs" />
     <Compile Include="Items\HamdraxEX.cs" />
     <Compile Include="Items\HornedHelmet.cs" />
