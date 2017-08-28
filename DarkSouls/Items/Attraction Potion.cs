@@ -16,19 +16,20 @@ using DarkSouls;
 
 namespace DarkSouls.Items
 {
-    public class ArmorDrug : ModItem
+    public class AttractionPotion : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Armor Drug");
-            Tooltip.SetDefault("Increases Defense by 13 for 3 minutes.");
+            DisplayName.SetDefault("Attraction Potion");
+            Tooltip.SetDefault("Initiates a blood moon"
+                + "\n10 minute duration");
         }
 
         public override void SetDefaults()
         {
 
-            item.width = 14;
-            item.height = 24;
+            item.width = 28;
+            item.height = 28;
             item.useStyle = 2;
             item.useAnimation = 17;
             item.useTime = 17;
@@ -39,21 +40,34 @@ namespace DarkSouls.Items
             item.UseSound = SoundID.Item3;
             item.value = 1000;
             item.rare = 1;
-            
 
+
+        }
+        public override bool CanUseItem(Player player)
+        {
+            bool canuse = true;
+            if (Main.dayTime == false) canuse = true;
+            else
+            {
+                canuse = false;
+            }
+            return canuse;
         }
         public override bool UseItem(Player player)
         {
-            player.AddBuff(mod.BuffType("ArmorDrug"), 10800, false);
+            player.AddBuff(mod.BuffType("BloodMoon"), 36000, false);
             return true;
         }
-            
+
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.BottledWater, 1);
-            recipe.AddIngredient(ItemID.Sapphire, 5);
-            recipe.AddIngredient(ItemID.SoulofNight, 4);
+            recipe.AddIngredient(ItemID.BottledWater, 5);
+            recipe.AddIngredient(ItemID.Deathweed, 5);
+            recipe.AddIngredient(ItemID.RottenChunk, 10);
+            recipe.AddIngredient(ItemID.Moonglow, 5);
+            recipe.AddIngredient(ItemID.DeathweedSeeds, 5);
+            recipe.AddIngredient(ItemID.Lens, 1);
             recipe.SetResult(this);
             recipe.AddTile(13);
             recipe.AddRecipe();

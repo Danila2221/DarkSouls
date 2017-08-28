@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Buffs\ArmorDrug.png" />
+    <Content Include="Buffs\BloodMoon.png" />
     <Content Include="Buffs\Vulnerable.png" />
     <Content Include="build.txt" />
     <Content Include="Dusts\Smoke.png" />
@@ -133,6 +134,7 @@
     <Content Include="Items\ArchmenEmblem.png" />
     <Content Include="Items\ArmorDrug.png" />
     <Content Include="Items\ArtemisBow.png" />
+    <Content Include="Items\AttractionPotion.png" />
     <Content Include="Items\BarrowBlade.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
@@ -244,6 +246,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Buffs\ArmorDrug.cs" />
+    <Compile Include="Buffs\BloodMoon.cs" />
     <Compile Include="Buffs\Vulnerable.cs" />
     <Compile Include="DarkSouls.cs" />
     <Compile Include="DarkSoulsPlayer.cs" />
@@ -284,6 +287,7 @@
     <Compile Include="Items\Archmen Emblem.cs" />
     <Compile Include="Items\Armor Drug.cs" />
     <Compile Include="Items\Artemis Bow.cs" />
+    <Compile Include="Items\Attraction Potion.cs" />
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />
