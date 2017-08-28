@@ -147,6 +147,7 @@
     <Content Include="Items\BeholderShield2.png" />
     <Content Include="Items\BeholderShield2_Shield.png" />
     <Content Include="Items\BeholderShield_Shield.png" />
+    <Content Include="Items\BerserkerNightmare.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
@@ -315,6 +316,7 @@
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\BeholderShield2.cs" />
     <Compile Include="Items\BeholderShield.cs" />
+    <Compile Include="Items\Berserker nightmare.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />
     <Compile Include="Items\Bolt2Tome.cs" />
