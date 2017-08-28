@@ -31,6 +31,22 @@ namespace DarkSouls.Projectiles
 			projectile.ignoreWater = true;
 			projectile.tileCollide = false;
         }
-		
+		public override void AI()
+        {
+            projectile.frameCounter++;
+            if (projectile.frameCounter > 3)
+            {
+                projectile.frame++;
+                projectile.frameCounter = 0;
+            }
+            if (projectile.frame >= 7)
+            {
+                projectile.Kill();
+                return;
+            }
+            
+
+            
+		}
 	}
 }
