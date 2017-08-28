@@ -817,7 +817,7 @@ if (Main.rand.Next(66)==1) // might remove
 			    num51 = num48 / num51;
 			    speedX *= num51;
 			    speedY *= num51;
-			    int damage = 100;//(int) (14f * npc.scale);
+			    int damage = 0;//(int) (14f * npc.scale);
 			    int type = mod.ProjectileType("Gravity4Ball");//44;//0x37; //14;
 			    int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, speedX, speedY, type, damage, 0f, Main.myPlayer);
 			    Main.projectile[num54].timeLeft = 60;
