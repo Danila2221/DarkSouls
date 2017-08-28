@@ -18,7 +18,7 @@ namespace OmnirsNosPak.Items.Accessory
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Gazing Shield");
-            Tooltip.SetDefault("For melee warriors only \n Grants immunity to knockback, plus 20 defense & +4% melee damage. \n Reduces ranged and magic damage by 85%. \n +50% mana cost -10% move speed.")
+            Tooltip.SetDefault("For melee warriors only \n Grants immunity to knockback, plus 20 defense & +4% melee damage. \n Reduces ranged and magic damage by 85%. \n +50% mana cost -10% move speed.");
         }
         public override void SetDefaults()
 		{
