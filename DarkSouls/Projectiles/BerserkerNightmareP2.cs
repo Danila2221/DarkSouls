@@ -42,19 +42,7 @@ namespace DarkSouls.Projectiles
                        //Act exactly like default Bullet
         }
         
-        public override void AI()
-        {
-            
-            if (Main.rand.Next(2) == 0)
-            {
-                Color color = new Color();
-                int dust = Dust.NewDust(projectile.position, projectile.width, projectile.height, 58, 0f, 0f, 80, color, 1.5f);
-                int dust2 = Dust.NewDust(projectile.position, projectile.width, projectile.height, 36, 0f, 0f, 80, color, 1.5f);
-                Main.dust[dust].noGravity = true;
-                Main.dust[dust2].noGravity = true;
-            }
-            
-        }
+        
 
         public override void OnHitNPC(NPC N, int damage, float knockBack, bool crit)
         {
