@@ -26,6 +26,7 @@ namespace DarkSouls.Projectiles
             projectile.friendly = true;
             projectile.tileCollide = true;
             projectile.melee = true;
+            projectile.extraUpdates = 1;
         }
 
         public override void AI()
@@ -41,8 +42,10 @@ namespace DarkSouls.Projectiles
             
         }
 
-        public void DamageNPC(NPC N, ref int damage, ref float knockback)
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {
+            
+        
             if (Main.rand.Next(4) == 0)
             {
                 Projectile.NewProjectile(N.position.X + (N.width * 0.5f), N.position.Y - 200, 0f, 4f, mod.ProjectileType("LightningBolt"), 35, 6, Main.myPlayer);
