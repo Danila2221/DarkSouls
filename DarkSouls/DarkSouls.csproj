@@ -137,6 +137,8 @@
     <Content Include="Items\AttractionPotion.png" />
     <Content Include="Items\AttraidiesRelic.png" />
     <Content Include="Items\BandofCosmicPower.png" />
+    <Content Include="Items\BandofGreatCosmicPower.png" />
+    <Content Include="Items\BandofSupremeCosmicPower.png" />
     <Content Include="Items\BarrowBlade.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
@@ -292,6 +294,8 @@
     <Compile Include="Items\Attraction Potion.cs" />
     <Compile Include="Items\AttraidiesRelic.cs" />
     <Compile Include="Items\BandofCosmicPower.cs" />
+    <Compile Include="Items\BandofGreatCosmicPower.cs" />
+    <Compile Include="Items\BandofSupremeCosmicPower.cs" />
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />

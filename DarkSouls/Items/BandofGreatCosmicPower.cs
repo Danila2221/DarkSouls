@@ -16,13 +16,13 @@ using DarkSouls;
 
 namespace DarkSouls.Items
 {
-    public class BandofCosmicPower : ModItem
+    public class BandofGreatCosmicPower : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Band of Cosmic Power");
-            Tooltip.SetDefault("+ 2 life regeneration and increases max mana by 40"
-                + "\nCan be upgraded with 10,000 Dark Souls");
+            DisplayName.SetDefault("Band of Great Cosmic Power");
+            Tooltip.SetDefault("+3 life regeneration and increases max mana by 60"
+                + "\nCan be upgraded with 15,000 Dark Souls");
         }
 
         public override void SetDefaults()
@@ -32,22 +32,22 @@ namespace DarkSouls.Items
             item.height = 22;
             item.accessory = true;
 
-            item.value = 5000;
-            item.rare = 2;
+            item.value = 10000;
+            item.rare = 3;
             item.maxStack = 1;
 
         }
         public override void UpdateEquip(Player player)
         {
-            player.lifeRegen += 2;
-            player.statManaMax2 += 40;
+            player.lifeRegen += 3;
+            player.statManaMax2 += 60;
         }
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.BandofRegeneration, 1);
-            recipe.AddIngredient(ItemID.BandofStarpower, 1);
-            recipe.AddIngredient(null, "DarkSoul", 3000);
+            recipe.AddIngredient(null, "BandofCosmicPower", 1);
+
+            recipe.AddIngredient(null, "DarkSoul", 10000);
             recipe.SetResult(this);
             recipe.AddTile(26);
             recipe.AddRecipe();
@@ -55,7 +55,7 @@ namespace DarkSouls.Items
     }
 }
 
- 
-    
-    
+
+
+
 
