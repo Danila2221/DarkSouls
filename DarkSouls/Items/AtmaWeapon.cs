@@ -18,7 +18,7 @@ namespace DarkSouls.Items // Code modified from Zero-Exodus's code :)
             Tooltip.SetDefault("A sword that draws from the power of the wielder. Scales with current HP."
                 + "\nThe true form of your father's sword revealed.");
         }
-        public float damageMultiplier = 1f; // Damage Multiplier of the weapon.
+        public float damageMultiplier = 0.25f; // Damage Multiplier of the weapon.
         public override void SetDefaults()
         {
             
