@@ -35,14 +35,7 @@ namespace DarkSouls.Items
             item.melee = true;
             item.autoReuse = true; // Most spears don't autoReuse, but it's possible
         }
-        public void OnHitNPC(NPC N, int damage, float knockback)
-        {
-
-
-            Projectile.NewProjectile(N.position.X + (N.width * 0.5f), N.position.Y - 200, 0f, 4f, mod.ProjectileType("FBoltBall"), 35, 6, Main.myPlayer);
-            Main.PlaySound(2, (int)N.position.X, (int)N.position.Y, SoundID.Duck);
-
-        }
+        
 
     }
 }
