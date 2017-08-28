@@ -140,6 +140,7 @@
     <Content Include="Items\BandofCosmicPower.png" />
     <Content Include="Items\BandofGreatCosmicPower.png" />
     <Content Include="Items\BandofSupremeCosmicPower.png" />
+    <Content Include="Items\BarrierRing - Копировать.png" />
     <Content Include="Items\BarrierRing.png" />
     <Content Include="Items\BarrierTome.png" />
     <Content Include="Items\BarrowBlade.png" />
@@ -166,6 +167,7 @@
     <Content Include="Items\HamdraxEX.png" />
     <Content Include="Items\HornedHelmet.png" />
     <Content Include="Items\HornedHelmet_Head.png" />
+    <Content Include="Items\LightCube.png" />
     <Content Include="Items\MagicPlateArmor.png" />
     <Content Include="Items\MagicPlateArmor_Arms.png" />
     <Content Include="Items\MagicPlateArmor_Body.png" />
@@ -212,7 +214,6 @@
     <Content Include="Projectiles\AncientHolyLanceP.png" />
     <Content Include="Projectiles\AntiMaterialRound.png" />
     <Content Include="Projectiles\AntiMatterBlast.png" />
-    <Content Include="Projectiles\BerserkerNightmareP2 - Копировать.png" />
     <Content Include="Projectiles\BerserkerNightmareP2.png" />
     <Content Include="Projectiles\BerserkerNightmareP.png" />
     <Content Include="Projectiles\BlackBreath.png" />
@@ -308,6 +309,7 @@
     <Compile Include="Items\Anicient Great Bow.cs" />
     <Compile Include="Items\AntimatRifle.cs" />
     <Compile Include="Items\AquamarineRing.cs" />
+    <Compile Include="Items\LightCube.cs" />
     <Compile Include="Items\Beserker Emblem.cs" />
     <Compile Include="Items\Archmen Emblem.cs" />
     <Compile Include="Items\Armor Drug.cs" />
