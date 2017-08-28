@@ -31,7 +31,7 @@ namespace DarkSouls.Items
             item.width = 32;
             item.height = 32;
             item.scale = 1f;
-            item.rare = 5;
+            item.rare = 11;
             item.UseSound = SoundID.Item1;
             item.shoot = mod.ProjectileType<BerserkerNightmareP2>();
             item.value = 27000;
