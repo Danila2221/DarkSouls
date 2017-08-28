@@ -16,11 +16,11 @@ using DarkSouls;
 
 namespace DarkSouls.Items
 {
-    public class BerserkerEmblem : ModItem
+    public class BeserkerEmblem : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Berserker Emblem");
+            DisplayName.SetDefault("Beserker Emblem");
             Tooltip.SetDefault("25% increased melee damage");
         }
 
