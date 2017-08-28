@@ -21,7 +21,7 @@ namespace DarkSouls.Items
         {
             item.width = 34;
             item.height = 32;
-            item.channel = true;
+            
             item.useAnimation = 44;
             item.useTime = 44;
             item.maxStack = 1;
