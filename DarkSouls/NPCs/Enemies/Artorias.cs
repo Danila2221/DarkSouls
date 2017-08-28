@@ -28,7 +28,7 @@ namespace DarkSouls.NPCs.Enemies
 
 		public override void SetDefaults()
 		{
-			npc.aiStyle = 3;
+			
 			animationType = 28;
 			npc.lifeMax = 76000;
 			npc.damage = 200;
