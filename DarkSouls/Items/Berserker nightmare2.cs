@@ -25,8 +25,8 @@ namespace DarkSouls.Items
             item.maxStack = 1;
             item.damage = 250;
             item.useStyle = 5;
-            item.useAnimation = 60;
-            item.useTime = 60;
+            item.useAnimation = 20;
+            item.useTime = 20;
             item.shootSpeed = 60;
             item.knockBack = 9.5f;
             item.width = 32;
