@@ -59,7 +59,7 @@ namespace DarkSouls.Projectiles
         {
             if (Main.rand.Next(4) == 0)
             {
-                Projectile.NewProjectile(N.position.X + (N.width * 0.5f), N.position.Y - 200, 0f, 4f, mod.ProjectileType("LightningBolt"), 35, 6, Main.myPlayer);
+                Projectile.NewProjectile(N.position.X + (N.width * 0.5f), N.position.Y - 200, 0f, 4f, mod.ProjectileType("FBolt3"), 35, 6, Main.myPlayer);
                 Main.PlaySound(2, (int)N.position.X, (int)N.position.Y, SoundID.Duck);
             }
         }
