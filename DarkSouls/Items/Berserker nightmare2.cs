@@ -22,7 +22,7 @@ namespace DarkSouls.Items
         public override void SetDefaults()
         {
             item.maxStack = 1;
-            item.damage = 100;
+            item.damage = 250;
             item.useStyle = 5;
             item.useAnimation = 200;
             item.useTime = 200;
