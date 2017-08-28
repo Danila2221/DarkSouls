@@ -37,7 +37,7 @@ namespace DarkSouls.Projectiles
                        //The transparency of the projectile, 255 for completely transparent. (aiStyle 1 quickly fades the projectile in)
                      //How much light emit around the projectile
             projectile.ignoreWater = true;          //Does the projectile's speed be influenced by water?
-            projectile.tileCollide = true;          //Can the projectile collide with tiles?
+            projectile.tileCollide = false;          //Can the projectile collide with tiles?
                       //Set to above 0 if you want the projectile to update multiple time in a frame
                        //Act exactly like default Bullet
         }
