@@ -267,9 +267,94 @@ namespace DarkSouls.NPCs
                 meteor = basicsoul * 20;
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), meteor);
             }
-
-
-
+            if (npc.type == NPCID.AngryBones)
+            {
+                angrybones = basicsoul * 50;
+                angrybones2 = basicsoul * 100;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(angrybones, angrybones2));
+            }
+            if (npc.type == NPCID.AnomuraFungus)
+            {
+                anoruma = basicsoul * 200;
+                anoruma2 = basicsoul * 250;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(anoruma, anoruma2));
+            }
+            if (npc.type == NPCID.Antlion)
+            {
+                antilion = basicsoul * 30;
+                antilion2 = basicsoul * 45;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(antilion, antilion2));
+            }
+            if (npc.type == NPCID.FlyingAntlion)
+            {
+                antilionSWARM = basicsoul * 30;
+                antilionSWARM2 = basicsoul * 40;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(antilionSWARM, antilionSWARM2));
+            }
+            if (npc.type == NPCID.WalkingAntlion)
+            {
+                antilionCHARGE = basicsoul * 40;
+                antilionCHARGE2 = basicsoul * 80;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(antilionCHARGE, antilionCHARGE2));
+            }
+            if (npc.type == NPCID.BabySlime)
+            {
+                babyslime = basicsoul * 20;
+                babyslime2 = basicsoul * 25;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(babyslime, babyslime2));
+            }
+            if (npc.type == NPCID.BlackSlime)
+            {
+                blackslime = basicsoul * 30;
+                blackslime2 = basicsoul * 40;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(blackslime, blackslime2));
+            }
+            if (npc.type == NPCID.BeeSmall)
+            {
+                bee = basicsoul * 1;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), bee);
+            }
+            if (npc.type == NPCID.Bee)
+            {
+                bee = basicsoul * 1;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), bee);
+            }
+            if (npc.type == NPCID.BloodCrawler)
+            {
+                crimsoncravler = basicsoul * 20;
+                crimsoncravler2 = basicsoul * 25;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(crimsoncravler, crimsoncravler2));
+            }
+            if (npc.type == NPCID.BloodCrawlerWall)
+            {
+                crimsoncravler = basicsoul * 20;
+                crimsoncravler2 = basicsoul * 25;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(crimsoncravler, crimsoncravler2));
+            }
+            if (npc.type == NPCID.BlueJellyfish)
+            {
+                jellyfish = basicsoul * 40;
+                jellyfish2 = basicsoul * 50;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(jellyfish, jellyfish2));
+            }
+            if (npc.type == NPCID.GreenJellyfish)
+            {
+                jellyfish = basicsoul * 40;
+                jellyfish2 = basicsoul * 50;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(jellyfish, jellyfish2));
+            }
+            if (npc.type == NPCID.PinkJellyfish)
+            {
+                jellyfish = basicsoul * 40;
+                jellyfish2 = basicsoul * 50;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(jellyfish, jellyfish2));
+            }
+            if (npc.type == NPCID.BoneSerpentHead)
+            {
+                boneserhead = basicsoul * 25;
+                boneserhead2 = basicsoul * 30;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(boneserhead, boneserhead2));
+            }
         }
     }
 }
