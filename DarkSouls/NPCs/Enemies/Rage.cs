@@ -99,7 +99,7 @@ public override void AI()
                         if (npc.velocity.Y < 0f) npc.velocity.Y += 0.8f;
                         else npc.velocity.Y += 0.07f;
                     }
-                    if (npc.lifeMax == 6500)
+                    if (npc.life <= npc.lifeMax / 2)
                     { 
                         if (Main.rand.Next(20) == 1)
                     {
