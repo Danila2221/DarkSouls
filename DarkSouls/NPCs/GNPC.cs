@@ -100,7 +100,7 @@ namespace DarkSouls.NPCs
         static int harpy2;//80-90
         static int hardmode;
         static int hardmode2;
-
+        static int kingslime;
 
 
 
@@ -142,14 +142,10 @@ namespace DarkSouls.NPCs
             if (npc.type == NPCID.KingSlime)
             {
                 Main.NewText("The souls of King Slime have been released");
-                
+                kingslime = basicsoul * 3000;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), kingslime);
             }
-            if (npc.type == NPCID.GreenSlime)
-            {
-                greenslime = basicsoul * 1;
-                greenslime2 = basicsoul * 3;
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(greenslime, greenslime2));
-            }
+            
 
 
 
