@@ -63,7 +63,7 @@ namespace DarkSouls.NPCs
         static int jellyfish;
         static int jellyfish2;//40-50
         static int boneserhead;
-        static int boneserhead2;//25-30
+        static int boneserhead2;//25-30 OKOKOKO              OKOKOK
         static int cavebat;
         static int cavebat2;//10-15
         static int beetle;
@@ -354,6 +354,42 @@ namespace DarkSouls.NPCs
                 boneserhead = basicsoul * 25;
                 boneserhead2 = basicsoul * 30;
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(boneserhead, boneserhead2));
+            }
+            if (npc.type == NPCID.CaveBat)
+            {
+                cavebat = basicsoul * 10;
+                cavebat2 = basicsoul * 15;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(cavebat, cavebat2));
+            }
+            if (npc.type == NPCID.CochinealBeetle)
+            {
+                beetle = basicsoul * 30;
+                beetle2 = basicsoul * 40;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(beetle, beetle2));
+            }
+            if (npc.type == NPCID.Crab)
+            {
+                crab = basicsoul * 30;
+                crab2 = basicsoul * 40;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(crab, crab2));
+            }
+            if (npc.type == NPCID.Crawdad)
+            {
+                crawdad = basicsoul * 40;
+                crawdad2 = basicsoul * 50;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(crawdad, crawdad2));
+            }
+            if (npc.type == NPCID.Crawdad2)
+            {
+                crawdad = basicsoul * 40;
+                crawdad2 = basicsoul * 50;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(crawdad, crawdad2));
+            }
+            if (npc.type == NPCID.Harpy)
+            {
+                harpy = basicsoul * 80;
+                harpy2 = basicsoul * 90;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(harpy, harpy2));
             }
         }
     }
