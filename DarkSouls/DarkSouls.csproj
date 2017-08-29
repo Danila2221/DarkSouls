@@ -241,6 +241,7 @@
     <Content Include="Projectiles\FBolt4_4.png" />
     <Content Include="Projectiles\FBoltBall.png" />
     <Content Include="Projectiles\FGravity4Strike.png" />
+    <Content Include="Projectiles\FireTrails.png" />
     <Content Include="Projectiles\FrozenSaw.png" />
     <Content Include="Projectiles\Gravity4Ball.png" />
     <Content Include="Projectiles\Gravity4Strike.png" />

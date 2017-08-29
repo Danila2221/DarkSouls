@@ -119,11 +119,11 @@ for (int num36 = 0; num36 < 20; num36++)
 	int num54 = 0;
 	if (left)
 	{
-	num54 = Projectile.NewProjectile(vector8.X, vector8.Y,-6+Main.rand.Next(-1,1), Main.rand.Next(-10,10)/5, mod.ProjectileType("CrazyOrb"), 35, 0f, 0);
+	num54 = Projectile.NewProjectile(vector8.X, vector8.Y,-6+Main.rand.Next(-1,1), Main.rand.Next(-10,10)/5, mod.ProjectileType("FireTrails"), 35, 0f, 0);
 	}
 	else
 	{
-	num54 = Projectile.NewProjectile(vector8.X, vector8.Y,6+Main.rand.Next(-1,1), Main.rand.Next(-10,10)/5, mod.ProjectileType("CrazyOrb"), 35, 0f, 0);
+	num54 = Projectile.NewProjectile(vector8.X, vector8.Y,6+Main.rand.Next(-1,1), Main.rand.Next(-10,10)/5, mod.ProjectileType("FireTrails"), 35, 0f, 0);
 	}
 	genericTimer2 = 0;
 	}
