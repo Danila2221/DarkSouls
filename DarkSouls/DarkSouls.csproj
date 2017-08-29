@@ -151,6 +151,13 @@
     <Content Include="Items\BerserkerNightmare.png" />
     <Content Include="Items\BerserkerNightmare2.png" />
     <Content Include="Items\BeserkerEmblem.png" />
+    <Content Include="Items\Black BeltHelmet_Head.png" />
+    <Content Include="Items\BlackBeltArmor.png" />
+    <Content Include="Items\BlackBeltArmor_Arms.png" />
+    <Content Include="Items\BlackBeltArmor_Body.png" />
+    <Content Include="Items\BlackBeltArmor_FemaleBody.png" />
+    <Content Include="Items\BlackBeltGreaves.png" />
+    <Content Include="Items\BlackBeltHelmet.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
@@ -309,7 +316,6 @@
     <Compile Include="Items\Anicient Great Bow.cs" />
     <Compile Include="Items\AntimatRifle.cs" />
     <Compile Include="Items\AquamarineRing.cs" />
-    <Compile Include="Items\GlobalItem.cs" />
     <Compile Include="Items\Black Belt Hair Style.cs" />
     <Compile Include="Items\LightCube.cs" />
     <Compile Include="Items\Beserker Emblem.cs" />
