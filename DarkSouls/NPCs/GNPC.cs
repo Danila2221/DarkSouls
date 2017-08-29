@@ -137,12 +137,46 @@ namespace DarkSouls.NPCs
             {
                 basicsoul = 1;
             }
+            if (npc.type == NPCID.Demon)
+            {
+                demon = basicsoul * 200;
+                demon2 = basicsoul * 350;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(demon, demon2));
+            }
+            if (npc.type == NPCID.DarkCaster)
+            {
+                darkcaster = basicsoul * 60;
+                darkcaster2 = basicsoul * 100;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(darkcaster, darkcaster2));
+            }
+            if (npc.type == NPCID.CursedSkull)
+            {
+                cursedscull = basicsoul * 40;
+                cursedscull2 = basicsoul * 50;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(cursedscull, cursedscull2));
+            }
+            if (npc.type == NPCID.CyanBeetle)
+            {
+                cyanbeetle = basicsoul * 40;
+                cyanbeetle2 = basicsoul * 50;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(cyanbeetle, cyanbeetle2));
+            }
+            if (npc.type == NPCID.DoctorBones)
+            {
+                doctorbones = basicsoul * 400;
+                doctorbones2 = basicsoul * 1000;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(doctorbones, doctorbones2));
+            }
 
-            
+
+
+
+
+
             if (npc.type == NPCID.KingSlime)
             {
                 Main.NewText("The souls of King Slime have been released");
-                kingslime = basicsoul * 3000;
+                kingslime = basicsoul * 2600;
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), kingslime);
             }
             
