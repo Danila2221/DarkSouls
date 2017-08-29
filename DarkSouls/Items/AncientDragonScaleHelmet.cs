@@ -32,10 +32,12 @@ namespace DarkSouls.Items
 			player.AddBuff(BuffID.Thorns, 2);
 		}
 
-		
 
-		public override bool IsArmorSet(Item head, Item body, Item legs)
-		{
+
+        public override bool IsArmorSet(Terraria.Item head, Terraria.Item body, Terraria.Item legs)
+        {
+            
+        
 			return body.type == mod.ItemType("AncientDragonScaleMail") && legs.type == mod.ItemType("AncientDragonScaleGreaves");
 		}
 

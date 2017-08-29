@@ -30,10 +30,12 @@ namespace DarkSouls.Items
 			
 		}
 
-		
 
-		public override bool IsArmorSet(Item head, Item body, Item legs)
-		{
+
+        public override bool IsArmorSet(Terraria.Item head, Terraria.Item body, Terraria.Item legs)
+        {
+            
+        
 			return body.type == mod.ItemType("AncientDwarvenArmor") && legs.type == mod.ItemType("AncientDwarvenGreaves");
 		}
 

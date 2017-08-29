@@ -36,8 +36,9 @@ namespace DarkSouls.Items
             player.magicCrit += 5;
         }
 
-		public override bool IsArmorSet(Item head, Item body, Item legs)
-		{
+        public override bool IsArmorSet(Terraria.Item head, Terraria.Item body, Terraria.Item legs)
+        {
+            
             return body.type == mod.ItemType("MagicPlateArmor") && legs.type == mod.ItemType("MagicPlateGreaves");
 		}
 
