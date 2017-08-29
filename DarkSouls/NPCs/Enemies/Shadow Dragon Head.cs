@@ -37,7 +37,7 @@ bool breath = false;
 			animationType = 87;﻿
 			npc.scale = 1f;
 			npc.boss = true;
-			npc.aiStyle = 0;
+			npc.aiStyle = 6;
 			npc.npcSlots = 1f;
 			npc.HitSound = SoundID.NPCHit7;
 			npc.noGravity = true;
@@ -64,6 +64,44 @@ bool breath = false;
 		
 		public override void AI()
 {
+            
+            
+            Player nT = Main.player[npc.target];
+    if (Main.rand.Next(275) == 0) {
+        breath = true;
+        //Main.PlaySound(15, -1, -1, 0);
+    }
+    if (breath) {
+        //while (breathCD > 0) {
+        //for (int pcy = 0; pcy < 10; pcy++) {
+            Projectile.NewProjectile(npc.position.X + (float)npc.width / 2f, npc.position.Y + (float)npc.height / 2f, npc.velocity.X * 3f + (float)Main.rand.Next(-2, 3), npc.velocity.Y * 3f + (float)Main.rand.Next(-2, 3), mod.ProjectileType("DragonBreath"), 65, 1.2f, 255);
+        	
+        //}
+		npc.netUpdate = true; //new
+        breathCD--;
+        //}
+    }
+    if (breathCD <= 0) {
+        breath = false;
+        breathCD = 90;
+        Main.PlaySound(2, -1, -1, 20);
+    }
+    npc.TargetClosest(true);
+    
+    SegmentBody();
+    if (npc.velocity.X < 0f){ npc.spriteDirection = 1; } else  //both -1 is correct
+	if (npc.velocity.X > 0f){ npc.spriteDirection = -1; }
+
+									
+					
+
+if (!Main.npc[(int)npc.ai[1]].active)
+	{
+		npc.life = 0;
+		npc.HitEffect(0, 10.0);
+		NPCLoot();
+		npc.active = false;
+	}
             float num115 = 16f;
             float num116 = 0.4f;
 
@@ -215,46 +253,8 @@ bool breath = false;
                     }
                 }
             }
-            
-            Player nT = Main.player[npc.target];
-    if (Main.rand.Next(275) == 0) {
-        breath = true;
-        //Main.PlaySound(15, -1, -1, 0);
-    }
-    if (breath) {
-        //while (breathCD > 0) {
-        //for (int pcy = 0; pcy < 10; pcy++) {
-            Projectile.NewProjectile(npc.position.X + (float)npc.width / 2f, npc.position.Y + (float)npc.height / 2f, npc.velocity.X * 3f + (float)Main.rand.Next(-2, 3), npc.velocity.Y * 3f + (float)Main.rand.Next(-2, 3), mod.ProjectileType("DragonBreath"), 65, 1.2f, 255);
-        	
-        //}
-		npc.netUpdate = true; //new
-        breathCD--;
-        //}
-    }
-    if (breathCD <= 0) {
-        breath = false;
-        breathCD = 90;
-        Main.PlaySound(2, -1, -1, 20);
-    }
-    npc.TargetClosest(true);
-    
-    SegmentBody();
-    if (npc.velocity.X < 0f){ npc.spriteDirection = 1; } else  //both -1 is correct
-	if (npc.velocity.X > 0f){ npc.spriteDirection = -1; }
 
-									
-					
-
-if (!Main.npc[(int)npc.ai[1]].active)
-	{
-		npc.life = 0;
-		npc.HitEffect(0, 10.0);
-		NPCLoot();
-		npc.active = false;
-	}
-
-
-}
+        }
 
 		private void SegmentBody()
 		{
