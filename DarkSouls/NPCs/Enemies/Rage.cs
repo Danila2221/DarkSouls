@@ -99,8 +99,9 @@ public override void AI()
                         if (npc.velocity.Y < 0f) npc.velocity.Y += 0.8f;
                         else npc.velocity.Y += 0.07f;
                     }
-
-                    if (Main.rand.Next(10) == 1)
+                    if (npc.lifeMax == 6500)
+                    { 
+                        if (Main.rand.Next(20) == 1)
                     {
                         float num48 = 47f;//25 was 40
                         int damage = 28;
@@ -114,6 +115,7 @@ public override void AI()
                         num54 = Projectile.NewProjectile(vector8.X, vector8.Y - 600, (float)((Math.Cos(rotation - 0.4) * num48) * -1), (float)((Math.Sin(rotation - 0.4) * num48) * -1), type, damage, 0f, Main.myPlayer);
                         Main.projectile[num54].timeLeft = 550;
                         npc.ai[1] = -90;
+                    }
                     }
                 }
                 else if (npc.ai[2] >= 600 && npc.ai[2] < 1200)
