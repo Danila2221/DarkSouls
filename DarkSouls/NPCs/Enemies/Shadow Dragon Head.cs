@@ -215,25 +215,7 @@ bool breath = false;
                     }
                 }
             }
-            this.npc.rotation = (float)Math.Atan2((double)this.npc.velocity.Y, (double)this.npc.velocity.X) + 1.57f;
-
-            if (Main.rand.Next(3) == 0)
-            {
-                Vector2 arg_1394_0 = new Vector2(this.npc.position.X, this.npc.position.Y);
-                int arg_1394_1 = this.npc.width;
-                int arg_1394_2 = this.npc.height;
-                int arg_1394_3 = 15;
-                float arg_1394_4 = 0f;
-                float arg_1394_5 = 0f;
-                int arg_1394_6 = 100;
-                Color newColor = default(Color);
-                int num41 = Dust.NewDust(arg_1394_0, arg_1394_1, arg_1394_2, arg_1394_3, arg_1394_4, arg_1394_5, arg_1394_6, newColor, 1.2f);
-                Main.dust[num41].noGravity = true;
-            }
-
-            customAi1 += (Main.rand.Next(2, 5) * 0.1f) * npc.scale;
             
-            npc.netUpdate = true;
             Player nT = Main.player[npc.target];
     if (Main.rand.Next(275) == 0) {
         breath = true;
