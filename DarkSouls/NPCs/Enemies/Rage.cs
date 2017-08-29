@@ -100,7 +100,7 @@ public override void AI()
                         else npc.velocity.Y += 0.07f;
                     }
 
-                    if (npc.ai[1] >= 0 && npc.ai[2] > 120 && npc.ai[2] < 600)
+                    if (Main.rand.Next(10) == 1)
                     {
                         float num48 = 47f;//25 was 40
                         int damage = 28;
@@ -255,7 +255,7 @@ public override void AI()
 				Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), count);
 				
 			}	
-			DarkSoulsWorld.downedSorcerer = true;
+			
 		}
 
 	}
