@@ -50,10 +50,9 @@ bool breath = false;
 
 		public int basicsoul;
 		static int count;
+        private float customAi1;
 
-		
-
-		public override void OnHitPlayer(Player player, int damage, bool crit)
+        public override void OnHitPlayer(Player player, int damage, bool crit)
 		{
 			
 		}
@@ -65,8 +64,177 @@ bool breath = false;
 		
 		public override void AI()
 {
-        DarkSouls.AIWorm(npc, mod.NPCType("ShadowDragonHead"), SegmentBody, mod.NPCType("ShadowDragonTail"), 23, -1f, 12f, 0.12f, true, false);
-        Player nT = Main.player[npc.target];
+            float num115 = 16f;
+            float num116 = 0.4f;
+
+            Vector2 vector14 = new Vector2(this.npc.position.X + (float)this.npc.width * 0.5f, this.npc.position.Y + (float)this.npc.height * 0.5f);
+            float num118 = Main.rand.Next(-500, 500) + Main.player[this.npc.target].position.X + (float)(Main.player[this.npc.target].width / 2);
+            float num119 = Main.rand.Next(-500, 500) + Main.player[this.npc.target].position.Y + (float)(Main.player[this.npc.target].height / 2);
+            num118 = (float)((int)(num118 / 16f) * 16);
+            num119 = (float)((int)(num119 / 16f) * 16);
+            vector14.X = (float)((int)(vector14.X / 16f) * 16);
+            vector14.Y = (float)((int)(vector14.Y / 16f) * 16);
+            num118 -= vector14.X;
+            num119 -= vector14.Y;
+            float num120 = (float)Math.Sqrt((double)(num118 * num118 + num119 * num119));
+
+            float num123 = Math.Abs(num118);
+            float num124 = Math.Abs(num119);
+            float num125 = num115 / num120;
+            num118 *= num125;
+            num119 *= num125;
+
+            bool flag14 = false;
+            if (((this.npc.velocity.X > 0f && num118 < 0f) || (this.npc.velocity.X < 0f && num118 > 0f) || (this.npc.velocity.Y > 0f && num119 < 0f) || (this.npc.velocity.Y < 0f && num119 > 0f)) && Math.Abs(this.npc.velocity.X) + Math.Abs(this.npc.velocity.Y) > num116 / 2f && num120 < 300f)
+            {
+                flag14 = true;
+                if (Math.Abs(this.npc.velocity.X) + Math.Abs(this.npc.velocity.Y) < num115)
+                {
+                    this.npc.velocity *= 1.1f;
+                }
+            }
+            if (this.npc.position.Y > Main.player[this.npc.target].position.Y || (double)(Main.player[this.npc.target].position.Y / 16f) > Main.worldSurface || Main.player[this.npc.target].dead)
+            {
+                flag14 = true;
+                if (Math.Abs(this.npc.velocity.X) < num115 / 2f)
+                {
+                    if (this.npc.velocity.X == 0f)
+                    {
+                        this.npc.velocity.X = this.npc.velocity.X - (float)this.npc.direction;
+                    }
+                    this.npc.velocity.X = this.npc.velocity.X * 1.1f;
+                }
+                else
+                {
+                    if (this.npc.velocity.Y > -num115)
+                    {
+                        this.npc.velocity.Y = this.npc.velocity.Y - num116;
+                    }
+                }
+            }
+            if (!flag14)
+            {
+                if ((this.npc.velocity.X > 0f && num118 > 0f) || (this.npc.velocity.X < 0f && num118 < 0f) || (this.npc.velocity.Y > 0f && num119 > 0f) || (this.npc.velocity.Y < 0f && num119 < 0f))
+                {
+                    if (this.npc.velocity.X < num118)
+                    {
+                        this.npc.velocity.X = this.npc.velocity.X + num116;
+                    }
+                    else
+                    {
+                        if (this.npc.velocity.X > num118)
+                        {
+                            this.npc.velocity.X = this.npc.velocity.X - num116;
+                        }
+                    }
+                    if (this.npc.velocity.Y < num119)
+                    {
+                        this.npc.velocity.Y = this.npc.velocity.Y + num116;
+                    }
+                    else
+                    {
+                        if (this.npc.velocity.Y > num119)
+                        {
+                            this.npc.velocity.Y = this.npc.velocity.Y - num116;
+                        }
+                    }
+                    if ((double)Math.Abs(num119) < (double)num115 * 0.2 && ((this.npc.velocity.X > 0f && num118 < 0f) || (this.npc.velocity.X < 0f && num118 > 0f)))
+                    {
+                        if (this.npc.velocity.Y > 0f)
+                        {
+                            this.npc.velocity.Y = this.npc.velocity.Y + num116 * 2f;
+                        }
+                        else
+                        {
+                            this.npc.velocity.Y = this.npc.velocity.Y - num116 * 2f;
+                        }
+                    }
+                    if ((double)Math.Abs(num118) < (double)num115 * 0.2 && ((this.npc.velocity.Y > 0f && num119 < 0f) || (this.npc.velocity.Y < 0f && num119 > 0f)))
+                    {
+                        if (this.npc.velocity.X > 0f)
+                        {
+                            this.npc.velocity.X = this.npc.velocity.X + num116 * 2f;
+                        }
+                        else
+                        {
+                            this.npc.velocity.X = this.npc.velocity.X - num116 * 2f;
+                        }
+                    }
+                }
+                else
+                {
+                    if (num123 > num124)
+                    {
+                        if (this.npc.velocity.X < num118)
+                        {
+                            this.npc.velocity.X = this.npc.velocity.X + num116 * 1.1f;
+                        }
+                        else
+                        {
+                            if (this.npc.velocity.X > num118)
+                            {
+                                this.npc.velocity.X = this.npc.velocity.X - num116 * 1.1f;
+                            }
+                        }
+                        if ((double)(Math.Abs(this.npc.velocity.X) + Math.Abs(this.npc.velocity.Y)) < (double)num115 * 0.5)
+                        {
+                            if (this.npc.velocity.Y > 0f)
+                            {
+                                this.npc.velocity.Y = this.npc.velocity.Y + num116;
+                            }
+                            else
+                            {
+                                this.npc.velocity.Y = this.npc.velocity.Y - num116;
+                            }
+                        }
+                    }
+                    else
+                    {
+                        if (this.npc.velocity.Y < num119)
+                        {
+                            this.npc.velocity.Y = this.npc.velocity.Y + num116 * 1.1f;
+                        }
+                        else
+                        {
+                            if (this.npc.velocity.Y > num119)
+                            {
+                                this.npc.velocity.Y = this.npc.velocity.Y - num116 * 1.1f;
+                            }
+                        }
+                        if ((double)(Math.Abs(this.npc.velocity.X) + Math.Abs(this.npc.velocity.Y)) < (double)num115 * 0.5)
+                        {
+                            if (this.npc.velocity.X > 0f)
+                            {
+                                this.npc.velocity.X = this.npc.velocity.X + num116;
+                            }
+                            else
+                            {
+                                this.npc.velocity.X = this.npc.velocity.X - num116;
+                            }
+                        }
+                    }
+                }
+            }
+            this.npc.rotation = (float)Math.Atan2((double)this.npc.velocity.Y, (double)this.npc.velocity.X) + 1.57f;
+
+            if (Main.rand.Next(3) == 0)
+            {
+                Vector2 arg_1394_0 = new Vector2(this.npc.position.X, this.npc.position.Y);
+                int arg_1394_1 = this.npc.width;
+                int arg_1394_2 = this.npc.height;
+                int arg_1394_3 = 15;
+                float arg_1394_4 = 0f;
+                float arg_1394_5 = 0f;
+                int arg_1394_6 = 100;
+                Color newColor = default(Color);
+                int num41 = Dust.NewDust(arg_1394_0, arg_1394_1, arg_1394_2, arg_1394_3, arg_1394_4, arg_1394_5, arg_1394_6, newColor, 1.2f);
+                Main.dust[num41].noGravity = true;
+            }
+
+            customAi1 += (Main.rand.Next(2, 5) * 0.1f) * npc.scale;
+            
+            npc.netUpdate = true;
+            Player nT = Main.player[npc.target];
     if (Main.rand.Next(275) == 0) {
         breath = true;
         //Main.PlaySound(15, -1, -1, 0);
@@ -108,12 +276,13 @@ if (!Main.npc[(int)npc.ai[1]].active)
 
 		private void SegmentBody()
 		{
-			if (JustSpawned)
+            
+            if (JustSpawned)
 			{
 				int previous = npc.whoAmI;
 				const int segments = 30;
-
-				for (int i = 0; i < segments; i++)
+                
+                for (int i = 0; i < segments; i++)
 				{
 					int type =
 						i < segments - 1
