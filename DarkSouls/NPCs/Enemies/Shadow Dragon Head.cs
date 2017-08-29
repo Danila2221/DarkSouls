@@ -46,7 +46,7 @@ bool breath = false;
 			npc.active = true;
 			npc.npcSlots = 1;
     		npc.behindTiles = true;
-            npc.timeLeft = 999999;
+            npc.timeLeft = 22750;
         }
 
 		public int basicsoul;
