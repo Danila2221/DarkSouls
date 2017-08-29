@@ -12,11 +12,12 @@ namespace DarkSouls.Projectiles
 		public override void SetStaticDefaults()
 		{
 			DisplayName.SetDefault("Light Pillar");
-		}
+            Main.projFrames[projectile.type] = 15;
+        }
 		public override void SetDefaults()
 		{
-			projectile.width = 16;
-			projectile.height = 16;
+			projectile.width = 220;
+			projectile.height = 40;
 			projectile.penetrate = 1;
 			projectile.knockBack = 9;
 			projectile.timeLeft = 360;
@@ -27,21 +28,21 @@ namespace DarkSouls.Projectiles
 			projectile.magic = true;
 			projectile.ignoreWater = true;
 			projectile.tileCollide = true;
-			Main.projFrames[projectile.type] = 15;
+			
 		}
-		public override void AI() 
-		{
-			projectile.frameCounter++;
-			if (projectile.frameCounter > 3)
-			{
-				projectile.frame++;
-				projectile.frameCounter = 0;
-			}
-			if (projectile.frame >= 15)
-			{
-				projectile.Kill();
-				return;
-			}
-		}
-	}
+        public override void AI()
+        {
+            projectile.frameCounter++;
+            if (projectile.frameCounter > 3)
+            {
+                projectile.frame++;
+                projectile.frameCounter = 0;
+            }
+            if (projectile.frame >= 15)
+            {
+                projectile.Kill();
+                return;
+            }
+        }
+    }
 }

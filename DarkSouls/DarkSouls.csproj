@@ -223,7 +223,6 @@
     <Content Include="Projectiles\AncientHolyLanceP.png" />
     <Content Include="Projectiles\AntiMaterialRound.png" />
     <Content Include="Projectiles\AntiMatterBlast.png" />
-    <Content Include="Projectiles\BerserkerNightmareP2.png" />
     <Content Include="Projectiles\BerserkerNightmareP.png" />
     <Content Include="Projectiles\BlackBreath.png" />
     <Content Include="Projectiles\CrazyOrb.png" />
@@ -265,12 +264,12 @@
     <Content Include="Projectiles\Lightning4Bolt2.png" />
     <Content Include="Projectiles\Lightning4Bolt3.png" />
     <Content Include="Projectiles\Lightning4Bolt4.png" />
-    <Content Include="Projectiles\LightPillarBall.png" />
     <Content Include="Projectiles\LizardPro.png" />
     <Content Include="Projectiles\MasterBuster2.png" />
     <Content Include="Projectiles\MasterBuster.png" />
     <Content Include="Projectiles\MegaDrill.png" />
     <Content Include="Projectiles\ObscureSaw.png" />
+    <Content Include="Projectiles\LightPillarBall.png" />
     <Content Include="Projectiles\PhantomSeeker.png" />
     <Content Include="Projectiles\PoisonSmog.png" />
     <Content Include="Projectiles\ShadowOrb.png" />
@@ -394,7 +393,6 @@
     <Compile Include="Projectiles\AncientHolyLanceP.cs" />
     <Compile Include="Projectiles\Anti Matter Blast.cs" />
     <Compile Include="Projectiles\AntiMaterialRound.cs" />
-    <Compile Include="Projectiles\BerserkerNightmareP2.cs" />
     <Compile Include="Projectiles\BerserkerNightmareP.cs" />
     <Compile Include="Projectiles\BlackBreath.cs" />
     <Compile Include="Projectiles\FireTrails.cs" />
