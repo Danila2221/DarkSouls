@@ -39,7 +39,7 @@ namespace DarkSouls.NPCs.Enemies
 			int x = spawnInfo.spawnTileX;
 			int y = spawnInfo.spawnTileY;
 			int tile = Main.tile[x, y].type;
-        	return y > Main.rockLayer ? 0.25f : 0f;
+        	return y > Main.rockLayer ? 0.025f : 0f;
 
 
 		}

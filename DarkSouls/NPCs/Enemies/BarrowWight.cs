@@ -61,7 +61,7 @@ namespace DarkSouls.NPCs.Enemies
             int x = spawnInfo.spawnTileX;
             int y = spawnInfo.spawnTileY;
             int tile = Main.tile[x, y].type;
-            return (DarkSouls.NoZoneAllowWater(spawnInfo)) && Main.hardMode && y >= Main.rockLayer ? 0.1f : 0f;
+            return (DarkSouls.NoZoneAllowWater(spawnInfo)) && Main.hardMode && y >= Main.rockLayer ? 0.01f : 0f;
         }
 
         public override void AI()
