@@ -18,7 +18,7 @@ namespace DarkSouls.NPCs
                 return true;
             }
         }
-        
+        // this is fucking long
         public int basicsoul;
 		static int zombie;
 		static int zombie2;
@@ -42,7 +42,70 @@ namespace DarkSouls.NPCs
         static int goblinmag2;
         static int goblinmagS;
         static int goblinmagS2;
-        static int meteor;
+        static int meteor; // up ok!
+        static int angrybones;
+        static int angrybones2; //50 - 100 s
+        static int anoruma;
+        static int anoruma2; //200 - 250 s
+        static int antilion;
+        static int antilion2;//30-45
+        static int antilionCHARGE;
+        static int antilionCHARGE2; //40-80
+        static int antilionSWARM;
+        static int antilionSWARM2;//30-40
+        static int babyslime;
+        static int babyslime2;//20-25
+        static int blackslime;
+        static int blackslime2;//30-40
+        static int bee;//1
+        static int crimsoncravler;
+        static int crimsoncravler2;//35-45
+        static int jellyfish;
+        static int jellyfish2;//40-50
+        static int boneserhead;
+        static int boneserhead2;//25-30
+        static int cavebat;
+        static int cavebat2;//10-15
+        static int beetle;
+        static int beetle2;//30-40
+        static int crab;
+        static int crab2;//30-40
+        static int crawdad;
+        static int crawdad2;//40-50
+        static int crimera;
+        static int crimera2;//40-50
+        static int duegonG;
+        static int duegonG2;//300000 message well done
+        static int demon;
+        static int demon2;//200-350
+        static int darkcaster;
+        static int darkcaster2;//60-80
+        static int cursedscull;
+        static int cursedscull2;//40-50
+        static int cyanbeetle;
+        static int cyanbeetle2;//40-50
+        static int doctorbones;
+        static int doctorbones2;//400-1000
+        static int duegonslime;
+        static int duegonslime2;//200-350
+        static int groom;
+        static int groom2;//300-600
+        static int facemo;
+        static int facemo2;//70-80
+        static int fireimp;
+        static int fireimp2;//60-70
+        static int scout;
+        static int scout2;//50-70
+        static int harpy;
+        static int harpy2;//80-90
+        static int hardmode;
+        static int hardmode2;
+
+
+
+
+
+
 
 
 
@@ -75,6 +138,12 @@ namespace DarkSouls.NPCs
                 basicsoul = 1;
             }
 
+            if (Main.hardMode);
+            {
+                hardmode = basicsoul * 500;
+                hardmode2 = basicsoul * 1500;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(hardmode, hardmode2));
+            }
             if (npc.type == NPCID.KingSlime)
             {
                 Main.NewText("The souls of King Slime have been released");
