@@ -46,7 +46,7 @@ bool breath = false;
 			npc.active = true;
 			npc.npcSlots = 1;
     		npc.behindTiles = true;
-            npc.timeLeft = 22750;
+            
         }
 
 		public int basicsoul;
@@ -65,8 +65,8 @@ bool breath = false;
 		
 		public override void AI()
 {
-            
-            
+            npc.timeLeft = 922750;
+
             Player nT = Main.player[npc.target];
     if (Main.rand.Next(275) == 0) {
         breath = true;
