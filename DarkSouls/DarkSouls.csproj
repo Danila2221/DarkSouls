@@ -157,6 +157,7 @@
     <Content Include="Items\BlackBeltArmor_Body.png" />
     <Content Include="Items\BlackBeltArmor_FemaleBody.png" />
     <Content Include="Items\BlackBeltGreaves.png" />
+    <Content Include="Items\BlackBeltGreaves_Legs.png" />
     <Content Include="Items\BlackBeltHelmet.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
