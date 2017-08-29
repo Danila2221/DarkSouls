@@ -209,6 +209,7 @@
     <Content Include="NPCs\Enemies\GhostDragonTail.png" />
     <Content Include="NPCs\Enemies\Gwyn.png" />
     <Content Include="NPCs\Enemies\MindflayerIllusion.png" />
+    <Content Include="NPCs\Enemies\Rage.png" />
     <Content Include="NPCs\Enemies\ShadowDragonBody.png" />
     <Content Include="NPCs\Enemies\ShadowDragonHead.png" />
     <Content Include="NPCs\Enemies\ShadowDragonTail.png" />
@@ -357,6 +358,7 @@
     <Compile Include="Items\Red Titanite.cs" />
     <Compile Include="Items\White Titanite.cs" />
     <Compile Include="MPlayer.cs" />
+    <Compile Include="NPCs\Enemies\Rage.cs" />
     <Compile Include="NPCs\Enemies\AbysmalOolacileSorcerer.cs" />
     <Compile Include="NPCs\Enemies\Armored Wraith.cs" />
     <Compile Include="NPCs\Enemies\Artorias.cs" />
