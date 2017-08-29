@@ -138,12 +138,7 @@ namespace DarkSouls.NPCs
                 basicsoul = 1;
             }
 
-            if (Main.hardMode);
-            {
-                hardmode = basicsoul * 500;
-                hardmode2 = basicsoul * 1500;
-                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(hardmode, hardmode2));
-            }
+            
             if (npc.type == NPCID.KingSlime)
             {
                 Main.NewText("The souls of King Slime have been released");
