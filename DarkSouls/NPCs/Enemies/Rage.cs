@@ -35,7 +35,8 @@ namespace DarkSouls.NPCs.Enemies
 
 		public override void SetDefaults()
 		{
-			npc.lifeMax = 13000;
+            animationType = -1;
+            npc.lifeMax = 13000;
             npc.damage = 35;
 			npc.defense = 24;
 			npc.knockBackResist = 0.3f;
@@ -178,7 +179,7 @@ public override void AI()
             }
         }
 
-        public void FindFrame(int currentFrame)
+        public override void FindFrame(int currentFrame)
         {
             int num = 1;
             if (!Main.dedServ)

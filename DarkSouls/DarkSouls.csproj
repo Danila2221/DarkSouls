@@ -396,6 +396,7 @@
     <Compile Include="Projectiles\BerserkerNightmareP2.cs" />
     <Compile Include="Projectiles\BerserkerNightmareP.cs" />
     <Compile Include="Projectiles\BlackBreath.cs" />
+    <Compile Include="Projectiles\FireTrails.cs" />
     <Compile Include="Projectiles\Crazy Orb.cs" />
     <Compile Include="Projectiles\DragonBreath.cs" />
     <Compile Include="Projectiles\EffectBuff.cs" />
