@@ -9,14 +9,16 @@ using System.Collections.Generic;
 using System;
 using Terraria.ModLoader.IO;
 using System.IO;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 
 namespace DarkSouls
 {
 		 
 	public class DarkSoulsWorld : ModWorld
 	{
-
-		public static bool downedSorcerer = false; // Downed Tutorial Boss
+        public static bool CheckingMyCollision;
+        public static bool downedSorcerer = false; // Downed Tutorial Boss
 		public static bool downedAttraidies = false;
         public int iexp = 0;
         public int ilevel = 0;
@@ -66,8 +68,62 @@ namespace DarkSouls
 
 		}
 
+        public void UpdateWorld()
+        {
+            bool charm = false;
+            foreach (Player p in Main.player)
+            {
+                foreach (Item i in p.armor)
+                {
+                    if (i.type == mod.ItemType("CovenantofArtorias"))
+                    {
+                        charm = true;
 
-		public override void NetSend(BinaryWriter writer)
+                    }
+                }
+            }
+            if (charm)
+            {
+
+                //Main.NewText("You have entered The Abyss..."); 
+                Main.bloodMoon = true;
+                Main.moonPhase = 0;
+                Main.dayTime = false;
+                Main.time = 16240.0;
+
+            }
+
+            else
+            {
+                //if(Main.bloodMoon) 
+                //{
+                //  //Main.bloodMoon = false;
+                //  Main.dayTime = true;
+                //}
+            }
+        }
+
+        public Vector2 TileCollision(Vector2 Result, Vector2 Position, Vector2 Velocity, int Width, int Height, bool fallThrough, bool fall2)
+        {
+            if (CheckingMyCollision) Result = Velocity;
+            CheckingMyCollision = false;
+            return Result;
+        }
+        public static int AddWingByTextureName(string tex)
+        {
+            
+            Texture2D TEX = Main.goreTexture[ModGore.GetGoreSlot("tex")];
+            for (int i = 0; i < Main.wingsTexture.Length; i++)
+                if (Main.wingsTexture[i] == TEX) return i;
+            Array.Resize(ref Main.wingsTexture, Main.wingsTexture.Length + 1);
+            Main.wingsTexture[Main.wingsTexture.Length - 1] = TEX;
+            return Main.wingsTexture.Length - 1;
+        }
+
+
+
+
+        public override void NetSend(BinaryWriter writer)
 		{
 			BitsByte flags = new BitsByte();
 			flags[0] = downedSorcerer;
