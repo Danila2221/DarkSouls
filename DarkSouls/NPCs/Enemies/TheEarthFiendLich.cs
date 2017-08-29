@@ -35,7 +35,7 @@ namespace DarkSouls.NPCs.Enemies
         {
             DisplayName.SetDefault("Lich, the Earth Fiend");
 
-            Main.npcFrameCount[npc.type] = 8;
+            Main.npcFrameCount[npc.type] = 1;
         }
         public override void SetDefaults()
         {
