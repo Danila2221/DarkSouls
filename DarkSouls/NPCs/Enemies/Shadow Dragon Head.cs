@@ -34,7 +34,7 @@ bool breath = false;
 			npc.width = 44;
 			npc.height = 24;
 			npc.noTileCollide = true ;
-			animationType = NPCID.WyvernHead;﻿
+			animationType = 87;﻿
 			npc.scale = 1f;
 			npc.boss = true;
 			npc.aiStyle = 6;
@@ -65,7 +65,8 @@ bool breath = false;
 		
 		public override void AI()
 {
-	Player nT = Main.player[npc.target];
+        DarkSouls.AIWorm(npc, mod.NPCType("ShadowDragonHead"), SegmentBody, mod.NPCType("ShadowDragonTail"), 23, -1f, 12f, 0.12f, true, false);
+        Player nT = Main.player[npc.target];
     if (Main.rand.Next(275) == 0) {
         breath = true;
         //Main.PlaySound(15, -1, -1, 0);

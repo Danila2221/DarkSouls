@@ -395,16 +395,10 @@ namespace DarkSouls
             }
         }
 
-
-
-
-
-
-
-
-
-
-
+        internal static void AIWorm(NPC npc, int v1, Action segmentBody, int v2, int v3, float v4, float v5, float v6, bool v7, bool v8)
+        {
+            throw new NotImplementedException();
+        }
 
         public DarkSouls()
         {
