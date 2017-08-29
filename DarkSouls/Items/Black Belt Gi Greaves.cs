@@ -1,34 +1,36 @@
+using System;
+using System.IO;
+using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Graphics;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
-using Microsoft.Xna.Framework;
 
 namespace DarkSouls.Items
 {
     [AutoloadEquip(EquipType.Legs)]
-    public class MagicPlateGreaves : ModItem
+    public class BlackBeltGreaves : ModItem
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Ancient Magic Plate Greaves");
-            Tooltip.SetDefault("The long forgotten greaves."
-                                + "\n+20% movement.");
+            DisplayName.SetDefault("Black Belt Gi Pants");
+            Tooltip.SetDefault("+30% Move Speed");
         }
 
         public override void SetDefaults()
         {
             
-            item.width = 20;
-            item.height = 20;
+            item.width = 18;
+            item.height = 18;
 
             item.maxStack = 1;
-            item.value = 500000;
-            item.rare = 1;
-            item.defense = 14;
+            item.value = 5000;
+            item.rare = 3;
+            item.defense = 2;
         }
         public override void UpdateEquip(Player player)
         {
-            player.moveSpeed += 0.2f;
+            player.moveSpeed += 0.30f;
         }
         public override void AddRecipes()
         {
