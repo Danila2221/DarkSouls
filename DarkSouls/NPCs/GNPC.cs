@@ -75,7 +75,7 @@ namespace DarkSouls.NPCs
         static int crimera;
         static int crimera2;//40-50
         static int duegonG;
-        static int duegonG2;//300000 message well done
+        
         static int demon;
         static int demon2;//200-350
         static int darkcaster;
@@ -391,6 +391,19 @@ namespace DarkSouls.NPCs
                 harpy2 = basicsoul * 90;
                 Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(harpy, harpy2));
             }
+            if (npc.type == NPCID.Crimera)
+            {
+                crimera = basicsoul * 40;
+                crimera2 = basicsoul * 50;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), Main.rand.Next(crimera, crimera2));
+            }
+            if (npc.type == NPCID.DungeonGuardian)
+            {
+                duegonG = basicsoul * 300000;
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), duegonG);
+                Main.NewText("Well Done!", 0, 255, 0);
+            }
+
         }
     }
 }
