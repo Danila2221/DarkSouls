@@ -138,6 +138,7 @@
     <Content Include="Items\ArmorOfArtorias_Arms.png" />
     <Content Include="Items\ArmorOfArtorias_Body.png" />
     <Content Include="Items\ArmorOfArtorias_FemaleBody.png" />
+    <Content Include="Items\ArrowofBard.png" />
     <Content Include="Items\ArtemisBow.png" />
     <Content Include="Items\AttractionPotion.png" />
     <Content Include="Items\AttraidiesRelic.png" />
@@ -226,7 +227,7 @@
     <Content Include="Projectiles\AncientHolyLanceP.png" />
     <Content Include="Projectiles\AntiMaterialRound.png" />
     <Content Include="Projectiles\AntiMatterBlast.png" />
-    <Content Include="Projectiles\ArrowofBard.png" />
+    <Content Include="Projectiles\ArrowofBardP.png" />
     <Content Include="Projectiles\BerserkerNightmareP.png" />
     <Content Include="Projectiles\BlackBreath.png" />
     <Content Include="Projectiles\CrazyOrb.png" />
@@ -293,6 +294,7 @@
     <Compile Include="Dusts\Sparkle.cs" />
     <Compile Include="Items\Aaron%27s Protection Stone.cs" />
     <Compile Include="Items\Armor of Artorias.cs" />
+    <Compile Include="Items\Arrow of Bard.cs" />
     <Compile Include="Items\Blight Stone.cs" />
     <Compile Include="Items\Abysmal Stone.cs" />
     <Compile Include="Items\Abyss Scroll.cs" />
