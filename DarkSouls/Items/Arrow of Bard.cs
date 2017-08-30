@@ -7,12 +7,15 @@ namespace DarkSouls.Items
 {
     public class ArrowofBard : ModItem
     {
-
+        public override void SetStaticDefaults()
+        {
+            base.SetStaticDefaults();
+        }
         public override void SetDefaults()
         {
 
             item.consumable = true;
-            item.ammo = 1;
+            item.ammo = AmmoID.Arrow;
             item.damage = 500;
             item.height = 28;
             item.knockBack = 4;
@@ -20,7 +23,6 @@ namespace DarkSouls.Items
             item.ranged = true;
             item.scale = 1;
             item.shootSpeed = 3.5f;
-
             item.useAnimation = 100;
             item.useTime = 100;
             item.value = 500000;
