@@ -42,7 +42,7 @@ namespace DarkSouls.NPCs.SuperHard
             int y = spawnInfo.spawnTileY;
             int tile = Main.tile[x, y].type;
           
-            return (spawnInfo.player.ZoneMeteor || spawnInfo.player.ZoneJungle) && DarkSoulsWorld.downedAttraidies && !spawnInfo.player.ZoneDungeon && !spawnInfo.player.ZoneCorrupt && y < Main.rockLayer ? 55.05f : 0f;
+            return (spawnInfo.player.ZoneMeteor || spawnInfo.player.ZoneJungle) && DarkSoulsWorld.downedAttraidies && !spawnInfo.player.ZoneDungeon && !spawnInfo.player.ZoneCorrupt && y < Main.rockLayer ? 0.05f : 0f;
             return (spawnInfo.player.ZoneMeteor || spawnInfo.player.ZoneJungle) && DarkSoulsWorld.downedAttraidies && !spawnInfo.player.ZoneDungeon && !spawnInfo.player.ZoneCorrupt && y == Main.rockLayer ? 0.025f : 0f;
             return (spawnInfo.player.ZoneMeteor || spawnInfo.player.ZoneJungle) && DarkSoulsWorld.downedAttraidies && !spawnInfo.player.ZoneDungeon && !spawnInfo.player.ZoneCorrupt && y > Main.rockLayer ? 0.015f : 0f;
         }
