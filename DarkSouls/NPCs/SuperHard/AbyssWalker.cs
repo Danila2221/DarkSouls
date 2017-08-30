@@ -12,7 +12,8 @@ namespace DarkSouls.NPCs.SuperHard
         int drownTimerMax = 1200;
         int drownTimer = 1200;
         int drowningRisk = 500;
-
+        public int basicsoul;
+        static int count;
 
         public override void SetStaticDefaults()
         {
@@ -685,7 +686,34 @@ namespace DarkSouls.NPCs.SuperHard
             #endregion
             //-------------------------------------------------------------------*/
         }
+        public override void NPCLoot()
+        {
+            if (Main.netMode != 1)
+            {
+                if (Main.expertMode)
+                {
+                    basicsoul = 2;
+                }
+                else
+                {
+                    basicsoul = 1;
+                }
+                count = basicsoul * 1000;
 
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), count);
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("FlameoftheAbyss"), Main.rand.Next(4, 8));
+            }
+            if (npc.life <= 0)
+            {
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/DworcGore1"), 1f);
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/DworcGore2"), 1f);
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/DworcGore3"), 1f);
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/DworcGore4"), 1f);
+                
+
+            }
+
+        }
 
     }
 }

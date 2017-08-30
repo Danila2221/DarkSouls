@@ -46,6 +46,10 @@
     <Content Include="build.txt" />
     <Content Include="Dusts\Smoke.png" />
     <Content Include="Dusts\Sparkle.png" />
+    <Content Include="Gores\DworcGore1.png" />
+    <Content Include="Gores\DworcGore2.png" />
+    <Content Include="Gores\DworcGore3.png" />
+    <Content Include="Gores\DworcGore4.png" />
     <Content Include="Gores\EarthFiendLichGore1.png" />
     <Content Include="Gores\EarthFiendLichGore2.png" />
     <Content Include="Gores\EasterlingGore1.png" />
@@ -330,6 +334,7 @@
     <Compile Include="Items\AntimatRifle.cs" />
     <Compile Include="Items\AquamarineRing.cs" />
     <Compile Include="Items\Black Belt Hair Style.cs" />
+    <Compile Include="Items\Flame of the Abyss .cs" />
     <Compile Include="Items\LightCube.cs" />
     <Compile Include="Items\Beserker Emblem.cs" />
     <Compile Include="Items\Archmen Emblem.cs" />
