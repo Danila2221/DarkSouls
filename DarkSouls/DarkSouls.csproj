@@ -164,6 +164,7 @@
     <Content Include="Items\BlackBeltGreaves_Legs.png" />
     <Content Include="Items\BlackBeltHelmet.png" />
     <Content Include="Items\BlightStone.png" />
+    <Content Include="Items\BloodySkull.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
