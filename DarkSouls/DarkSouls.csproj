@@ -149,7 +149,6 @@
     <Content Include="Items\BeholderShield2_Shield.png" />
     <Content Include="Items\BeholderShield_Shield.png" />
     <Content Include="Items\BerserkerNightmare.png" />
-    <Content Include="Items\BerserkerNightmare2.png" />
     <Content Include="Items\BeserkerEmblem.png" />
     <Content Include="Items\BlackBeltHelmet_Head.png" />
     <Content Include="Items\BlackBeltArmor.png" />
@@ -159,6 +158,7 @@
     <Content Include="Items\BlackBeltGreaves.png" />
     <Content Include="Items\BlackBeltGreaves_Legs.png" />
     <Content Include="Items\BlackBeltHelmet.png" />
+    <Content Include="Items\BlightStone.png" />
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
@@ -168,7 +168,6 @@
     <Content Include="Items\DivineBoomSpark.png" />
     <Content Include="Items\DivineSpark.png" />
     <Content Include="Items\FireSword.png" />
-    <Content Include="Items\Gazing Shield.png" />
     <Content Include="Items\GazingShield.png" />
     <Content Include="Items\GazingShield_Shield.png" />
     <Content Include="Items\GemBox.png" />
@@ -288,6 +287,7 @@
     <Compile Include="Dusts\Smoke.cs" />
     <Compile Include="Dusts\Sparkle.cs" />
     <Compile Include="Items\Aaron%27s Protection Stone.cs" />
+    <Compile Include="Items\Blight Stone.cs" />
     <Compile Include="Items\Abysmal Stone.cs" />
     <Compile Include="Items\Abyss Scroll.cs" />
     <Compile Include="Items\Ankor Wat Armor.cs" />
@@ -334,7 +334,6 @@
     <Compile Include="Items\BarrowBlade.cs" />
     <Compile Include="Items\BeholderShield2.cs" />
     <Compile Include="Items\BeholderShield.cs" />
-    <Compile Include="Items\Berserker nightmare2.cs" />
     <Compile Include="Items\Berserker nightmare.cs" />
     <Compile Include="Items\Bloom Shards.cs" />
     <Compile Include="Items\Bolt1Tome.cs" />
