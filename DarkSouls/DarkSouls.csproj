@@ -135,6 +135,9 @@
     <Content Include="Items\ArchmenEmblem.png" />
     <Content Include="Items\ArmorDrug.png" />
     <Content Include="Items\ArmorOfArtorias.png" />
+    <Content Include="Items\ArmorOfArtorias_Arms.png" />
+    <Content Include="Items\ArmorOfArtorias_Body.png" />
+    <Content Include="Items\ArmorOfArtorias_FemaleBody.png" />
     <Content Include="Items\ArrowofBard.png" />
     <Content Include="Items\ArtemisBow.png" />
     <Content Include="Items\AttractionPotion.png" />
