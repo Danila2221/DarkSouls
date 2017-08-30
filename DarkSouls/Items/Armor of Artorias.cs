@@ -10,7 +10,7 @@ namespace DarkSouls.Items
     {
         public override void SetStaticDefaults()
         {
-            base.SetStaticDefaults();
+            
             DisplayName.SetDefault("Artorias Set");
             Tooltip.SetDefault("Enchanted armor of Artorias of the Abyss."
                 + "\nPossesses the same power as the Titan Glove.");
