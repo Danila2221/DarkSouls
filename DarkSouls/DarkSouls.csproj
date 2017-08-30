@@ -223,6 +223,7 @@
     <Content Include="NPCs\Enemies\TheWaterFiendKraken.png" />
     <Content Include="NPCs\Enemies\Witchking.png" />
     <Content Include="NPCs\Enemies\WyvernMageShadow.png" />
+    <Content Include="NPCs\SuperHard\Abysswalker.png" />
     <Content Include="obj\Debug\Dark Souls.csproj.FileListAbsolute.txt" />
     <Content Include="Projectiles\AncientDragonLanceP.png" />
     <Content Include="Projectiles\AncientHolyLanceP.png" />

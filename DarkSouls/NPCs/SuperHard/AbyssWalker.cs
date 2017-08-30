@@ -6,7 +6,7 @@ using System;
 
 namespace DarkSouls.NPCs.SuperHard
 {
-    public class AbyssWalker : ModNPC
+    public class Abysswalker : ModNPC
     {
         float customAi1;
         int drownTimerMax = 1200;
