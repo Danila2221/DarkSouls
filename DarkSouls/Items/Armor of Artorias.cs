@@ -8,9 +8,9 @@ namespace DarkSouls.Items
     [AutoloadEquip(EquipType.Body)]
     public class ArmorOfArtorias : ModItem
     {
+
         public override void SetStaticDefaults()
-        {
-            
+        { 
             DisplayName.SetDefault("Artorias Set");
             Tooltip.SetDefault("Enchanted armor of Artorias of the Abyss."
                 + "\nPossesses the same power as the Titan Glove.");

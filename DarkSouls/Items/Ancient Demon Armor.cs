@@ -10,7 +10,7 @@ namespace DarkSouls.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			base.SetStaticDefaults();
+			
 			DisplayName.SetDefault("Ancient Demon Armor Set");
 			Tooltip.SetDefault("Forged by those who brave Annihilation."
 				+ "\nMana Regen Skill activates when health falls below 160");
