@@ -18,7 +18,7 @@ namespace DarkSouls.Projectiles
             projectile.ranged = true;
             projectile.scale = 1;
             projectile.tileCollide = true;
-            projectile.type = -1;
+            
             projectile.width = 5;
 
         }
