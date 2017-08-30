@@ -9,9 +9,10 @@ namespace DarkSouls.Items
     {
         public override void SetStaticDefaults()
         {
-            DisplayName.SetDefault("Arrow of Bard");
-            Tooltip.SetDefault("The arrow which slew Smaug.");
+            DisplayName.SetDefault("Hold");
+
         }
+
         public override void SetDefaults()
         {
             item.stack = 1;

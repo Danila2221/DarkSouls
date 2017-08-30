@@ -7,11 +7,7 @@ namespace DarkSouls.Items
 {
     public class ArrowofBardP : ModProjectile
     {
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Arrow of Bard");
-            
-        }
+        
         public override void SetDefaults()
         {
             projectile.aiStyle = 1;
