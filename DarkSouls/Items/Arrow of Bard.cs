@@ -30,5 +30,17 @@ namespace DarkSouls.Items
             item.rare = 3;
             item.shoot = mod.ProjectileType<ArrowofBardP>();
         }
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.MythrilBar, 1);
+            recipe.AddIngredient(ItemID.SoulofLight, 10);
+            recipe.AddIngredient(null, "DarkSoul", 2000);
+            recipe.SetResult(this);
+            recipe.AddTile(26);
+            recipe.AddRecipe();
+        }
+
+
     }
 }
