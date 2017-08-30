@@ -9,7 +9,7 @@ namespace DarkSouls.Items
 	{
 		public override void SetStaticDefaults()
 		{
-			Tooltip.SetDefault("Summons the Abysmal Oolacile Sorcerer.");
+			Tooltip.SetDefault("Summons the Blight.");
 		}
 
 		public override void SetDefaults()
