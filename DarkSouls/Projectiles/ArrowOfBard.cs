@@ -3,7 +3,7 @@ using Terraria.ID;
 using Terraria.ModLoader;
 using Microsoft.Xna.Framework;
 
-namespace DarkSouls.Items
+namespace DarkSouls.Projectiles
 {
     public class ArrowofBardP : ModProjectile
     {
