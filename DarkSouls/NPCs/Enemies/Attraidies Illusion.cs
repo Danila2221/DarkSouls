@@ -118,7 +118,7 @@ namespace DarkSouls.NPCs.Enemies
                     int damage = 26;//(int) (14f * npc.scale);
                     int type = mod.ProjectileType("Oracle");//44;//0x37; //14;
                     int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, speedX, speedY, type, damage, 0f, Main.myPlayer);
-                    Main.projectile[num54].timeLeft = 150;
+                    Main.projectile[num54].timeLeft = 350;
                     Main.projectile[num54].aiStyle = 23;
                     Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 0x11);
                     npc.ai[0] = 0;
@@ -252,7 +252,7 @@ namespace DarkSouls.NPCs.Enemies
                         int type = mod.ProjectileType("ScrewAttack");//44;//0x37; //14;
                         int num54 = Projectile.NewProjectile(vector9.X, vector9.Y, speedX, speedY, type, damage, 0f, Main.myPlayer);
                         Main.projectile[num54].timeLeft = 600;
-                        Main.projectile[num54].aiStyle = 4;
+                        Main.projectile[num54].aiStyle = 23;
                         Main.PlaySound(2, (int)npc.position.X, (int)npc.position.Y, 25);
                         npc.ai[3] = 0; ;
                     }
