@@ -173,6 +173,9 @@
     <Content Include="Items\BlightStone.png" />
     <Content Include="Items\BloodySkull.png" />
     <Content Include="Items\BloomShards.png" />
+    <Content Include="Items\BlueHeroHat.png" />
+    <Content Include="Items\BlueHeroPants.png" />
+    <Content Include="Items\BlueHeroShirt.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
     <Content Include="Items\Bolt3Tome.png" />
@@ -342,6 +345,7 @@
     <Compile Include="Items\AquamarineRing.cs" />
     <Compile Include="Items\Black Belt Hair Style.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
+    <Compile Include="Items\Blue Hero hat.cs" />
     <Compile Include="Items\LightCube.cs" />
     <Compile Include="Items\Beserker Emblem.cs" />
     <Compile Include="Items\Archmen Emblem.cs" />
@@ -373,6 +377,8 @@
     <Compile Include="Items\HornedHelmet.cs" />
     <Compile Include="Items\Black Belt Gi Top.cs" />
     <Compile Include="Items\Black Belt Gi Greaves.cs" />
+    <Compile Include="Items\Blue Hero Shirt.cs" />
+    <Compile Include="Items\Blue Hero Pants.cs" />
     <Compile Include="Items\MagicPlateGreaves.cs" />
     <Compile Include="Items\MagicPlateArmor.cs" />
     <Compile Include="Items\AtmaWeapon.cs" />
