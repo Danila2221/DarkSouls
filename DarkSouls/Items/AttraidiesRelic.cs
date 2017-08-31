@@ -32,7 +32,7 @@ namespace DarkSouls.Items
         public override bool CanUseItem(Player player)
         {
             // "player.ZoneUnderworldHeight" could also be written as "player.position.Y / 16f > Main.maxTilesY - 200"
-            return !NPC.AnyNPCs(mod.NPCType("MindflayerIllusion"));
+            return !NPC.AnyNPCs(mod.NPCType("AttraidiesIllusion"));
         }
 
         public override bool UseItem(Player player)
@@ -40,7 +40,7 @@ namespace DarkSouls.Items
             
                 if (Main.netMode != 1)
                 {
-                NPC.SpawnOnPlayer(player.whoAmI, mod.NPCType("MindflayerIllusion"));
+                NPC.SpawnOnPlayer(player.whoAmI, mod.NPCType("AttraidiesIllusion"));
                 }
                 
             

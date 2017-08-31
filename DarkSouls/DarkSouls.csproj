@@ -205,6 +205,7 @@
     <Content Include="NPCs\Enemies\ArmoredWraith.png" />
     <Content Include="NPCs\Enemies\Artorias.png" />
     <Content Include="NPCs\Enemies\Attraidies.png" />
+    <Content Include="NPCs\Enemies\AttraidiesIllusion.png" />
     <Content Include="NPCs\Enemies\AttraidiesMimic.png" />
     <Content Include="NPCs\Enemies\BarrowWight.png" />
     <Content Include="NPCs\Enemies\Blight.png" />
@@ -374,6 +375,7 @@
     <Compile Include="Items\Red Titanite.cs" />
     <Compile Include="Items\White Titanite.cs" />
     <Compile Include="MPlayer.cs" />
+    <Compile Include="NPCs\Enemies\Attraidies Illusion.cs" />
     <Compile Include="NPCs\Enemies\Rage.cs" />
     <Compile Include="NPCs\Enemies\AbysmalOolacileSorcerer.cs" />
     <Compile Include="NPCs\Enemies\Armored Wraith.cs" />
