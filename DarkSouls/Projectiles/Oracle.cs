@@ -32,7 +32,7 @@ namespace DarkSouls.Projectiles
 
             if (projectile.velocity.X <= 4 && projectile.velocity.Y <= 4 && projectile.velocity.X >= -4 && projectile.velocity.Y >= -4)
             {
-                float accel = 1f + (Main.rand.Next(10, 30) * 0.001f);
+                float accel = 1f + 30;
                 projectile.velocity.X *= accel;
                 projectile.velocity.Y *= accel;
             }
