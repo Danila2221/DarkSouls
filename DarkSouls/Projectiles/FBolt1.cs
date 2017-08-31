@@ -20,8 +20,7 @@ namespace DarkSouls.Projectiles
         }
         public override void SetDefaults()
         {
-			
-			projectile.width = 60;
+            projectile.width = 60;
 			projectile.height = 110;
             projectile.scale = 1;
             projectile.magic = true;
