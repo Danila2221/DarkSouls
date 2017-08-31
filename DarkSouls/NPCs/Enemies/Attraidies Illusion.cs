@@ -116,7 +116,7 @@ namespace DarkSouls.NPCs.Enemies
                     speedX *= num51;
                     speedY *= num51;
                     int damage = 26;//(int) (14f * npc.scale);
-                    int type = mod.ProjectileType("TheOracle");//44;//0x37; //14;
+                    int type = mod.ProjectileType("ScrewAttack");//44;//0x37; //14;
                     int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, speedX, speedY, type, damage, 0f, Main.myPlayer);
                     Main.projectile[num54].timeLeft = 150;
                     Main.projectile[num54].aiStyle = 4;
@@ -356,6 +356,7 @@ namespace DarkSouls.NPCs.Enemies
             }
             if (npc.life <= 0)
             {
+                Main.NewText("The Attraidies Illusion has been defeated...", 150, 150, 150);
                 Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/MindflayerGore1"), 1f);
                 Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/MindflayerGore2"), 1f);
                 Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/MindflayerGore3"), 1f);
