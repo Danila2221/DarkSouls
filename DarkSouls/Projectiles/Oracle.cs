@@ -12,13 +12,13 @@ namespace DarkSouls.Projectiles
     {
         public override void SetDefaults()
         {
-            projectile.aiStyle = 9;
+            projectile.aiStyle = 23;
             projectile.hostile = true;
             projectile.height = 16;
             projectile.scale = 1;
             projectile.tileCollide = false;
             projectile.width = 16;
-            projectile.timeLeft = 2500;
+            projectile.ranged = true;
         }
         public override void AI()
         {
