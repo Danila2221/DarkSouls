@@ -175,7 +175,10 @@
     <Content Include="Items\BloomShards.png" />
     <Content Include="Items\BlueHeroHat.png" />
     <Content Include="Items\BlueHeroPants.png" />
+    <Content Include="Items\BlueHeroPants_Legs.png" />
     <Content Include="Items\BlueHeroShirt.png" />
+    <Content Include="Items\BlueHeroShirt_Arms.png" />
+    <Content Include="Items\BlueHeroShirt_Body.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
     <Content Include="Items\Bolt3Tome.png" />
