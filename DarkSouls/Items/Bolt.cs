@@ -16,7 +16,7 @@ namespace DarkSouls.Items
 
             item.consumable = true;
             item.ammo = AmmoID.Arrow;
-            item.damage = 500;
+            item.damage = 5;
             item.height = 28;
             item.knockBack = 3;
             item.maxStack = 2000;
