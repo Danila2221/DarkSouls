@@ -15,7 +15,8 @@ namespace DarkSouls.NPCs.Enemies
             DisplayName.SetDefault("Attraidies Illusion");
             Main.npcFrameCount[npc.type] = 3;
         }
-
+        public int basicsoul;
+        static int count;
 
 
 
@@ -33,7 +34,7 @@ namespace DarkSouls.NPCs.Enemies
             npc.HitSound = SoundID.NPCHit1;
             npc.DeathSound = SoundID.NPCDeath6;
             npc.value = 60000;
-            npc.boss = true;
+            npc.boss = false;
             npc.buffImmune[20] = true;
             npc.buffImmune[31] = true;
             npc.buffImmune[39] = true;
@@ -336,8 +337,37 @@ namespace DarkSouls.NPCs.Enemies
                 npc.frame.Y = 0;
             }
         }
+        public override void NPCLoot()
+        {
+            if (Main.netMode != 1)
+            {
+                if (Main.expertMode)
+                {
+                    basicsoul = 2;
+                }
+                else
+                {
+                    basicsoul = 1;
+                }
+                count = basicsoul * 600;
 
+                Item.NewItem((int)npc.position.X, (int)npc.position.Y, npc.width, npc.height, mod.ItemType("DarkSoul"), count);
 
+            }
+            if (npc.life <= 0)
+            {
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/MindflayerGore1"), 1f);
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/MindflayerGore2"), 1f);
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/MindflayerGore3"), 1f);
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/MindflayerGore2"), 1f);
+                Gore.NewGore(npc.position, npc.velocity, mod.GetGoreSlot("Gores/MindflayerGore3"), 1f);
+
+            }
+
+        }
 
     }
+
+
+
 }

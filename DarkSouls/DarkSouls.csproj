@@ -64,6 +64,9 @@
     <Content Include="Gores\FireFiendMarilithGore7.png" />
     <Content Include="Gores\FireFiendMarilithGore8.png" />
     <Content Include="Gores\FireFiendMarilithGore9.png" />
+    <Content Include="Gores\MindflayerGore1.png" />
+    <Content Include="Gores\MindflayerGore2.png" />
+    <Content Include="Gores\MindflayerGore3.png" />
     <Content Include="Gores\WaterFiendKrakenGore1.png" />
     <Content Include="Gores\WaterFiendKrakenGore2.png" />
     <Content Include="Gores\WaterFiendKrakenGore3.png" />
@@ -285,6 +288,7 @@
     <Content Include="Projectiles\LightPillarBall.png" />
     <Content Include="Projectiles\PhantomSeeker.png" />
     <Content Include="Projectiles\PoisonSmog.png" />
+    <Content Include="Projectiles\ScrewAttack.png" />
     <Content Include="Projectiles\ShadowOrb.png" />
     <Content Include="Projectiles\SuddenDeathBall.png" />
     <Content Include="Projectiles\SuddenDeathStrike.png" />
@@ -457,6 +461,7 @@
     <Compile Include="Projectiles\Obscure Saw.cs" />
     <Compile Include="Projectiles\Phantom Seeker.cs" />
     <Compile Include="Projectiles\PoisonSmog.cs" />
+    <Compile Include="Projectiles\ScrewAttack.cs" />
     <Compile Include="Projectiles\Shadow Orb.cs" />
     <Compile Include="Projectiles\SuddenDeathBall.cs" />
     <Compile Include="Projectiles\SuddenDeathStrike.cs" />
