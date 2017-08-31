@@ -286,6 +286,7 @@
     <Content Include="Projectiles\MegaDrill.png" />
     <Content Include="Projectiles\ObscureSaw.png" />
     <Content Include="Projectiles\LightPillarBall.png" />
+    <Content Include="Projectiles\Oracle.png" />
     <Content Include="Projectiles\PhantomSeeker.png" />
     <Content Include="Projectiles\PoisonSmog.png" />
     <Content Include="Projectiles\ScrewAttack.png" />
@@ -459,6 +460,7 @@
     <Compile Include="Projectiles\MasterBuster.cs" />
     <Compile Include="Projectiles\MegaDrill.cs" />
     <Compile Include="Projectiles\Obscure Saw.cs" />
+    <Compile Include="Projectiles\Oracle.cs" />
     <Compile Include="Projectiles\Phantom Seeker.cs" />
     <Compile Include="Projectiles\PoisonSmog.cs" />
     <Compile Include="Projectiles\ScrewAttack.cs" />
