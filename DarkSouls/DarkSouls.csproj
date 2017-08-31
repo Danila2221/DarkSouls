@@ -180,6 +180,7 @@
     <Content Include="Items\BlueHeroShirt.png" />
     <Content Include="Items\BlueHeroShirt_Arms.png" />
     <Content Include="Items\BlueHeroShirt_Body.png" />
+    <Content Include="Items\Bolt.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
     <Content Include="Items\Bolt3Tome.png" />
@@ -248,6 +249,7 @@
     <Content Include="Projectiles\ArrowofBardP.png" />
     <Content Include="Projectiles\BerserkerNightmareP.png" />
     <Content Include="Projectiles\BlackBreath.png" />
+    <Content Include="Projectiles\BoltP.png" />
     <Content Include="Projectiles\CrazyOrb.png" />
     <Content Include="Projectiles\DragonBreath.png" />
     <Content Include="Projectiles\EffectBuff.png" />
@@ -313,6 +315,7 @@
     <Compile Include="Dusts\Smoke.cs" />
     <Compile Include="Dusts\Sparkle.cs" />
     <Compile Include="Items\Aaron%27s Protection Stone.cs" />
+    <Compile Include="Items\Bolt.cs" />
     <Compile Include="Items\Bloody Skull.cs" />
     <Compile Include="Items\Armor of Artorias.cs" />
     <Compile Include="Items\Arrow of Bard.cs" />
@@ -427,6 +430,7 @@
     <Compile Include="Projectiles\AncientHolyLanceP.cs" />
     <Compile Include="Projectiles\Anti Matter Blast.cs" />
     <Compile Include="Projectiles\AntiMaterialRound.cs" />
+    <Compile Include="Projectiles\BoltP.cs" />
     <Compile Include="Projectiles\ArrowOfBard.cs" />
     <Compile Include="Projectiles\BerserkerNightmareP.cs" />
     <Compile Include="Projectiles\BlackBreath.cs" />
