@@ -12,7 +12,7 @@ namespace DarkSouls.Projectiles
     {
         public override void SetDefaults()
         {
-            projectile.aiStyle = 24;
+            projectile.aiStyle = 9;
             projectile.hostile = true;
             projectile.height = 16;
             projectile.scale = 1;
