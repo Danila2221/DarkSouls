@@ -37,7 +37,7 @@ bool breath = false;
 
 		public override void SetDefaults()
 		{
-			npc.lifeMax = 65000;
+			npc.lifeMax = 650000;
 			npc.damage = 115;
 			npc.defense = 120;
 			npc.knockBackResist = 0f;
