@@ -294,7 +294,7 @@ namespace DarkSouls.NPCs.Enemies
                             if (npc.life > npc.lifeMax) npc.life = npc.lifeMax;
                             float num48 = 8f;
                             int num291 = 0;//damage
-                            int num292 = mod.ProjectileType("Cure4Ball");//type
+                            int num292 = mod.ProjectileType("Cure4");//type
                             Projectile.NewProjectile(vector33.X, vector33.Y, num288, num289, num292, num291, 0f, Main.myPlayer, 0f, 0f);
                             choasHealed += 1;
                         }
