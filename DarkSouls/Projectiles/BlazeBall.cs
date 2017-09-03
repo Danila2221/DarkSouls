@@ -9,12 +9,7 @@ namespace DarkSouls.Projectiles
 {
 	public class BlazeBall : ModProjectile
 	{
-        public override void SetStaticDefaults()
-        {
-            DisplayName.SetDefault("Blaze");
-
-            
-        }
+        
         public override void SetDefaults()
 		{
 

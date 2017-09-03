@@ -7,7 +7,6 @@ using Terraria.ModLoader;
 
 namespace DarkSouls.Projectiles
 {
-
     public class Blaze : ModProjectile
 	{
         public override void SetStaticDefaults()
