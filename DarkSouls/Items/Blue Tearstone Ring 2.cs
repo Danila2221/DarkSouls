@@ -42,7 +42,7 @@ namespace DarkSouls.Items
         }
         public override void UpdateAccessory(Player player, bool hideVisual)
         {
-            if (player.statLife <= 80)
+            if (player.statLife <= 100)
 
             {
                 player.statDefense += 85;
