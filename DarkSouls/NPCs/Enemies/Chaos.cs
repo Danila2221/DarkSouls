@@ -203,11 +203,11 @@ namespace DarkSouls.NPCs.Enemies
             int oDamage4 = 60;//damage
             int oType4 = mod.ProjectileType("BlazeBall");//type
             int oDamage5 = 60;//damage
-            int oType5 = mod.ProjectileType("IcestormBall");//type
+            int oType5 = mod.ProjectileType("FlareBall");//type
             int oDamage6 = 60;//damage
-            int oType6 = mod.ProjectileType("EarthquakeBall");//type
+            int oType6 = mod.ProjectileType("FlareBall");//type
             int oDamage7 = 25;//damage
-            int oType7 = mod.ProjectileType("TsunamiBall");//type
+            int oType7 = mod.ProjectileType("FlareBall");//type
             int oDamage8 = 25;//damage
             int oType8 = mod.ProjectileType("FlareBall");//type
             if (Main.netMode != 1 && npc.ai[3] == 32f && !Main.player[npc.target].npcTypeNoAggro[npc.type])
