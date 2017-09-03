@@ -251,6 +251,7 @@
     <Content Include="Projectiles\AncientHolyLanceP.png" />
     <Content Include="Projectiles\AntiMaterialRound.png" />
     <Content Include="Projectiles\AntiMatterBlast.png" />
+    <Content Include="Projectiles\AntimatterCannon.png" />
     <Content Include="Projectiles\ArrowofBardP.png" />
     <Content Include="Projectiles\BerserkerNightmareP.png" />
     <Content Include="Projectiles\BlackBreath.png" />
@@ -453,6 +454,7 @@
     <Compile Include="Projectiles\AncientHolyLanceP.cs" />
     <Compile Include="Projectiles\Anti Matter Blast.cs" />
     <Compile Include="Projectiles\AntiMaterialRound.cs" />
+    <Compile Include="Projectiles\AntimatterCannon.cs" />
     <Compile Include="Projectiles\BoltP.cs" />
     <Compile Include="Projectiles\ArrowOfBard.cs" />
     <Compile Include="Projectiles\BerserkerNightmareP.cs" />
