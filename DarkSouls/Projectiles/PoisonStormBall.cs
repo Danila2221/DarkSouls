@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace DarkSouls.Projectiles
 {
-	public class OmnirsEnemySpellPoisonStormBall : ModProjectile
+	public class PoisonStormBall : ModProjectile
 	{
         public override void SetStaticDefaults()
         {
