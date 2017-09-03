@@ -31,5 +31,21 @@ namespace DarkSouls.Projectiles
 			projectile.ignoreWater = true;
 			projectile.tileCollide = true;
 		}
-	}
+        public override void Kill(int timeLeft)
+        {
+            if (!projectile.active)
+            {
+                return;
+            }
+            projectile.timeLeft = 0;
+            {
+                int proj = Projectile.NewProjectile(projectile.Center.X, projectile.Center.Y, 0, 0, mod.ProjectileType("Flare"), 70, 0, projectile.owner);
+                Main.projectile[proj].friendly = projectile.friendly;
+                Main.projectile[proj].hostile = projectile.hostile;
+                Main.PlaySound(2, (int)projectile.position.X, (int)projectile.position.Y, 10);
+            }
+            projectile.active = false;
+        }
+
+    }
 }
