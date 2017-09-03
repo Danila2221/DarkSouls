@@ -305,6 +305,9 @@
     <Content Include="Projectiles\Flare.png" />
     <Content Include="Projectiles\FlareBall.png" />
     <Content Include="Projectiles\Cure4.png" />
+    <Content Include="Projectiles\Tsunami.png" />
+    <Content Include="Projectiles\TsunamiBall.png" />
+    <Content Include="Projectiles\TsunamiReverse.png" />
     <Content Include="Projectiles\PoisonStorm.png" />
     <Content Include="Projectiles\PoisonStormBall.png" />
     <Content Include="Projectiles\Oracle.png" />
@@ -496,6 +499,9 @@
     <Compile Include="Projectiles\Flare.cs" />
     <Compile Include="Projectiles\FlareBall.cs" />
     <Compile Include="Projectiles\Cure4.cs" />
+    <Compile Include="Projectiles\Tsunami.cs" />
+    <Compile Include="Projectiles\TsunamiBall.cs" />
+    <Compile Include="Projectiles\TsunamiReverse.cs" />
     <Compile Include="Projectiles\PoisonStorm.cs" />
     <Compile Include="Projectiles\PoisonStormBall.cs" />
     <Compile Include="Projectiles\Oracle.cs" />
