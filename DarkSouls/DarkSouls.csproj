@@ -255,6 +255,7 @@
     <Content Include="Projectiles\BerserkerNightmareP.png" />
     <Content Include="Projectiles\BlackBreath.png" />
     <Content Include="Projectiles\BoltP.png" />
+    <Content Include="Projectiles\Comet.png" />
     <Content Include="Projectiles\CrazyOrb.png" />
     <Content Include="Projectiles\DragonBreath.png" />
     <Content Include="Projectiles\EffectBuff.png" />
@@ -456,6 +457,7 @@
     <Compile Include="Projectiles\ArrowOfBard.cs" />
     <Compile Include="Projectiles\BerserkerNightmareP.cs" />
     <Compile Include="Projectiles\BlackBreath.cs" />
+    <Compile Include="Projectiles\Comet.cs" />
     <Compile Include="Projectiles\FireTrails.cs" />
     <Compile Include="Projectiles\Crazy Orb.cs" />
     <Compile Include="Projectiles\DragonBreath.cs" />

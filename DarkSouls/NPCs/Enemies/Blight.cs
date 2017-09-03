@@ -316,7 +316,7 @@ for (int i = 0; i < 6; i++) {
 int s=Main.rand.Next(2,10);
 float m=(float)Math.Sin(j)*-s;
 float n=(float)Math.Cos(j)*-s;
-num54 = Projectile.NewProjectile(this.npc.position.X+Main.rand.Next(-25,25),this.npc.position.Y+Main.rand.Next(50,150),m,n,mod.ProjectileType("Antimatter Cannon"),140,0f,Main.myPlayer);
+num54 = Projectile.NewProjectile(this.npc.position.X+Main.rand.Next(-25,25),this.npc.position.Y+Main.rand.Next(50,150),m,n,mod.ProjectileType("AntimatterCannon"),140,0f,Main.myPlayer);
 Main.projectile[num54].scale = (Main.rand.Next(50,100))/75f;
 Main.projectile[num54].timeLeft = 300;
 }
