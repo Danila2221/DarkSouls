@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace OmnirsNosPak.Projectiles.Enemy
+namespace DarkSouls.Projectiles
 {
 	public class Cure4 : ModProjectile
 	{
