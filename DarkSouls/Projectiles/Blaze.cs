@@ -12,25 +12,23 @@ namespace DarkSouls.Projectiles
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Blaze");
-
-            Main.npcFrameCount[projectile.type] = 5;
+            Main.projFrames[projectile.type] = 5;
         }
 
         public override void SetDefaults()
 		{
-
-			projectile.width = 86;
+            projectile.aiStyle = 0;
+            projectile.width = 86;
 			projectile.height = 66;
 			projectile.penetrate = 50;
 			projectile.knockBack = 9;
 			projectile.timeLeft = 100;
-			projectile.light = 1f;
+			projectile.light = 1;
 			projectile.friendly = false;
 			projectile.hostile = true;
 			projectile.magic = true;
 			projectile.ignoreWater = true;
 			projectile.tileCollide = false;
-
 		}
         #region AI
         public override void AI()

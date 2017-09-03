@@ -12,8 +12,7 @@ namespace DarkSouls.Projectiles
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Flare");
-
-            Main.npcFrameCount[projectile.type] = 10;
+            Main.projFrames[projectile.type] = 10;
         }
         public override void SetDefaults()
 		{

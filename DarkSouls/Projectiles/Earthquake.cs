@@ -13,7 +13,7 @@ namespace DarkSouls.Projectiles
         {
             DisplayName.SetDefault("Earthquake");
 
-            Main.npcFrameCount[projectile.type] = 4;
+            Main.projFrames[projectile.type] = 4;
         }
         public override void SetDefaults()
 		{
