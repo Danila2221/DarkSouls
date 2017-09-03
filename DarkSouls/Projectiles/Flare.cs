@@ -5,7 +5,7 @@ using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace DarkSols.Projectiles
+namespace DarkSouls.Projectiles
 {
 	public class Flare : ModProjectile
 	{
