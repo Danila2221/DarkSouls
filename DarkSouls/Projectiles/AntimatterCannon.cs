@@ -19,7 +19,6 @@ namespace DarkSouls.Projectiles
             projectile.scale = 1;
             projectile.width = 15;
             projectile.height = 15;
-            projectile.alpha = 255;
             projectile.tileCollide = false;
             projectile.ignoreWater = true;
         }
