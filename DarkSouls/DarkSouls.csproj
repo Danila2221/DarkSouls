@@ -182,12 +182,14 @@
     <Content Include="Items\BlueHeroShirt_Body.png" />
     <Content Include="Items\BlueTearstoneRing.png" />
     <Content Include="Items\BlueTearstoneRing2.png" />
+    <Content Include="Items\BlueTitanite.png" />
     <Content Include="Items\Bolt.png" />
     <Content Include="Items\Bolt1Tome.png" />
     <Content Include="Items\Bolt2Tome.png" />
     <Content Include="Items\Bolt3Tome.png" />
     <Content Include="Items\Bolt4Tome.png" />
     <Content Include="Items\BoneBlade.png" />
+    <Content Include="Items\BootsofHaste.png" />
     <Content Include="Items\DarkSoul.png" />
     <Content Include="Items\DivineBoomSpark.png" />
     <Content Include="Items\DivineSpark.png" />
@@ -330,6 +332,7 @@
     <Compile Include="Dusts\Smoke.cs" />
     <Compile Include="Dusts\Sparkle.cs" />
     <Compile Include="Items\Aaron%27s Protection Stone.cs" />
+    <Compile Include="Items\Boots speed.cs" />
     <Compile Include="Items\Blue Tearstone Ring 2.cs" />
     <Compile Include="Items\Blue Tearstone Ring.cs" />
     <Compile Include="Items\Bolt.cs" />
@@ -369,6 +372,7 @@
     <Compile Include="Items\AquamarineRing.cs" />
     <Compile Include="Items\Black Belt Hair Style.cs" />
     <Compile Include="Items\Bone Blade.cs" />
+    <Compile Include="Items\Blue Titanite.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
     <Compile Include="Items\Blue Hero hat.cs" />
     <Compile Include="Items\LightCube.cs" />
