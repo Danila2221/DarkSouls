@@ -187,6 +187,7 @@
     <Content Include="Items\Bolt2Tome.png" />
     <Content Include="Items\Bolt3Tome.png" />
     <Content Include="Items\Bolt4Tome.png" />
+    <Content Include="Items\BoneBlade.png" />
     <Content Include="Items\DarkSoul.png" />
     <Content Include="Items\DivineBoomSpark.png" />
     <Content Include="Items\DivineSpark.png" />
@@ -364,6 +365,7 @@
     <Compile Include="Items\AntimatRifle.cs" />
     <Compile Include="Items\AquamarineRing.cs" />
     <Compile Include="Items\Black Belt Hair Style.cs" />
+    <Compile Include="Items\Bone Blade.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
     <Compile Include="Items\Blue Hero hat.cs" />
     <Compile Include="Items\LightCube.cs" />
