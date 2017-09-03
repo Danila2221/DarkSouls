@@ -295,6 +295,12 @@
     <Content Include="Projectiles\MegaDrill.png" />
     <Content Include="Projectiles\ObscureSaw.png" />
     <Content Include="Projectiles\LightPillarBall.png" />
+    <Content Include="Projectiles\Blaze.png" />
+    <Content Include="Projectiles\BlazeBall.png" />
+    <Content Include="Projectiles\Earthquake.png" />
+    <Content Include="Projectiles\EarthquakeBall.png" />
+    <Content Include="Projectiles\Flare.png" />
+    <Content Include="Projectiles\FlareBall.png" />
     <Content Include="Projectiles\PoisonStorm.png" />
     <Content Include="Projectiles\PoisonStormBall.png" />
     <Content Include="Projectiles\Oracle.png" />
@@ -476,6 +482,12 @@
     <Compile Include="Projectiles\MasterBuster.cs" />
     <Compile Include="Projectiles\MegaDrill.cs" />
     <Compile Include="Projectiles\Obscure Saw.cs" />
+    <Compile Include="Projectiles\Blaze.cs" />
+    <Compile Include="Projectiles\BlazeBall.cs" />
+    <Compile Include="Projectiles\Earthquake.cs" />
+    <Compile Include="Projectiles\EarthquakeBall.cs" />
+    <Compile Include="Projectiles\Flare.cs" />
+    <Compile Include="Projectiles\FlareBall.cs" />
     <Compile Include="Projectiles\PoisonStorm.cs" />
     <Compile Include="Projectiles\PoisonStormBall.cs" />
     <Compile Include="Projectiles\Oracle.cs" />
