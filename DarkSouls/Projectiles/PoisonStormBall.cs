@@ -12,6 +12,7 @@ namespace DarkSouls.Projectiles
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Poison Storm");
+            Main.projFrames[projectile.type] = 5;
         }
         public override void SetDefaults()
 		{
@@ -27,7 +28,7 @@ namespace DarkSouls.Projectiles
 			projectile.magic = true;
 			projectile.ignoreWater = true;
 			projectile.tileCollide = true;
-			Main.projFrames[projectile.type] = 5;
+			
 		}
 		public override void AI() 
 		{
