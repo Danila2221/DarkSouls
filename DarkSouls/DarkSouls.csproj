@@ -191,6 +191,7 @@
     <Content Include="Items\BoneBlade.png" />
     <Content Include="Items\BootsofHaste.png" />
     <Content Include="Items\BowofEarendil.png" />
+    <Content Include="Items\BrokenStrangeMagicRing.png" />
     <Content Include="Items\DarkSoul.png" />
     <Content Include="Items\DivineBoomSpark.png" />
     <Content Include="Items\DivineSpark.png" />
@@ -377,6 +378,7 @@
     <Compile Include="Items\Bone Blade.cs" />
     <Compile Include="Items\Blue Titanite.cs" />
     <Compile Include="Items\Bow of Earendil.cs" />
+    <Compile Include="Items\BrokenStrangeMagicRing.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
     <Compile Include="Items\Blue Hero hat.cs" />
     <Compile Include="Items\LightCube.cs" />
