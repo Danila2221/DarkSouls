@@ -397,7 +397,7 @@ namespace DarkSouls.NPCs.SuperHard
                                 speedX *= num51;
                                 speedY *= num51;
                                 int damage = 110;//(int) (14f * npc.scale);
-                                int type = mod.ProjectileType("AbyssPoisonStrikeBall");//44;//0x37; //14;
+                                int type = mod.ProjectileType("PoisonStormBall");//44;//0x37; //14;
                                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, speedX, speedY, type, damage, 0f, Main.myPlayer);
                                 Main.projectile[num54].timeLeft = 200;
                                 Main.projectile[num54].aiStyle = 23;
@@ -419,7 +419,7 @@ namespace DarkSouls.NPCs.SuperHard
                                 speedX *= num51;
                                 speedY *= num51;
                                 int damage = 120;//(int) (14f * npc.scale);
-                                int type = mod.ProjectileType("AbyssStormBall");//44;//0x37; //14;
+                                int type = mod.ProjectileType("PoisonStorm");//44;//0x37; //14;
                                 int num54 = Projectile.NewProjectile(vector8.X, vector8.Y, speedX, speedY, type, damage, 0f, Main.myPlayer);
                                 Main.projectile[num54].timeLeft = 0;
                                 Main.projectile[num54].aiStyle = 23;
