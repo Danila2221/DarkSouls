@@ -5,26 +5,23 @@ using Terraria.ModLoader;
 namespace DarkSouls.Items
 {
 
-    public class AttraidiesRelic : ModItem
+    public class BrokenIllusion : ModItem
     {
         public override void SetStaticDefaults()
         {
-            Tooltip.SetDefault("Summons a Attraidies illusion from the legion army of Attraidies!"
-                + "\nDrops 600 souls of utterly corrupt darkness, among other random things."
-                + "\nYou feel compelled to try this...");
+            Tooltip.SetDefault("Summons an all-powerful Mindflayer Illusion"
+                + "\nNot for normal use. Actually, this is for testing only. Haha.");
         }
 
         public override void SetDefaults()
         {
             item.width = 34;
             item.height = 40;
-            item.maxStack = 1;
-            item.rare = 9;
-            item.useAnimation = 45;
-            item.useTime = 55;
             item.useStyle = 4;
-            item.UseSound = SoundID.Item44;
-            item.value = 1000;
+            item.useAnimation = 5;
+            item.useTime = 5;
+            item.maxStack = 1;
+            item.scale = 1;
             item.consumable = false;
         }
 
@@ -32,15 +29,15 @@ namespace DarkSouls.Items
         public override bool CanUseItem(Player player)
         {
             // "player.ZoneUnderworldHeight" could also be written as "player.position.Y / 16f > Main.maxTilesY - 200"
-            return !NPC.AnyNPCs(mod.NPCType("AttraidiesIllusion"));
+            return !NPC.AnyNPCs(mod.NPCType("MindflayerIllusion"));
         }
 
         public override bool UseItem(Player player)
         {
-            
-                if (Main.netMode != 1)
+            Main.NewText("I am impressed you've made it this far, Red. But I'm done playing games. It's time to end this...", 175, 75, 255);
+            if (Main.netMode != 1)
                 {
-                NPC.SpawnOnPlayer(player.whoAmI, mod.NPCType("AttraidiesIllusion"));
+                NPC.SpawnOnPlayer(player.whoAmI, mod.NPCType("MindflayerIllusion"));
                 }
                 
             
