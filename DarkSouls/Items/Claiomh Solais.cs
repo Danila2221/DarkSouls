@@ -7,7 +7,7 @@ using Terraria.ModLoader;
 
 namespace DarkSouls.Items
 {
-    public class Claiomh_Solais : ModItem
+    public class ClaiomhSolais : ModItem
     {
         public override void SetStaticDefaults()
         {
