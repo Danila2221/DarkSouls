@@ -139,6 +139,13 @@
     <Content Include="Items\AnkorWatHelmet_Head.png" />
     <Content Include="Items\AntimatRifle.png" />
     <Content Include="Items\AquamarineRing.png" />
+    <Content Include="Items\ArcherofLumeliaHairStyle.png" />
+    <Content Include="Items\ArcherofLumeliaHairStyle_Head.png" />
+    <Content Include="Items\ArcherofLumeliaPants.png" />
+    <Content Include="Items\ArcherofLumeliaPants_Legs.png" />
+    <Content Include="Items\ArcherofLumeliaShirt.png" />
+    <Content Include="Items\ArcherofLumeliaShirt_Arms.png" />
+    <Content Include="Items\ArcherofLumeliaShirt_Body.png" />
     <Content Include="Items\ArchmenEmblem.png" />
     <Content Include="Items\ArmorDrug.png" />
     <Content Include="Items\ArmorOfArtorias.png" />
