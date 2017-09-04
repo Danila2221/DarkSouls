@@ -81,13 +81,13 @@ namespace DarkSouls.Projectiles
             // These dusts are added later, for the 'ExampleMod' effect
             if (Main.rand.Next(3) == 0)
             {
-                int dustIndex = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, mod.DustType<Dusts.Sparkle>(), projectile.velocity.X * 0.2f, projectile.velocity.Y * 0.2f, 200, default(Color), 1.2f);
+                int dustIndex = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, ProjectileID.FallingStar, projectile.velocity.X * 0.2f, projectile.velocity.Y * 0.2f, 200, default(Color), 1.2f);
                 Main.dust[dustIndex].velocity += projectile.velocity * 0.3f;
                 Main.dust[dustIndex].velocity *= 0.2f;
             }
             if (Main.rand.Next(4) == 0)
             {
-                int dustIndex = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, mod.DustType<Dusts.Smoke>(), 0f, 0f, 254, default(Color), 0.3f);
+                int dustIndex = Dust.NewDust(new Vector2(projectile.position.X, projectile.position.Y), projectile.width, projectile.height, ProjectileID.FallingStar, 0f, 0f, 254, default(Color), 0.3f);
                 Main.dust[dustIndex].velocity += projectile.velocity * 0.5f;
                 Main.dust[dustIndex].velocity *= 0.5f;
                 return;
