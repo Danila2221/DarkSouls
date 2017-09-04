@@ -4,17 +4,18 @@ using Terraria.ModLoader;
 
 namespace DarkSouls.Items
 {
-    public class CookedChicken : ModItem
+    public class DeadChicken : ModItem
     {
         public override void SetStaticDefaults()
         {
-            base.SetStaticDefaults();
+            Tooltip.SetDefault("Can be cooked at a cooking pot to make 1 Cooked Chicken"
+                + "\nCooked chicken heals 125 HP and has no potion cool-down. Wow! Tasty!");
         }
         public override void SetDefaults()
         {
             item.stack = 1;
             item.consumable = true;
-            item.healLife = 125;
+            item.healLife = 25;
             item.useAnimation = 17;
             item.UseSound = SoundID.Item2;
             item.useStyle = 2;
@@ -25,13 +26,6 @@ namespace DarkSouls.Items
             item.value = 2;
             item.width = 20;
         }
-        public override void AddRecipes()
-        {
-            ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "DeadChicken", 1);
-            recipe.SetResult(this);
-            recipe.AddTile(96);
-            recipe.AddRecipe();
-        }
+        
     }
 }
