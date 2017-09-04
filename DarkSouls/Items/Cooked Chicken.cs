@@ -28,7 +28,7 @@ namespace DarkSouls.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "DeadChicken", 1);
+            recipe.AddIngredient(null, "DarkSoul", 1);
             recipe.SetResult(this);
             recipe.AddTile(96);
             recipe.AddRecipe();
