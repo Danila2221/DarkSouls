@@ -342,6 +342,9 @@
     <Compile Include="Dusts\Smoke.cs" />
     <Compile Include="Dusts\Sparkle.cs" />
     <Compile Include="Items\Aaron%27s Protection Stone.cs" />
+    <Compile Include="Items\Archer of Lumelia Shirt.cs" />
+    <Compile Include="Items\Archer of Lumelia Pants.cs" />
+    <Compile Include="Items\Archer of Lumelia Hair Style.cs" />
     <Compile Include="Items\Broken Illusion.cs" />
     <Compile Include="Items\Boots speed.cs" />
     <Compile Include="Items\Blue Tearstone Ring 2.cs" />

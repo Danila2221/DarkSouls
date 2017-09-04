@@ -6,36 +6,36 @@ using Microsoft.Xna.Framework;
 namespace DarkSouls.Items
 {
 	[AutoloadEquip(EquipType.Body)]
-	public class AncientBrassArmor : ModItem
+	public class ArcherofLumeliaShirt : ModItem
 	{
 		public override void SetStaticDefaults()
 		{
-			base.SetStaticDefaults();
-			DisplayName.SetDefault("Ancient Brass Set");
-			
+			DisplayName.SetDefault("Archer of Lumelia Set");
+            Tooltip.SetDefault("Gifted with lethal archery abilities"
+                + "\n25% chance not to consume ammo.");
 		}
 
 
 		public override void SetDefaults()
 		{
-			item.width = 18;
+            item.rare = 3;
+            item.width = 18;
 			item.height = 18;
-			item.value = 27000;
-			item.defense = 3;
+			item.value = 5000;
+			item.defense = 20;
 			item.maxStack = 1;
-            item.rare = 2;
-        }
+		}
 
 		public override void UpdateEquip(Player player)
 		{
-			
-		}	
+            player.ammoCost75 = true;
+        }	
 
 		public override void AddRecipes()
 		{
 			ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(ItemID.IronChainmail, 1);
-            recipe.AddIngredient(null, "DarkSoul", 200);
+            recipe.AddIngredient(ItemID.AdamantiteBreastplate, 1);
+            recipe.AddIngredient(null, "DarkSoul", 4000);
             recipe.SetResult(this);
             recipe.AddTile(26);
             recipe.AddRecipe();
