@@ -37,7 +37,7 @@ namespace DarkSouls.Items
         {
             ModRecipe recipe = new ModRecipe(mod);
             recipe.AddIngredient(ItemID.HermesBoots, 1);
-            recipe.AddIngredient(null, "DarkSoul", 2);
+            recipe.AddIngredient(null, "DarkSoul", 2000);
             recipe.SetResult(this);
             recipe.AddTile(26);
             recipe.AddRecipe();

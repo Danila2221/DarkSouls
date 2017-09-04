@@ -45,9 +45,8 @@ namespace DarkSouls.Items
         public override void AddRecipes()
         {
             ModRecipe recipe = new ModRecipe(mod);
-            recipe.AddIngredient(null, "GazingShield", 1);
-            recipe.AddIngredient(ItemID.SoulofMight, 5);
-            recipe.AddIngredient(null, "DarkSoul", 25000);
+            recipe.AddIngredient(null, "BeholderShield", 1);
+            recipe.AddIngredient(null, "DarkSoul", 50000);
             recipe.SetResult(this);
             recipe.AddTile(26);
             recipe.AddRecipe();
