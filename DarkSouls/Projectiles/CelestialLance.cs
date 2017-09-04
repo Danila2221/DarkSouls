@@ -1,40 +1,34 @@
-using System;
-using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Graphics;
-using Terraria;
+﻿using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
+using Microsoft.Xna.Framework;
+using System;
 
 namespace DarkSouls.Projectiles
 {
-	public class AncientDragonLanceP : ModProjectile
-	{
-		public override void SetStaticDefaults()
-		{
-			DisplayName.SetDefault("Lance");
-		}
-
-		public override void SetDefaults()
-		{
-			projectile.aiStyle = 19; 
-			projectile.width = 66;
-			projectile.height = 66;
-			projectile.aiStyle = 19;
-			projectile.friendly = true;
-			projectile.penetrate = 3;
-			projectile.tileCollide = false;
-			projectile.scale = 1f;
-			projectile.hide = true;
-			projectile.ownerHitCheck = false;
-			projectile.melee = true;
-			projectile.alpha = 0;
-		}
-
-		
-
-
-		public override void AI()
+    public class CelestialLanceP : ModProjectile
+    {
+        public override void SetDefaults()
         {
+            projectile.aiStyle = 19;
+            projectile.width = 34;
+            projectile.height = 34;
+            projectile.friendly = true;
+            projectile.penetrate = 3;
+            projectile.tileCollide = false;
+            projectile.scale = 1f;
+            projectile.hide = true;
+            projectile.ownerHitCheck = false;
+            projectile.melee = true;
+            projectile.alpha = 0;
+        }
+
+
+
+
+        public override void AI()
+        {
+            Lighting.AddLight((int)((projectile.position.X + (float)projectile.width) / 16f), (int)((projectile.position.Y + (float)(projectile.height / 2)) / 16f), 0.8f, 0.7f, 0.1f);
             Main.player[projectile.owner].direction = projectile.direction;
             Main.player[projectile.owner].heldProj = projectile.whoAmI;
             Main.player[projectile.owner].itemTime = Main.player[projectile.owner].itemAnimation;
@@ -65,10 +59,5 @@ namespace DarkSouls.Projectiles
                 projectile.rotation -= 1.57f;
             }
         }
-        
-		// It appears that for this AI, only the ai0 field is used!
-
-		
-		}
-	}
-
+    }
+}
