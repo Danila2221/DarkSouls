@@ -9,7 +9,7 @@ namespace DarkSouls.Items
     {
         public override void SetStaticDefaults()
         {
-            base.SetStaticDefaults();
+            DisplayName.SetDefault("Arrow of Bard");
         }
         public override void SetDefaults()
         {

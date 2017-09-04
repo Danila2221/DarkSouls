@@ -204,6 +204,8 @@
     <Content Include="Items\Celestriad.png" />
     <Content Include="Items\ChaosTome.png" />
     <Content Include="Items\ClaiomhSolais.png" />
+    <Content Include="Items\Compact Frame.png" />
+    <Content Include="Items\CookedChicken.png" />
     <Content Include="Items\DarkSoul.png" />
     <Content Include="Items\DivineBoomSpark.png" />
     <Content Include="Items\DivineSpark.png" />
@@ -400,6 +402,8 @@
     <Compile Include="Items\Celestriad.cs" />
     <Compile Include="Items\Chaos Tome.cs" />
     <Compile Include="Items\Claiomh Solais.cs" />
+    <Compile Include="Items\Compact Frame.cs" />
+    <Compile Include="Items\Cooked Chicken.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
     <Compile Include="Items\Blue Hero hat.cs" />
     <Compile Include="Items\LightCube.cs" />
