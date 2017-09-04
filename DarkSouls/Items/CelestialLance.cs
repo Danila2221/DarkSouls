@@ -11,6 +11,8 @@ namespace DarkSouls.Items
         public override void SetStaticDefaults()
         {
             DisplayName.SetDefault("Celestial Lance");
+            Tooltip.SetDefault("Celestial lance fabled to hold sway over the world."
+                + "\nIncreases attack damage by 50% when falling.");
         }
 
         public override void SetDefaults()
@@ -35,9 +37,22 @@ namespace DarkSouls.Items
             item.melee = true;
             item.autoReuse = true; // Most spears don't autoReuse, but it's possible
         }
-        
+        public override void GetWeaponDamage(Player player, ref int damage)
+        {
+            int num21 = (int)(player.position.Y / 16f) - player.fallStart;
+            if ((player.gravDir == 1f) && (player.velocity.Y > 0))
+            {
+                //player.meleeDamage *= (int) ((player.velocity.Y*0.15) + 1);
+                player.meleeDamage *= 1.5f;
+            }
+            if ((player.gravDir == -1f) && (player.velocity.Y < 0))
+            {
+                //player.meleeDamage *= (int) -(((player.velocity.Y*0.15) - 1));
+                player.meleeDamage *= 1.5f;
+            }
+        }
 
-        
+
         public override bool CanUseItem(Player player)
         {
             return player.ownedProjectileCounts[item.shoot] < 1; // This is to ensure the spear doesn't bug out when using autoReuse = true
