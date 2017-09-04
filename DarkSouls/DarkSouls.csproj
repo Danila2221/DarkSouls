@@ -195,6 +195,8 @@
     <Content Include="Items\BrokenStrangeMagicRing.png" />
     <Content Include="Items\CelestialLance.png" />
     <Content Include="Items\Celestriad.png" />
+    <Content Include="Items\ChaosTome.png" />
+    <Content Include="Items\ClaiomhSolais.png" />
     <Content Include="Items\DarkSoul.png" />
     <Content Include="Items\DivineBoomSpark.png" />
     <Content Include="Items\DivineSpark.png" />
@@ -261,6 +263,7 @@
     <Content Include="Projectiles\BlackBreath.png" />
     <Content Include="Projectiles\BoltP.png" />
     <Content Include="Projectiles\CelestialLanceP.png" />
+    <Content Include="Projectiles\ChaosBall2.png" />
     <Content Include="Projectiles\Comet.png" />
     <Content Include="Projectiles\CrazyOrb.png" />
     <Content Include="Projectiles\DragonBreath.png" />
@@ -385,6 +388,8 @@
     <Compile Include="Items\BrokenStrangeMagicRing.cs" />
     <Compile Include="Items\CelestialLance.cs" />
     <Compile Include="Items\Celestriad.cs" />
+    <Compile Include="Items\Chaos Tome.cs" />
+    <Compile Include="Items\Claiomh Solais.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
     <Compile Include="Items\Blue Hero hat.cs" />
     <Compile Include="Items\LightCube.cs" />
@@ -470,6 +475,7 @@
     <Compile Include="Projectiles\BerserkerNightmareP.cs" />
     <Compile Include="Projectiles\BlackBreath.cs" />
     <Compile Include="Projectiles\CelestialLance.cs" />
+    <Compile Include="Projectiles\ChaosBall2.cs" />
     <Compile Include="Projectiles\Comet.cs" />
     <Compile Include="Projectiles\FireTrails.cs" />
     <Compile Include="Projectiles\Crazy Orb.cs" />
