@@ -23,7 +23,11 @@ namespace DarkSouls.Projectiles
             projectile.alpha = 0;
         }
 
-
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        {
+            
+            Projectile.NewProjectile(target.position.X - 0, target.position.Y - 25, 0, 5, ProjectileID.FallingStar, 500, 1f, Main.myPlayer);
+        }
 
 
         public override void AI()

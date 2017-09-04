@@ -221,7 +221,6 @@
     <Content Include="Microsoft.Xna.Framework.Game.dll" />
     <Content Include="Microsoft.Xna.Framework.Graphics.dll" />
     <Content Include="Microsoft.Xna.Framework.Xact.dll" />
-    <Content Include="NPCs\BrokenMindflayerIllusion.png" />
     <Content Include="NPCs\Enemies\AbysmalOolacileSorcerer.png" />
     <Content Include="NPCs\Enemies\ArmoredWraith.png" />
     <Content Include="NPCs\Enemies\Artorias.png" />

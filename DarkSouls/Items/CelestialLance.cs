@@ -1,4 +1,5 @@
 ﻿using DarkSouls.Projectiles;
+using System;
 using Terraria;
 using Terraria.ID;
 using Terraria.ModLoader;
@@ -24,8 +25,7 @@ namespace DarkSouls.Items
             item.scale = 1.1f;
             item.shoot = 46;
             item.shootSpeed = 8;
-
-
+            item.rare = 10;
             item.useStyle = 5;
             item.useAnimation = 11;
             item.useTime = 1;
@@ -35,7 +35,9 @@ namespace DarkSouls.Items
             item.melee = true;
             item.autoReuse = true; // Most spears don't autoReuse, but it's possible
         }
+        
 
+        
         public override bool CanUseItem(Player player)
         {
             return player.ownedProjectileCounts[item.shoot] < 1; // This is to ensure the spear doesn't bug out when using autoReuse = true
