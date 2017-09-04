@@ -167,6 +167,7 @@
     <Content Include="Items\BeholderShield2.png" />
     <Content Include="Items\BeholderShield2_Shield.png" />
     <Content Include="Items\BeholderShield_Shield.png" />
+    <Content Include="Items\BequeathedLordSoulShard.png" />
     <Content Include="Items\BerserkerNightmare.png" />
     <Content Include="Items\BeserkerEmblem.png" />
     <Content Include="Items\BlackBeltHelmet_Head.png" />
@@ -406,6 +407,7 @@
     <Compile Include="Items\Claiomh Solais.cs" />
     <Compile Include="Items\Compact Frame.cs" />
     <Compile Include="Items\Cooked Chicken.cs" />
+    <Compile Include="Items\DarkSoul.cs" />
     <Compile Include="Items\Dead Chicken.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
     <Compile Include="Items\Blue Hero hat.cs" />
@@ -430,7 +432,7 @@
     <Compile Include="Items\Bolt2Tome.cs" />
     <Compile Include="Items\Bolt3Tome.cs" />
     <Compile Include="Items\Bolt4Tome.cs" />
-    <Compile Include="Items\DarkSoul.cs" />
+    <Compile Include="Items\Bequeathed Lord Soul Shard.cs" />
     <Compile Include="Items\DivineBoomCannon.cs" />
     <Compile Include="Items\DivineCannon.cs" />
     <Compile Include="Items\FireSword.cs" />
