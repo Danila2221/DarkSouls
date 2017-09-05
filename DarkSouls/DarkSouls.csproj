@@ -208,6 +208,8 @@
     <Content Include="Items\Compact Frame.png" />
     <Content Include="Items\CompactFrame.png" />
     <Content Include="Items\CookedChicken.png" />
+    <Content Include="Items\CopperRing.png" />
+    <Content Include="Items\CoralSword.png" />
     <Content Include="Items\DarkSoul.png" />
     <Content Include="Items\DeadChicken.png" />
     <Content Include="Items\DivineBoomSpark.png" />
@@ -407,6 +409,8 @@
     <Compile Include="Items\Claiomh Solais.cs" />
     <Compile Include="Items\Compact Frame.cs" />
     <Compile Include="Items\Cooked Chicken.cs" />
+    <Compile Include="Items\Copper Ring.cs" />
+    <Compile Include="Items\Coral Sword.cs" />
     <Compile Include="Items\DarkSoul.cs" />
     <Compile Include="Items\Dead Chicken.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
