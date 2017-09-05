@@ -30,7 +30,7 @@ namespace DarkSouls.Items
         }
         public override void ModifyHitNPC(Player player, NPC npc, ref int damage, ref float knockBack, ref bool crit)
         {
-            if (NPCID.Shark == 65) damage *= 400;
+            if (npc.type == NPCID.Shark) damage *= 400;
             else if (npc.FullName == "Goldfish") damage *= 4;
             else if (npc.FullName == "Corrupt Goldfish") damage *= 4;
             else if (npc.FullName == "Jelly Fish") damage *= 4;
