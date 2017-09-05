@@ -27,6 +27,7 @@ namespace DarkSouls.Items
             item.useTime = 21;
             item.value = 110000;
             item.width = 36;
+            item.autoReuse = true;
         }
         public override void ModifyHitNPC(Player player, NPC npc, ref int damage, ref float knockBack, ref bool crit)
         {
@@ -46,7 +47,6 @@ namespace DarkSouls.Items
             else if (npc.FullName == "Quara Mantassin") damage *= 4;
             else if (npc.FullName == "Quara Pincher") damage *= 4;
             else if (npc.FullName == "Quara Predator") damage *= 4;
-            else if (npc.FullName == "Bunny") damage *= 9000;
         }
         public override void AddRecipes()
         {

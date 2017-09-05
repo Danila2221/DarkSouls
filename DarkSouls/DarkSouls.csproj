@@ -411,6 +411,7 @@
     <Compile Include="Items\Cooked Chicken.cs" />
     <Compile Include="Items\Copper Ring.cs" />
     <Compile Include="Items\Coral Sword.cs" />
+    <Compile Include="Items\Corrupted Tooth.cs" />
     <Compile Include="Items\DarkSoul.cs" />
     <Compile Include="Items\Dead Chicken.cs" />
     <Compile Include="Items\Flame of the Abyss .cs" />
