@@ -30,13 +30,15 @@ namespace DarkSouls.Items
         }
         public override void ModifyHitNPC(Player player, NPC npc, ref int damage, ref float knockBack, ref bool crit)
         {
-            if (npc.type == NPCID.Shark) damage *= 400;
-            else if (npc.FullName == "Goldfish") damage *= 4;
-            else if (npc.FullName == "Corrupt Goldfish") damage *= 4;
-            else if (npc.FullName == "Jelly Fish") damage *= 4;
-            else if (npc.FullName == "Piranha") damage *= 4;
-            else if (npc.FullName == "Angler Fish") damage *= 4;
-            else if (npc.FullName == "Shark") damage *= 4;
+            if (npc.type == NPCID.Shark) damage *= 4;
+            else if (npc.type == NPCID.Goldfish) damage *= 4;
+            else if (npc.type == NPCID.CorruptGoldfish) damage *= 4;
+            else if (npc.type == NPCID.BlueJellyfish) damage *= 4;
+            else if (npc.type == NPCID.PinkJellyfish) damage *= 4;
+            else if (npc.type == NPCID.GreenJellyfish) damage *= 4;
+            else if (npc.type == NPCID.Piranha) damage *= 4;
+            else if (npc.type == NPCID.AnglerFish) damage *= 4;
+            else if (npc.type == NPCID.Shark) damage *= 4;
             else if (npc.FullName == "Sahagin Chief") damage *= 4;
             else if (npc.FullName == "Sahagin Prince") damage *= 4;
             else if (npc.FullName == "Quara Constrictor") damage *= 4;
@@ -44,6 +46,16 @@ namespace DarkSouls.Items
             else if (npc.FullName == "Quara Mantassin") damage *= 4;
             else if (npc.FullName == "Quara Pincher") damage *= 4;
             else if (npc.FullName == "Quara Predator") damage *= 4;
+            else if (npc.FullName == "Bunny") damage *= 9000;
+        }
+        public override void AddRecipes()
+        {
+            ModRecipe recipe = new ModRecipe(mod);
+            recipe.AddIngredient(ItemID.Coral, 5);
+            recipe.AddIngredient(null, "DarkSoul", 5000);
+            recipe.SetResult(this);
+            recipe.AddTile(26);
+            recipe.AddRecipe();
         }
     }
 }
