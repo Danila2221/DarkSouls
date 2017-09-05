@@ -210,6 +210,7 @@
     <Content Include="Items\CookedChicken.png" />
     <Content Include="Items\CopperRing.png" />
     <Content Include="Items\CoralSword.png" />
+    <Content Include="Items\CorruptedTooth.png" />
     <Content Include="Items\DarkSoul.png" />
     <Content Include="Items\DeadChicken.png" />
     <Content Include="Items\DivineBoomSpark.png" />
